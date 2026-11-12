@@ -113,6 +113,6 @@ ${sn.html}`;
     ...Object.fromEntries(A.jobs.map((p, i) => [`b/job${i}.jpg`, p])),
     ...Object.fromEntries([1, 2].map((n) => [`d/glints-0${n}.png`, `${D}/effect-parts/glints-0${n}.png`])),
   };
-  const contact = [1.2, T.intro + 1.0, T.jobs[0] + 1.3, T.jobs[1] + 1.3, T.hand + 1.8, T.end + 2.0];
+  const contact = [2.6, T.intro + 1.0, T.jobs[0] + 1.3, T.jobs[1] + 1.3, T.hand + 1.8, T.end + 2.0];
   return { duration, html: page({ id: "countdown", duration, brand, css, body, script: s }), assets, beats: contact, contact };
 }
