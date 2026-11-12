@@ -1,4 +1,4 @@
-# XtraFreshhh reels — style options (step 1, waiting for a pick)
+# XtraFreshhh reels — style options (DECIDED: B, with A's photo end card)
 
 Three looks for the **3-tips** template, shown as start / middle / end stills. Open **COMPARE.png** first.
 All three follow the carousel look (Option A carousels): bright daylight photo, deep-teal text straight on the wall,
