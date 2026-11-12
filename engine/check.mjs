@@ -20,23 +20,33 @@ export async function checkReel(htmlPath, out, phoneStripPath) {
   const problems = [];
   let minFont = Infinity;
   const tl = async (t) => page.evaluate((t) => { Object.values(window.__timelines)[0].seek(t, false); }, t);
+  // Read every visible text element at time t (rect, overflow, effective font size after transforms).
+  const probe = async (t) => { await tl(t); return page.evaluate(() => {
+    const vis = (el) => { let o = 1; for (let e = el; e && e !== document.body; e = e.parentElement) o *= +getComputedStyle(e).opacity; return o; };
+    return [...document.querySelectorAll(".txt,.zone")].map((el, i) => {
+      const r = el.getBoundingClientRect();
+      const scale = el.offsetWidth ? Math.sqrt((r.width * r.height) / (el.offsetWidth * el.offsetHeight || 1)) : 1;
+      return { k: i, id: el.id || el.className, text: el.textContent.trim().slice(0, 40), op: vis(el),
+               r: [r.left, r.top, r.right, r.bottom], over: el.scrollWidth > el.clientWidth + 2 && getComputedStyle(el).overflow !== "visible" ? true : el.scrollWidth > el.clientWidth + 2,
+               font: el.classList.contains("txt") && !el.classList.contains("ui") ? parseFloat(getComputedStyle(el).fontSize) * scale : null };
+    });
+  }); };
   for (let t = 0; t <= out.duration + 1e-6; t += 0.1) {
-    await tl(t);
-    const found = await page.evaluate((SAFE) => {
-      const vis = (el) => { let o = 1; for (let e = el; e && e !== document.body; e = e.parentElement) o *= +getComputedStyle(e).opacity; return o; };
-      return [...document.querySelectorAll(".txt,.zone")].filter((el) => vis(el) > 0.5).map((el) => {
-        const r = el.getBoundingClientRect();
-        const out = [];
-        if (r.top < SAFE.top - 0.5 || r.bottom > SAFE.bottom + 0.5) out.push(`vertical ${Math.round(r.top)}–${Math.round(r.bottom)}`);
-        if (r.left < SAFE.left - 0.5 || r.right > SAFE.right + 0.5) out.push(`horizontal ${Math.round(r.left)}–${Math.round(r.right)}`);
-        if (el.scrollWidth > el.clientWidth + 2) out.push("text wider than its box");
-        return { id: el.id || el.className, text: el.textContent.trim().slice(0, 40), issues: out,
-                 font: el.classList.contains("txt") ? parseFloat(getComputedStyle(el).fontSize) : null };
-      });
-    }, SAFE);
-    for (const f of found) {
+    const now = await probe(t);
+    const later = await probe(Math.min(t + 0.08, out.duration));
+    for (const f of now) {
+      if (f.op <= 0.5) continue;
+      if (f.r[2] <= 0 || f.r[0] >= 1080 || f.r[3] <= 0 || f.r[1] >= 1920) continue; // wholly off-screen
+      const g = later[f.k];
+      // only judge settled text: anything still sliding/whipping/landing is checked once it stops
+      const moving = Math.max(...f.r.map((v, j) => Math.abs(v - g.r[j]))) > 3 || Math.abs(f.op - g.op) > 0.05;
+      if (moving) continue;
+      const issues = [];
+      if (f.r[1] < SAFE.top - 0.5 || f.r[3] > SAFE.bottom + 0.5) issues.push(`vertical ${Math.round(f.r[1])}–${Math.round(f.r[3])}`);
+      if (f.r[0] < SAFE.left - 0.5 || f.r[2] > SAFE.right + 0.5) issues.push(`horizontal ${Math.round(f.r[0])}–${Math.round(f.r[2])}`);
+      if (f.over) issues.push("text wider than its box");
       if (f.font) minFont = Math.min(minFont, f.font);
-      for (const i of f.issues) problems.push({ t: +t.toFixed(1), id: f.id, text: f.text, issue: i });
+      for (const i of issues) problems.push({ t: +t.toFixed(1), id: f.id, text: f.text, issue: i });
     }
   }
   // phone-size strip of the key beats
@@ -60,7 +70,7 @@ export async function checkReel(htmlPath, out, phoneStripPath) {
   const small = minFont < 40;
   return {
     ok: seen.size === 0 && !small,
-    summary: `${seen.size} safe-zone/overflow issue(s); smallest caption ${minFont}px on 1080 canvas ≈ ${(minFont * 390 / 1080).toFixed(1)}px on a 390px phone${small ? " (TOO SMALL)" : ""}; duration ${out.duration}s`,
+    summary: `${seen.size} safe-zone/overflow issue(s); smallest caption ${minFont.toFixed(0)}px on 1080 canvas ≈ ${(minFont * 390 / 1080).toFixed(1)}px on a 390px phone${small ? " (TOO SMALL)" : ""}; duration ${out.duration}s`,
     duration: out.duration,
     minFontPx: minFont,
     problems: [...seen.values()],

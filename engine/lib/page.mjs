@@ -80,6 +80,8 @@ window.__timelines = window.__timelines || {};
 const tl = gsap.timeline({ paused: true });
 ${script}
 tl.to({}, { duration: ${duration} }, 0); // fill the slot (Herk law 11)
+// frame-painted effects (flip board) redraw from the timeline clock on every seek
+if (window.__paints) { const paintAll = () => { const t = tl.time(); window.__paints.forEach((p) => p(t)); }; tl.eventCallback("onUpdate", paintAll); window.__paintAll = paintAll; }
 window.__timelines[${J(id)}] = tl;
 tl.seek(0);
 </script>

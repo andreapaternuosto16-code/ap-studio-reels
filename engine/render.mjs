@@ -27,7 +27,11 @@ mkdirSync(buildDir, { recursive: true });
 writeFileSync(join(buildDir, "index.html"), out.html);
 writeFileSync(join(buildDir, "hyperframes.json"), JSON.stringify({ paths: { assets: "assets" } }, null, 2));
 const photoDir = join(clientDir, brand.photoDir ?? "kit/photos");
-for (const [dest, src] of Object.entries(out.assets)) copyFileSync(join(photoDir, src), join(buildDir, dest));
+// a bare filename comes from the client's photo folder; a path ("kit-round2/assets/A/01.jpg") from the client folder
+for (const [dest, src] of Object.entries(out.assets)) {
+  mkdirSync(dirname(join(buildDir, dest)), { recursive: true });
+  copyFileSync(src.includes("/") ? join(clientDir, src) : join(photoDir, src), join(buildDir, dest));
+}
 mkdirSync(join(buildDir, "fonts"));
 for (const f of readdirSync(join(engine, "vendor", "fonts"))) copyFileSync(join(engine, "vendor", "fonts", f), join(buildDir, "fonts", f));
 copyFileSync(join(engine, "vendor", "gsap.min.js"), join(buildDir, "gsap.min.js"));
@@ -56,4 +60,17 @@ if (reel.music) {
       join(renders, `${name}.mp4`)]);
 }
 rmSync(raw, { force: true });
+// 6-frame contact sheet, taken from the finished (no-music) MP4, labelled with each frame's time
+if (out.contact) {
+  const tmp = join(buildDir, "contact"); mkdirSync(tmp, { recursive: true });
+  const font = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf";
+  const frames = out.contact.slice(0, 6).map((t, i) => {
+    const f = join(tmp, `c${i}.png`);
+    ff(["-ss", String(t), "-i", nomusic, "-frames:v", "1", "-vf",
+        `scale=360:640,drawtext=fontfile=${font}:text='${t.toFixed(1)} s':x=10:y=10:fontsize=22:fontcolor=white:box=1:boxcolor=0x1F4F5B@0.85:boxborderw=6`, f]);
+    return f;
+  });
+  ff([...frames.flatMap((f) => ["-i", f]), "-filter_complex",
+      "[0][1][2]hstack=3[t];[3][4][5]hstack=3[b];[t][b]vstack=2", "-q:v", "3", join(renders, `${name}-contact.jpg`)]);
+}
 console.log(`rendered → ${renders}/${name}.mp4 and ${name}-nomusic.mp4`);

@@ -1,0 +1,31 @@
+{
+  "template": "countdown",
+  "date": "2026-12-03",
+  "pairsWith": "Christmas countdown (replaces the R3 photo fallback)",
+  "bpm": 96,
+  "music": "r2-b-sleigh-96.m4a",
+  "_wording": "REVIEWED-WORDING.md WR02, used exactly. 22 = days from 3 Dec 2026 to 25 Dec; change 'days' if the posting date moves.",
+  "days": 22,
+  "intro": "3 jobs to do now",
+  "jobs": [
+    "1. Ask about December dates early.",
+    "2. Clear shelves before decorating.",
+    "3. Plan the guest room."
+  ],
+  "handwritten": "You've got this.",
+  "endCard": {
+    "line": "Ask about December dates at",
+    "url": "xtrafreshhh.com"
+  },
+  "kitD": "kit-round2/assets/D",
+  "assets": {
+    "board": "kit-round2/assets/B/01-flipboard-room.jpg",
+    "jobs": [
+      "kit-round2/assets/B/02-phone-table.jpg",
+      "kit-round2/assets/B/03-garland.jpg",
+      "kit-round2/assets/B/04-guest-room.jpg"
+    ],
+    "strip": "kit-round2/assets/B/06-pan-strip.jpg",
+    "end": "kit-round2/assets/B/05-front-door.jpg"
+  }
+}
