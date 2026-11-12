@@ -1,0 +1,4 @@
+node_modules/
+.hyperframes/
+design-options/option-*/photo.jpg
+design-options/option-*/logo.png
