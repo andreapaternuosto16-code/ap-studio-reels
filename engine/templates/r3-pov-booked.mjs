@@ -23,7 +23,7 @@ export function build(reel, brand) {
   const feet = wrap(reel.feetLine, 13);
   const css = `${realCss}
 .chip{position:absolute;left:50%;top:${reel.chipTop ?? 388}px;transform:translateX(-50%);white-space:nowrap;font-family:-apple-system,'Figtree',sans-serif;font-size:27px;font-weight:700;color:#111;
-  background:rgba(246,244,243,.86);backdrop-filter:blur(22px);border-radius:999px;padding:8px 20px;opacity:0}
+  background:#E4E0DE;border:1px solid rgba(0,0,0,.08);border-radius:999px;padding:6px 22px;opacity:0}
 `;
   const end = reel.end;
   const body = `
@@ -46,7 +46,7 @@ ${endBlock("eb", { line: end.line, url: end.url, urlColor: end.urlColor, ...end.
   s += camera("s1", 0, T.hookOut, C0, { ...C0, scale: C0.scale + 0.02 }, "sine.out");
   s += camera("s1", T.hookOut, T.notes[0] - T.hookOut, { ...C0, scale: C0.scale + 0.02 }, C1, "power2.inOut");
   s += camera("s1", T.notes[0], T.through - T.notes[0], C1, { ...C1, scale: C1.scale + 0.05 }, "none");
-  s += `tl.fromTo("#chip",{opacity:0},{opacity:1,duration:0.3},${f3(b(5.5))});\n`;
+  s += `tl.fromTo("#chip",{opacity:0},{opacity:1,duration:0.3},${f3(b(5.5))});tl.to("#scr .ios-tools",{opacity:0,duration:0.2},${f3(b(5.5))});\n`;
   T.notes.forEach((t, i) => { s += `tl.fromTo("#n${i}",{opacity:0,y:28},{opacity:1,y:0,duration:0.42,ease:"power3.out"},${f3(t)});\n`; });
   // 2 · push-through into the rooms (match cut on the beat)
   s += camera("s1", T.through, T.rooms[0] - T.through, { ...C1, scale: C1.scale + 0.05 }, { ...C1, scale: 2.4 }, "power2.in");

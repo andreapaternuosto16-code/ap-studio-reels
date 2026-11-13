@@ -24,12 +24,12 @@ export function build(reel, brand) {
   const css = `${realCss}
 .rc{position:absolute;left:40px;top:${reel.cardTop ?? 300}px;width:1000px;border-radius:52px;background:#fff;padding:44px 52px 52px;
   box-shadow:0 18px 44px rgba(31,79,91,.18);visibility:hidden}
-.rc .smp{font-size:36px;font-weight:700;letter-spacing:.06em;color:#B3261E;margin-bottom:16px}
-.rc .hd{display:flex;align-items:center;gap:18px;font-size:50px;font-weight:600;color:var(--teal)}
+.rc .smp{font-size:40px;font-weight:700;letter-spacing:.06em;color:#B3261E;margin-bottom:16px}
+.rc .hd{display:flex;align-items:center;gap:18px;font-size:58px;font-weight:600;color:var(--teal)}
 .rc .ic{width:72px;height:72px;border-radius:16px;background:var(--teal);display:flex;align-items:center;justify-content:center}
 .rc .stars{display:flex;gap:8px;margin:24px 0 18px}
 .rc .q{font-family:var(--head);font-weight:700;font-size:84px;line-height:1.06;color:var(--ink)}
-.rc .nm{margin-top:28px;font-size:54px;font-weight:600;color:var(--teal)}
+.rc .nm{margin-top:28px;font-size:58px;font-weight:600;color:var(--teal)}
 `;
   const ic = `<svg viewBox="0 0 24 24" width="38" height="38"><path fill="${brand.colors.cream}" d="M12 2.6l2.8 6 6.6.7-5 4.5 1.4 6.5L12 17l-5.8 3.3 1.4-6.5-5-4.5 6.6-.7z"/></svg>`;
   const card = (r, i) => `<div class="rc" id="rc${i}">
@@ -41,11 +41,11 @@ export function build(reel, brand) {
   const body = `
 ${shot("s1", "c/room.jpg", { origin: "50% 35%" })}
 ${shot("s2", "c/phone.jpg", { origin: "50% 60%", extra: phone("cs", { corners: reel.phone.corners, mask: "c/ph-mask.png", maskData: globalThis.__dataUri?.(`${reel.phone.dir}-mask.png`), shadow: "c/ph-shadow.png", glass: "c/ph-glass.png" }, safariScreen(["c/page.png"], { url: "xtrafreshhh.com" }).replace('id="pg0"', 'id="cp0" style="visibility:inherit"'), { glass: reel.phone.glass ?? 0.14 }) })}
-${shot("s3", "c/detail.jpg", { origin: C.origin ?? "30% 45%" })}
+${shot("s3", "c/detail.jpg", { origin: "540px 960px", grade: C.grade ?? 1 })}
 ${shot("s4", "c/room.jpg", { origin: "540px 960px" })}
 ${lines("tt", wrap(reel.title, 8), { ...reel.titlePos, size: 156, align: "center" })}
 ${R.map(card).join("\n")}
-${lines("cl", wrap(reel.careLine, C.wrap ?? 11), { ...C.pos, size: C.size ?? 88 })}
+${lines("cl", wrap(reel.careLine, C.wrap ?? 11), { ...C.pos, size: C.size ?? 110, color: "var(--ink)" })}
 ${endBlock("eb", { line: E.line, url: E.url, ...E.block })}`;
 
   let s = "";
@@ -59,7 +59,7 @@ ${endBlock("eb", { line: E.line, url: E.url, ...E.block })}`;
     s += `tl.fromTo("#rc${i} .stars svg",{opacity:0},{opacity:1,duration:0.2,stagger:0.05},${f3(t + 0.35)});\n`;
   });
   s += `tl.set("#rc2",{visibility:"hidden"},${f3(T.care)});\n`;
-  s += cutIn("s3", T.care, T.end) + camera("s3", T.care, T.end - T.care, C.from ?? { scale: 1.0 }, C.to ?? { scale: 1.07 }, "sine.inOut");
+  s += cutIn("s3", T.care, T.end) + camera("s3", T.care, T.end - T.care, { ...C.cam, scale: C.cam.scale + 0.05 }, C.cam, "sine.out");
   s += linesIn("cl", T.care + 0.1) + linesOut("cl", T.end);
   s += cutIn("s4", T.end) + camera("s4", T.end, duration - T.end, { scale: E.scale[0], x: E.x ?? 0, y: E.y ?? 0 }, { scale: E.scale[1], x: E.x ?? 0, y: E.y ?? 0 }, "sine.out");
   s += `gsap.set("#eb",{opacity:1});` + endIn("eb", T.end + 0.12);

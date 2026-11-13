@@ -38,19 +38,18 @@
   "care": {
     "photo": "kit-round2/assets/C/04-bathroom-detail.jpg",
     "pos": {
-      "x": 64,
-      "y": 760,
-      "w": 560
+      "x": 140,
+      "y": 500,
+      "w": 880
     },
-    "size": 86,
-    "wrap": 11,
-    "origin": "15% 45%",
-    "from": {
-      "scale": 1.0
+    "size": 110,
+    "wrap": 15,
+    "cam": {
+      "scale": 1.6,
+      "x": 0,
+      "y": -192
     },
-    "to": {
-      "scale": 1.06
-    }
+    "grade": 1.08
   },
   "end": {
     "line": "Thank you for every review.",
@@ -67,7 +66,7 @@
       "w": 870,
       "align": "left",
       "size": 110,
-      "logoW": 780,
+      "logoW": 860,
       "order": "line-url-logo",
       "urlSize": 72,
       "gap": 40

@@ -27,12 +27,12 @@ export function build(reel, brand) {
   const body = `
 ${shot("s1", "b/room.jpg", { origin: "50% 30%" })}
 ${shot("s2", "b/room.jpg", { origin: "540px 960px" })}
-${J.map((j, i) => shot(`j${i}`, `b/job${i}.jpg`, { grade: j.grade ?? 0.85, origin: j.origin ?? "50% 50%", extra: j.phone ? phone(`ps${i}`, { corners: j.phone.corners, mask: `b/ph${i}-mask.png`, maskData: globalThis.__dataUri?.(`${j.phone.dir}-mask.png`), shadow: `b/ph${i}-shadow.png`, glass: `b/ph${i}-glass.png` }, safariScreen([`b/page${i}.png`], { url: "xtrafreshhh.com" }).replace(`id="pg0"`, `id="pp${i}" style="visibility:inherit"`), { glass: j.phone.glass ?? 0.16, ...(j.phone.light ? { light: j.phone.light } : {}) }) : "" })).join("\n")}
+${J.map((j, i) => shot(`j${i}`, `b/job${i}.jpg`, { grade: j.grade ?? 1, origin: "540px 960px", extra: j.phone ? phone(`ps${i}`, { corners: j.phone.corners, mask: `b/ph${i}-mask.png`, maskData: globalThis.__dataUri?.(`${j.phone.dir}-mask.png`), shadow: `b/ph${i}-shadow.png`, glass: `b/ph${i}-glass.png` }, safariScreen([`b/page${i}.png`], { url: "xtrafreshhh.com" }).replace(`id="pg0"`, `id="pp${i}" style="visibility:inherit"`), { glass: j.phone.glass ?? 0.16, ...(j.phone.light ? { light: j.phone.light } : {}) }) : "" })).join("\n")}
 <div id="pan"><img id="strip" src="b/strip.jpg" /></div>
 ${shot("s4", "b/room.jpg", { origin: "540px 960px" })}
 ${board.html}
-${lines("in", wrap(reel.intro, 9), { ...reel.introPos, size: 140 })}
-${J.map((j, i) => lines(`jt${i}`, wrap(j.text, j.wrap ?? 14), { ...j.pos, size: j.size ?? 74, color: "var(--cream)" })).join("\n")}
+${lines("in", wrap(reel.intro, 9), { ...reel.introPos, size: reel.introSize ?? 130 })}
+${J.map((j, i) => lines(`jt${i}`, wrap(j.text, j.wrap ?? 14), { ...j.pos, size: j.size ?? 110, color: j.color ?? "var(--ink)" })).join("\n")}
 ${handwrite("yg", reel.handwritten, { size: reel.handSize ?? 128 })}
 ${endBlock("eb", { line: E.line, url: E.url, ...E.block })}
 ${sn.html}`;
@@ -50,7 +50,7 @@ ${sn.html}`;
   // 3 · the three jobs, full-bleed, one camera move each
   J.forEach((j, i) => {
     const t = T.jobs[i], next = i < 2 ? T.jobs[i + 1] : T.pan;
-    s += cutIn(`j${i}`, t, next) + camera(`j${i}`, t, next - t, j.from, j.to, "sine.inOut");
+    s += cutIn(`j${i}`, t, next) + camera(`j${i}`, t, next - t, { ...j.cam, scale: j.cam.scale + 0.05 }, j.cam, "sine.out");
     s += linesIn(`jt${i}`, t + 0.1) + linesOut(`jt${i}`, next);
   });
   // 4 · slow pan across the house; handwriting completes, then holds
