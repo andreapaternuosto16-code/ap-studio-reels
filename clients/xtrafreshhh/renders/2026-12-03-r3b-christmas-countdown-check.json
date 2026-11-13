@@ -9,7 +9,7 @@
         "t": 3.4,
         "id": "in-l0",
         "text": "3 jobs to",
-        "contrast": 4.98,
+        "contrast": 5.57,
         "need": 3,
         "ok": true
       },
@@ -17,7 +17,7 @@
         "t": 3.4,
         "id": "in-l1",
         "text": "do now",
-        "contrast": 5.14,
+        "contrast": 4.47,
         "need": 3,
         "ok": true
       },
@@ -25,7 +25,7 @@
         "t": 4.96,
         "id": "jt0-l0",
         "text": "1. Ask about",
-        "contrast": 3.3,
+        "contrast": 3.42,
         "need": 3,
         "ok": true
       },
@@ -33,7 +33,7 @@
         "t": 4.96,
         "id": "jt0-l1",
         "text": "December dates",
-        "contrast": 3.6,
+        "contrast": 3.94,
         "need": 3,
         "ok": true
       },
@@ -41,7 +41,7 @@
         "t": 4.96,
         "id": "jt0-l2",
         "text": "early.",
-        "contrast": 3.8,
+        "contrast": 3.99,
         "need": 3,
         "ok": true
       },
@@ -97,7 +97,7 @@
         "t": 14.3,
         "id": "eh txt",
         "text": "Ask about December dates at",
-        "contrast": 4.69,
+        "contrast": 4.64,
         "need": 3,
         "ok": true
       },
@@ -105,14 +105,14 @@
         "t": 14.3,
         "id": "eu txt",
         "text": "xtrafreshhh.com",
-        "contrast": 3.38,
+        "contrast": 3.39,
         "need": 3,
         "ok": true
       }
     ]
   },
-  "summary": "0 safe-zone/overflow issue(s); smallest caption 60px on 1080 canvas ≈ 21.7px on a 390px phone; duration 15s; legibility 13/13 lines pass (worst 3.0:1)",
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 70px on 1080 canvas ≈ 25.2px on a 390px phone; duration 15s; legibility 13/13 lines pass (worst 3.0:1)",
   "duration": 15,
-  "minFontPx": 60,
+  "minFontPx": 69.8557611695421,
   "problems": []
 }

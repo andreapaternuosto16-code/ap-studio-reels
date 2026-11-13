@@ -1,39 +1,55 @@
 {
   "ok": true,
   "legibility": {
-    "checked": 20,
+    "checked": 22,
     "failing": [],
-    "worst": 3.27,
+    "worst": 3.2,
     "all": [
       {
-        "t": 1.5,
+        "t": 0,
         "id": "hook-l0",
-        "text": "POV: the clean",
-        "contrast": 5.53,
+        "text": "POV: the",
+        "contrast": 5.57,
         "need": 3,
         "ok": true
       },
       {
-        "t": 1.5,
+        "t": 0,
         "id": "hook-l1",
-        "text": "is booked.",
-        "contrast": 5.12,
+        "text": "clean is",
+        "contrast": 5.34,
         "need": 3,
         "ok": true
       },
       {
-        "t": 2.6,
+        "t": 0,
+        "id": "hook-l2",
+        "text": "booked.",
+        "contrast": 5.18,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.2,
         "id": "hook-l0",
-        "text": "POV: the clean",
-        "contrast": 5.55,
+        "text": "POV: the",
+        "contrast": 5.59,
         "need": 3,
         "ok": true
       },
       {
-        "t": 2.6,
+        "t": 1.2,
         "id": "hook-l1",
-        "text": "is booked.",
-        "contrast": 5.17,
+        "text": "clean is",
+        "contrast": 5.38,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.2,
+        "id": "hook-l2",
+        "text": "booked.",
+        "contrast": 5.18,
         "need": 3,
         "ok": true
       },
@@ -41,7 +57,7 @@
         "t": 5.99,
         "id": "nbd txt",
         "text": "Request received.",
-        "contrast": 14.09,
+        "contrast": 12.89,
         "need": 3,
         "ok": true
       },
@@ -49,7 +65,7 @@
         "t": 5.99,
         "id": "nbd txt",
         "text": "We agree the details.",
-        "contrast": 15.16,
+        "contrast": 13.16,
         "need": 3,
         "ok": true
       },
@@ -57,7 +73,7 @@
         "t": 5.99,
         "id": "nbd txt",
         "text": "Booking confirmed by email.",
-        "contrast": 13.77,
+        "contrast": 14.89,
         "need": 3,
         "ok": true
       },
@@ -65,23 +81,7 @@
         "t": 5.99,
         "id": "chip",
         "text": "Example booking",
-        "contrast": 13.72,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 7.53,
-        "id": "rl-l0",
-        "text": "Your agreed rooms,",
-        "contrast": 5.25,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 7.53,
-        "id": "rl-l1",
-        "text": "freshly cleaned.",
-        "contrast": 4.91,
+        "contrast": 14.55,
         "need": 3,
         "ok": true
       },
@@ -89,23 +89,15 @@
         "t": 7.53,
         "id": "lb0-l0",
         "text": "Kitchen ✓",
-        "contrast": 5.08,
+        "contrast": 5.05,
         "need": 3,
         "ok": true
       },
       {
-        "t": 8.59,
-        "id": "rl-l0",
-        "text": "Your agreed rooms,",
-        "contrast": 4.45,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 8.59,
-        "id": "rl-l1",
-        "text": "freshly cleaned.",
-        "contrast": 4.5,
+        "t": 7.53,
+        "id": "rs0-l0",
+        "text": "Your agreed rooms, freshly cleaned.",
+        "contrast": 4.87,
         "need": 3,
         "ok": true
       },
@@ -113,7 +105,15 @@
         "t": 8.59,
         "id": "lb1-l0",
         "text": "Bathroom ✓",
-        "contrast": 4.5,
+        "contrast": 4.57,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.59,
+        "id": "rs1-l0",
+        "text": "Your agreed rooms, freshly cleaned.",
+        "contrast": 4.57,
         "need": 3,
         "ok": true
       },
@@ -121,7 +121,15 @@
         "t": 9.74,
         "id": "lb2-l0",
         "text": "Bedroom ✓",
-        "contrast": 5.06,
+        "contrast": 5,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.74,
+        "id": "rs2-l0",
+        "text": "Your agreed rooms, freshly cleaned.",
+        "contrast": 4.93,
         "need": 3,
         "ok": true
       },
@@ -129,6 +137,14 @@
         "t": 10.9,
         "id": "lb3-l0",
         "text": "Hallway ✓",
+        "contrast": 3.65,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.9,
+        "id": "rs3-l0",
+        "text": "Your agreed rooms, freshly cleaned.",
         "contrast": 3.27,
         "need": 3,
         "ok": true
@@ -153,7 +169,7 @@
         "t": 14.2,
         "id": "eh txt",
         "text": "Get your estimate at",
-        "contrast": 4.21,
+        "contrast": 3.2,
         "need": 3,
         "ok": true
       },
@@ -161,14 +177,14 @@
         "t": 14.2,
         "id": "eu txt",
         "text": "xtrafreshhh.com",
-        "contrast": 4.27,
+        "contrast": 3.26,
         "need": 3,
         "ok": true
       }
     ]
   },
-  "summary": "0 safe-zone/overflow issue(s); smallest caption 49px on 1080 canvas ≈ 17.9px on a 390px phone; duration 15s; legibility 20/20 lines pass (worst 3.3:1)",
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 46px on 1080 canvas ≈ 16.6px on a 390px phone; duration 15s; legibility 22/22 lines pass (worst 3.2:1)",
   "duration": 15,
-  "minFontPx": 49.46584709089637,
+  "minFontPx": 45.91421662388253,
   "problems": []
 }
