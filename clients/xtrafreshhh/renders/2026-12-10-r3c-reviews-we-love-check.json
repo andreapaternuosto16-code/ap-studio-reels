@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 16,
+    "failing": [],
+    "worst": 3.86,
+    "all": [
+      {
+        "t": 1.5,
+        "id": "tt-l0",
+        "text": "Reviews",
+        "contrast": 5.55,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.5,
+        "id": "tt-l1",
+        "text": "we love",
+        "contrast": 5.78,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.6,
+        "id": "txt",
+        "text": "Google review",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.6,
+        "id": "q txt",
+        "text": "“[Exact excerpt from review 1]”",
+        "contrast": 9.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.6,
+        "id": "nm txt",
+        "text": "[Public name 1]",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.3,
+        "id": "txt",
+        "text": "Google review",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.3,
+        "id": "q txt",
+        "text": "“[Exact excerpt from review 2]”",
+        "contrast": 9.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.3,
+        "id": "nm txt",
+        "text": "[Public name 2]",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9,
+        "id": "txt",
+        "text": "Google review",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9,
+        "id": "q txt",
+        "text": "“[Exact excerpt from review 3]”",
+        "contrast": 9.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9,
+        "id": "nm txt",
+        "text": "[Public name 3]",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.4,
+        "id": "cl-l0",
+        "text": "Care in the",
+        "contrast": 4.2,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.4,
+        "id": "cl-l1",
+        "text": "little",
+        "contrast": 4.25,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.4,
+        "id": "cl-l2",
+        "text": "details.",
+        "contrast": 3.86,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eh txt",
+        "text": "Thank you for every review.",
+        "contrast": 5.44,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 3.99,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 42px on 1080 canvas ≈ 15.2px on a 390px phone; duration 15s; legibility 16/16 lines pass (worst 3.9:1)",
+  "duration": 15,
+  "minFontPx": 41.99881112447786,
+  "problems": []
+}

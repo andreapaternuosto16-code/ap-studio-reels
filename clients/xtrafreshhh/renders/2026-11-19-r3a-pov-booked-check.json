@@ -1,0 +1,174 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 20,
+    "failing": [],
+    "worst": 3.27,
+    "all": [
+      {
+        "t": 1.5,
+        "id": "hook-l0",
+        "text": "POV: the clean",
+        "contrast": 5.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.5,
+        "id": "hook-l1",
+        "text": "is booked.",
+        "contrast": 5.12,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.6,
+        "id": "hook-l0",
+        "text": "POV: the clean",
+        "contrast": 5.55,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.6,
+        "id": "hook-l1",
+        "text": "is booked.",
+        "contrast": 5.17,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.99,
+        "id": "nbd txt",
+        "text": "Request received.",
+        "contrast": 14.08,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.99,
+        "id": "nbd txt",
+        "text": "We agree the details.",
+        "contrast": 14.32,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.99,
+        "id": "nbd txt",
+        "text": "Booking confirmed by email.",
+        "contrast": 13.64,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.99,
+        "id": "chip",
+        "text": "Example booking",
+        "contrast": 15.27,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.53,
+        "id": "rl-l0",
+        "text": "Your agreed rooms,",
+        "contrast": 5.25,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.53,
+        "id": "rl-l1",
+        "text": "freshly cleaned.",
+        "contrast": 4.91,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.53,
+        "id": "lb0-l0",
+        "text": "Kitchen ✓",
+        "contrast": 5.08,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.59,
+        "id": "rl-l0",
+        "text": "Your agreed rooms,",
+        "contrast": 4.45,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.59,
+        "id": "rl-l1",
+        "text": "freshly cleaned.",
+        "contrast": 4.5,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.59,
+        "id": "lb1-l0",
+        "text": "Bathroom ✓",
+        "contrast": 4.5,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.74,
+        "id": "lb2-l0",
+        "text": "Bedroom ✓",
+        "contrast": 5.06,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.9,
+        "id": "lb3-l0",
+        "text": "Hallway ✓",
+        "contrast": 3.27,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 12.25,
+        "id": "fl-l0",
+        "text": "Now the sofa",
+        "contrast": 3.62,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 12.25,
+        "id": "fl-l1",
+        "text": "is all yours.",
+        "contrast": 3.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.2,
+        "id": "eh txt",
+        "text": "Get your estimate at",
+        "contrast": 4.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.2,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 4.27,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 49px on 1080 canvas ≈ 17.8px on a 390px phone; duration 15s; legibility 20/20 lines pass (worst 3.3:1)",
+  "duration": 15,
+  "minFontPx": 49.235014435786404,
+  "problems": []
+}
