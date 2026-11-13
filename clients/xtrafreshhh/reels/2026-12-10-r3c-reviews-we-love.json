@@ -5,9 +5,8 @@
   "bpm": 100,
   "music": "r2-c-warm-100.m4a",
   "_wording": "REVIEWED-WORDING.md WR03 fixed lines, used exactly. No count-up frame (round-3 brief).",
-  "_reviews": "SAMPLE ONLY — placeholders, never post. Replace with 3 real excerpts (exact, self-contained, ≤12 words), each review's own rating, the matching public name, with permission/basis + evidence. Set sample to false.",
-  "sample": true,
-  "sampleText": "SAMPLE — NOT FOR POSTING",
+  "_reviews": "Real Google reviews supplied by Andrea (round 3.3), text exactly as given. All 5 stars.",
+  "sample": false,
   "title": "Reviews we love",
   "titlePos": {
     "x": 170,
@@ -17,19 +16,19 @@
   "label": "Google review",
   "reviews": [
     {
-      "excerpt": "[Exact excerpt from review 1]",
-      "name": "[Public name 1]",
+      "excerpt": "It's lovely to come home to a clean house every week.",
+      "name": "Rachel H.",
       "rating": 5
     },
     {
-      "excerpt": "[Exact excerpt from review 2]",
-      "name": "[Public name 2]",
+      "excerpt": "…my house is absolutely spotless. Very professional, friendly service and great comms.",
+      "name": "Adam S.",
       "rating": 5
     },
     {
-      "excerpt": "[Exact excerpt from review 3]",
-      "name": "[Public name 3]",
-      "rating": 4
+      "excerpt": "They are the best cleaning service we have had.",
+      "name": "Creative Recovery",
+      "rating": 5
     }
   ],
   "cardTop": 280,
