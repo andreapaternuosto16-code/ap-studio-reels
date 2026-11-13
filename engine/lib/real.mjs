@@ -23,7 +23,8 @@ export function lines(id, ls, { x, y, w, size, color = "var(--ink)", align = "le
 }
 export const linesIn = (id, at, stagger = 0.09) =>
   `tl.set("#${id}",{opacity:1},${f3(at - 0.001)});tl.fromTo("#${id} .ml>span",{yPercent:105},{yPercent:0,duration:0.55,ease:"power3.out",stagger:${stagger}},${f3(at)});\n`;
-export const linesOut = (id, at) => `tl.to("#${id}",{opacity:0,duration:0.2,ease:"power1.in"},${f3(at)});\n`;
+/** Fade a text block out so it is gone BEFORE the cut at `cut` (never bleeding into the next shot). */
+export const linesOut = (id, cut) => `tl.to("#${id}",{opacity:0,duration:0.18,ease:"power1.in"},${f3(cut - 0.2)});\n`;
 export const wrap = (text, max) => {
   const out = [];
   for (const w of text.split(" ")) {

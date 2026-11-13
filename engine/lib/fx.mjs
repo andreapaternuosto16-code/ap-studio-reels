@@ -176,7 +176,7 @@ export function handwrite(id, text, { size = 150 } = {}) {
     .join("")}<svg class="hw-u" id="${id}-u" viewBox="0 0 600 40" preserveAspectRatio="none"><path d="M4 26 Q 80 10 160 24 T 320 22 T 470 20 T 596 16" fill="none" stroke="var(--teal)" stroke-width="7" stroke-linecap="round"/></svg></div>`;
 }
 export const handwriteIn = (id, n, at, per = 0.075) =>
-  `(function(){for(var i=0;i<${n};i++){var c=document.getElementById("${id}-c"+i);gsap.set(c,{clipPath:"inset(-20% 100% -20% 0)"});tl.to(c,{clipPath:"inset(-20% 0% -20% 0)",duration:${per * 1.6},ease:"sine.inOut"},${at}+i*${per});}
+  `(function(){for(var i=0;i<${n};i++){var c=document.getElementById("${id}-c"+i);gsap.set(c,{clipPath:"inset(-80% 100% -40% -60%)"});tl.to(c,{clipPath:"inset(-80% -60% -40% -60%)",duration:${per * 1.6},ease:"sine.inOut"},${at}+i*${per});}
 var p=document.querySelector("#${id}-u path");var L=p.getTotalLength();gsap.set(p,{strokeDasharray:L,strokeDashoffset:L});tl.to(p,{strokeDashoffset:0,duration:0.5,ease:"power2.inOut"},${at}+${n}*${per}+0.1);})();\n`;
 
 /** Perspective transform mapping a w×h box onto a quad (tl, tr, br, bl) — to put UI on a phone screen. */
@@ -198,6 +198,12 @@ export function quadMatrix(w, h, [p0, p1, p2, p3]) {
   return `matrix3d(${[a, d, 0, g, b, e, 0, hh, 0, 0, 1, 0, c, f, 0, 1].map((n) => +n.toFixed(8)).join(",")})`;
 }
 
+/** CSS for the handwriting (also used by round 3). */
+export const hwCss = `
+.hw{font-family:'Caveat',cursive;font-weight:700;color:var(--ink);line-height:1;white-space:nowrap}
+.hwc{display:inline-block;line-height:1.05;vertical-align:top}
+.hw-u{display:block;width:100%;height:30px;margin-top:-14px}
+`;
 /** CSS shared by the round-2 effects. */
 export const fxCss = `
 .cut{position:absolute;transform-origin:50% 60%}

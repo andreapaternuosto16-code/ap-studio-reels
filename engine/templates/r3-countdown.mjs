@@ -4,7 +4,7 @@
 // slow pan across the house with soft natural snow while "You've got this." is written in full and
 // held → end card on the same wall. Cuts on the beat. "days" is a JSON slot.
 import { page } from "../lib/page.mjs";
-import { beats, f3, flapBoard, handwrite, handwriteIn } from "../lib/fx.mjs";
+import { beats, f3, flapBoard, handwrite, handwriteIn, hwCss } from "../lib/fx.mjs";
 import { realCss, shot, cutIn, camera, lines, linesIn, linesOut, wrap, phone, safariScreen, snow, endBlock, endIn } from "../lib/real.mjs";
 
 export function build(reel, brand) {
@@ -17,7 +17,7 @@ export function build(reel, brand) {
   const A = reel.assets, J = reel.jobs, E = reel.end;
   const sn = snow("sn", { start: 0, end: duration, count: [9, 6, 3] });
   const hw = [...reel.handwritten].length;
-  const css = `${realCss}${board.css}
+  const css = `${realCss}${board.css}${hwCss}
 #fb{left:0;right:0;top:${reel.boardTop ?? 330}px;z-index:5}
 #strip{position:absolute;left:0;top:0;height:1920px;width:auto}
 #pan{position:absolute;inset:0;overflow:hidden;visibility:hidden}
@@ -46,17 +46,17 @@ ${sn.html}`;
   s += `tl.set("#fb",{visibility:"hidden"},${f3(T.intro)});\n`; // clean cut out
   // 2 · clean cut to a closer framing
   s += cutIn("s2", T.intro, T.jobs[0]) + camera("s2", T.intro, T.jobs[0] - T.intro, { scale: 1.28 }, { scale: 1.34 }, "sine.out");
-  s += linesIn("in", T.intro + 0.08) + linesOut("in", T.jobs[0] - 0.12);
+  s += linesIn("in", T.intro + 0.08) + linesOut("in", T.jobs[0]);
   // 3 · the three jobs, full-bleed, one camera move each
   J.forEach((j, i) => {
     const t = T.jobs[i], next = i < 2 ? T.jobs[i + 1] : T.pan;
     s += cutIn(`j${i}`, t, next) + camera(`j${i}`, t, next - t, j.from, j.to, "sine.inOut");
-    s += linesIn(`jt${i}`, t + 0.1) + linesOut(`jt${i}`, next - 0.12);
+    s += linesIn(`jt${i}`, t + 0.1) + linesOut(`jt${i}`, next);
   });
   // 4 · slow pan across the house; handwriting completes, then holds
   s += `tl.set("#pan",{visibility:"visible"},${f3(T.pan)});tl.set("#pan",{visibility:"hidden"},${f3(T.end)});`;
   s += `tl.fromTo("#strip",{x:${-reel.pan[0]}},{x:${-reel.pan[1]},duration:${f3(T.end - T.pan)},ease:"sine.inOut"},${f3(T.pan)});\n`;
-  s += `gsap.set("#yg",{opacity:0});tl.set("#yg",{opacity:1},${f3(T.hand - 0.01)});` + handwriteIn("yg", hw, T.hand, 0.07) + linesOut("yg", T.end - 0.1);
+  s += `gsap.set("#yg",{opacity:0});tl.set("#yg",{opacity:1},${f3(T.hand - 0.01)});` + handwriteIn("yg", hw, T.hand, 0.07) + linesOut("yg", T.end);
   // 5 · end card on the wall
   s += cutIn("s4", T.end) + camera("s4", T.end, duration - T.end, { scale: E.scale[0] }, { scale: E.scale[1] }, "sine.out");
   s += `gsap.set("#eb",{opacity:1});` + endIn("eb", T.end + 0.12);

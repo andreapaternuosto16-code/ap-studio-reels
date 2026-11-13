@@ -13,7 +13,7 @@ export function build(reel, brand) {
   const duration = 15;
   const A = reel.assets, R = reel.rooms;
   const icon = `<svg viewBox="0 0 24 24" width="26" height="26"><path fill="#fff" d="M12 3.2 3 10.4V21h6.2v-6h5.6v6H21V10.4z"/></svg>`;
-  const noteTop = [505, 603, 701];
+  const noteTop = [490, 597, 704];
   const screenInner = safariScreen(["a/page0.png", "a/page1.png", "a/page2.png"], { url: "xtrafreshhh.com" }) +
     reel.notes.map((n, i) => iosNote(`n${i}`, { app: reel.sender, body: n, top: noteTop[i], icon })).join("") +
     `<div class="chip txt" id="chip">${esc(reel.exampleLabel)}</div>`;
@@ -21,7 +21,7 @@ export function build(reel, brand) {
   const roomsLine = wrap(reel.roomsLine, 18);
   const feet = wrap(reel.feetLine, 13);
   const css = `${realCss}
-.chip{position:absolute;left:50%;top:812px;transform:translateX(-50%);white-space:nowrap;font-family:-apple-system,'Figtree',sans-serif;font-size:27px;font-weight:700;color:#111;
+.chip{position:absolute;left:50%;top:846px;transform:translateX(-50%);white-space:nowrap;font-family:-apple-system,'Figtree',sans-serif;font-size:27px;font-weight:700;color:#111;
   background:rgba(246,244,243,.86);backdrop-filter:blur(22px);border-radius:999px;padding:8px 20px;opacity:0}
 `;
   const end = reel.end;
@@ -40,7 +40,7 @@ ${endBlock("eb", { line: end.line, url: end.url, urlColor: end.urlColor, ...end.
   // 1 · phone in hand, real pages, hook on the worktop
   s += cutIn("s1", 0, T.rooms[0]);
   T.pages.forEach((t, i) => { s += `tl.set("#pg${i}",{visibility:"inherit"},${f3(t)});` + (i < 2 ? `tl.set("#pg${i}",{visibility:"hidden"},${f3(T.pages[i + 1])});` : "") + "\n"; });
-  s += linesIn("hook", 0.08) + linesOut("hook", T.hookOut - 0.2);
+  s += linesIn("hook", 0.08) + linesOut("hook", T.hookOut);
   s += camera("s1", 0, T.push, { scale: 1.2, y: -184 }, { scale: 1.25, y: -184 }, "sine.out");
   s += camera("s1", T.push, b(6.5) - T.push, { scale: 1.25, y: -184 }, { scale: 1.5, y: -100 }, "power2.inOut");
   s += camera("s1", b(6.5), T.through - b(6.5), { scale: 1.5, y: -100 }, { scale: 1.56, y: -100 }, "none");
@@ -52,13 +52,13 @@ ${endBlock("eb", { line: end.line, url: end.url, urlColor: end.urlColor, ...end.
     const t = T.rooms[i], next = i < 3 ? T.rooms[i + 1] : T.feet;
     s += cutIn(`r${i}`, t, next);
     s += camera(`r${i}`, t, next - t, r.from ?? { scale: i === 0 ? 1.14 : 1.07, x: 0 }, r.to ?? { scale: 1.0, x: i % 2 ? -18 : 18 }, i === 0 ? "power2.out" : "sine.inOut");
-    s += linesIn(`lb${i}`, t + 0.12) + linesOut(`lb${i}`, next - 0.15);
+    s += linesIn(`lb${i}`, t + 0.12) + linesOut(`lb${i}`, next);
   });
-  s += linesIn("rl", T.rooms[0] + 0.2) + linesOut("rl", T.rooms[2] - 0.15);
+  s += linesIn("rl", T.rooms[0] + 0.2) + linesOut("rl", T.rooms[2]);
   // 3 · feet up: slow push, the afternoon light softens
   s += cutIn("s3", T.feet, T.end);
   s += camera("s3", T.feet, T.end - T.feet, { scale: 1.0, filter: `brightness(${reel.feetGrade?.[0] ?? 0.86})` }, { scale: 1.08, filter: `brightness(${reel.feetGrade?.[1] ?? 0.76})` }, "sine.inOut");
-  s += linesIn("fl", T.feet + 0.15) + linesOut("fl", T.end - 0.15);
+  s += linesIn("fl", T.feet + 0.15) + linesOut("fl", T.end);
   // 4 · end card: clean bathroom mirror, slow push
   s += cutIn("s4", T.end);
   s += camera("s4", T.end, duration - T.end, { scale: end.scale[0] }, { scale: end.scale[1] }, "sine.out");

@@ -7,7 +7,7 @@ import { beats, f3 } from "../lib/fx.mjs";
 import { realCss, shot, cutIn, camera, lines, linesIn, linesOut, wrap, phone, safariScreen, endBlock, endIn } from "../lib/real.mjs";
 
 const starSvg = (fill, stroke) =>
-  `<svg viewBox="0 0 24 24" width="54" height="54"><path fill="${fill}" stroke="${stroke}" stroke-width="1.6" d="M12 2.6l2.8 6 6.6.7-5 4.5 1.4 6.5L12 17l-5.8 3.3 1.4-6.5-5-4.5 6.6-.7z"/></svg>`;
+  `<svg viewBox="0 0 24 24" width="68" height="68"><path fill="${fill}" stroke="${stroke}" stroke-width="1.6" d="M12 2.6l2.8 6 6.6.7-5 4.5 1.4 6.5L12 17l-5.8 3.3 1.4-6.5-5-4.5 6.6-.7z"/></svg>`;
 
 export function build(reel, brand) {
   const b = beats(reel.bpm ?? 100);
@@ -22,14 +22,14 @@ export function build(reel, brand) {
   const duration = 15;
   const A = reel.assets, E = reel.end, C = reel.care;
   const css = `${realCss}
-.rc{position:absolute;left:40px;top:${reel.cardTop ?? 300}px;width:1000px;border-radius:46px;background:#fff;padding:36px 46px 44px;
+.rc{position:absolute;left:40px;top:${reel.cardTop ?? 300}px;width:1000px;border-radius:52px;background:#fff;padding:44px 52px 52px;
   box-shadow:0 18px 44px rgba(31,79,91,.18);visibility:hidden}
 .rc .smp{font-size:36px;font-weight:700;letter-spacing:.06em;color:#B3261E;margin-bottom:16px}
-.rc .hd{display:flex;align-items:center;gap:16px;font-size:42px;font-weight:600;color:var(--teal)}
-.rc .ic{width:62px;height:62px;border-radius:16px;background:var(--teal);display:flex;align-items:center;justify-content:center}
-.rc .stars{display:flex;gap:6px;margin:20px 0 14px}
-.rc .q{font-family:var(--head);font-weight:700;font-size:64px;line-height:1.08;color:var(--ink)}
-.rc .nm{margin-top:22px;font-size:46px;font-weight:600;color:var(--teal)}
+.rc .hd{display:flex;align-items:center;gap:18px;font-size:50px;font-weight:600;color:var(--teal)}
+.rc .ic{width:72px;height:72px;border-radius:16px;background:var(--teal);display:flex;align-items:center;justify-content:center}
+.rc .stars{display:flex;gap:8px;margin:24px 0 18px}
+.rc .q{font-family:var(--head);font-weight:700;font-size:84px;line-height:1.06;color:var(--ink)}
+.rc .nm{margin-top:28px;font-size:54px;font-weight:600;color:var(--teal)}
 `;
   const ic = `<svg viewBox="0 0 24 24" width="38" height="38"><path fill="${brand.colors.cream}" d="M12 2.6l2.8 6 6.6.7-5 4.5 1.4 6.5L12 17l-5.8 3.3 1.4-6.5-5-4.5 6.6-.7z"/></svg>`;
   const card = (r, i) => `<div class="rc" id="rc${i}">
@@ -50,7 +50,7 @@ ${endBlock("eb", { line: E.line, url: E.url, ...E.block })}`;
 
   let s = "";
   s += cutIn("s1", 0, T.cards[0]) + camera("s1", 0, T.cards[0], { scale: 1.0 }, { scale: 1.05 }, "sine.out");
-  s += linesIn("tt", 0.06) + linesOut("tt", T.cards[0] - 0.12);
+  s += linesIn("tt", 0.06) + linesOut("tt", T.cards[0]);
   s += cutIn("s2", T.cards[0], T.care) + camera("s2", T.cards[0], T.care - T.cards[0], { scale: 1.0 }, { scale: 1.08 }, "sine.inOut");
   T.cards.forEach((t, i) => {
     // incoming and outgoing cards travel together, 1100 px apart: a clean slide, never overlapping
@@ -60,7 +60,7 @@ ${endBlock("eb", { line: E.line, url: E.url, ...E.block })}`;
   });
   s += `tl.set("#rc2",{visibility:"hidden"},${f3(T.care)});\n`;
   s += cutIn("s3", T.care, T.end) + camera("s3", T.care, T.end - T.care, C.from ?? { scale: 1.0 }, C.to ?? { scale: 1.07 }, "sine.inOut");
-  s += linesIn("cl", T.care + 0.1) + linesOut("cl", T.end - 0.12);
+  s += linesIn("cl", T.care + 0.1) + linesOut("cl", T.end);
   s += cutIn("s4", T.end) + camera("s4", T.end, duration - T.end, { scale: E.scale[0] }, { scale: E.scale[1] }, "sine.out");
   s += `gsap.set("#eb",{opacity:1});` + endIn("eb", T.end + 0.12);
   const assets = { "c/room.jpg": A.room, "c/phone.jpg": A.phone, "c/detail.jpg": C.photo, "c/page.png": reel.page };

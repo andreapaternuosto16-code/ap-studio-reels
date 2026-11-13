@@ -32,7 +32,7 @@
       "rating": 4
     }
   ],
-  "cardTop": 300,
+  "cardTop": 280,
   "screen": [
     [
       358,
@@ -83,7 +83,7 @@
       "y": 400,
       "w": 700,
       "align": "left",
-      "size": 84,
+      "size": 96,
       "logoW": 440,
       "order": "line-url-logo",
       "urlSize": 60,
