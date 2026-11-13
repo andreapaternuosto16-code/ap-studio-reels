@@ -3,7 +3,7 @@
   "legibility": {
     "checked": 22,
     "failing": [],
-    "worst": 3.2,
+    "worst": 3.27,
     "all": [
       {
         "t": 0,
@@ -169,7 +169,7 @@
         "t": 14.2,
         "id": "eh txt",
         "text": "Get your estimate at",
-        "contrast": 3.2,
+        "contrast": 3.35,
         "need": 3,
         "ok": true
       },
@@ -177,13 +177,13 @@
         "t": 14.2,
         "id": "eu txt",
         "text": "xtrafreshhh.com",
-        "contrast": 3.26,
+        "contrast": 3.4,
         "need": 3,
         "ok": true
       }
     ]
   },
-  "summary": "0 safe-zone/overflow issue(s); smallest caption 46px on 1080 canvas ≈ 16.6px on a 390px phone; duration 15s; legibility 22/22 lines pass (worst 3.2:1)",
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 46px on 1080 canvas ≈ 16.6px on a 390px phone; duration 15s; legibility 22/22 lines pass (worst 3.3:1)",
   "duration": 15,
   "minFontPx": 45.91421662388253,
   "problems": []
