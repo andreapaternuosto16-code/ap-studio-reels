@@ -26,10 +26,10 @@ export function build(reel, brand) {
 `;
   const body = `
 ${shot("s1", "b/room.jpg", { origin: "50% 30%" })}
-${shot("s2", "b/room.jpg", { origin: reel.introOrigin ?? "540px 0px" })}
-${J.map((j, i) => shot(`j${i}`, `b/job${i}.jpg`, { grade: j.grade ?? 0.85, origin: j.origin ?? "50% 50%", extra: j.screen ? phone(`ps${i}`, j.screen, safariScreen([`b/page${i}.png`], { url: "xtrafreshhh.com" }).replace(`id="pg0"`, `id="pp${i}" style="visibility:inherit"`), { radius: 46 }) : "" })).join("\n")}
+${shot("s2", "b/room.jpg", { origin: "540px 960px" })}
+${J.map((j, i) => shot(`j${i}`, `b/job${i}.jpg`, { grade: j.grade ?? 0.85, origin: j.origin ?? "50% 50%", extra: j.phone ? phone(`ps${i}`, { corners: j.phone.corners, mask: `b/ph${i}-mask.png`, maskData: globalThis.__dataUri?.(`${j.phone.dir}-mask.png`), shadow: `b/ph${i}-shadow.png`, glass: `b/ph${i}-glass.png` }, safariScreen([`b/page${i}.png`], { url: "xtrafreshhh.com" }).replace(`id="pg0"`, `id="pp${i}" style="visibility:inherit"`), { glass: j.phone.glass ?? 0.16, ...(j.phone.light ? { light: j.phone.light } : {}) }) : "" })).join("\n")}
 <div id="pan"><img id="strip" src="b/strip.jpg" /></div>
-${shot("s4", "b/room.jpg", { origin: E.origin ?? "50% 40%" })}
+${shot("s4", "b/room.jpg", { origin: "540px 960px" })}
 ${board.html}
 ${lines("in", wrap(reel.intro, 9), { ...reel.introPos, size: 140 })}
 ${J.map((j, i) => lines(`jt${i}`, wrap(j.text, j.wrap ?? 14), { ...j.pos, size: j.size ?? 74, color: "var(--cream)" })).join("\n")}
@@ -45,7 +45,7 @@ ${sn.html}`;
   s += `tl.fromTo("#fb",{opacity:0},{opacity:1,duration:0.15},0.02);` + board.script(0.06, { flip: 0.035, stagger: 0.025 });
   s += `tl.set("#fb",{visibility:"hidden"},${f3(T.intro)});\n`; // clean cut out
   // 2 · clean cut to a closer framing
-  s += cutIn("s2", T.intro, T.jobs[0]) + camera("s2", T.intro, T.jobs[0] - T.intro, { scale: 1.28 }, { scale: 1.34 }, "sine.out");
+  s += cutIn("s2", T.intro, T.jobs[0]) + camera("s2", T.intro, T.jobs[0] - T.intro, reel.introCam, { ...reel.introCam, scale: reel.introCam.scale + 0.06 }, "sine.out");
   s += linesIn("in", T.intro + 0.08) + linesOut("in", T.jobs[0]);
   // 3 · the three jobs, full-bleed, one camera move each
   J.forEach((j, i) => {
@@ -58,13 +58,14 @@ ${sn.html}`;
   s += `tl.fromTo("#strip",{x:${-reel.pan[0]}},{x:${-reel.pan[1]},duration:${f3(T.end - T.pan)},ease:"sine.inOut"},${f3(T.pan)});\n`;
   s += `gsap.set("#yg",{opacity:0});tl.set("#yg",{opacity:1},${f3(T.hand - 0.01)});` + handwriteIn("yg", hw, T.hand, 0.07) + linesOut("yg", T.end);
   // 5 · end card on the wall
-  s += cutIn("s4", T.end) + camera("s4", T.end, duration - T.end, { scale: E.scale[0] }, { scale: E.scale[1] }, "sine.out");
+  s += cutIn("s4", T.end) + camera("s4", T.end, duration - T.end, { scale: E.scale[0], x: E.x ?? 0, y: E.y ?? 0 }, { scale: E.scale[1], x: E.x ?? 0, y: E.y ?? 0 }, "sine.out");
   s += `gsap.set("#eb",{opacity:1});` + endIn("eb", T.end + 0.12);
 
   const assets = {
     "b/room.jpg": A.room, "b/strip.jpg": A.strip,
     ...Object.fromEntries(J.map((j, i) => [`b/job${i}.jpg`, j.photo])),
     ...Object.fromEntries(J.filter((j) => j.page).map((j) => [`b/page${J.indexOf(j)}.png`, j.page])),
+    ...Object.fromEntries(J.flatMap((j, i) => (j.phone ? ["mask", "shadow", "glass"].map((k) => [`b/ph${i}-${k}.png`, `${j.phone.dir}-${k}.png`]) : []))),
   };
   const contact = Array.from({ length: 30 }, (_, i) => +(i * 0.5 + 0.25).toFixed(2));
   const legibility = [T.intro - 0.4, T.intro + 0.9, T.jobs[0] + 0.9, T.jobs[1] + 0.9, T.jobs[2] + 0.9, T.end - 0.4, 14.3];

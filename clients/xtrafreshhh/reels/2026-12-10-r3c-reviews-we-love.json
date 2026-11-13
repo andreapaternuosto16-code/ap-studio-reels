@@ -33,24 +33,6 @@
     }
   ],
   "cardTop": 280,
-  "screen": [
-    [
-      358,
-      1141
-    ],
-    [
-      564,
-      1092
-    ],
-    [
-      789,
-      1400
-    ],
-    [
-      533,
-      1492
-    ]
-  ],
   "page": "kit-round3/screens/home.png",
   "careLine": "Care in the little details.",
   "care": {
@@ -73,25 +55,48 @@
   "end": {
     "line": "Thank you for every review.",
     "url": "xtrafreshhh.com",
-    "origin": "100% 40%",
     "scale": [
       1.0,
-      1.05
+      1.04
     ],
+    "x": 0,
+    "y": 0,
     "block": {
-      "x": 320,
-      "y": 400,
-      "w": 700,
+      "x": 150,
+      "y": 260,
+      "w": 870,
       "align": "left",
-      "size": 96,
-      "logoW": 440,
+      "size": 110,
+      "logoW": 780,
       "order": "line-url-logo",
-      "urlSize": 60,
-      "gap": 56
+      "urlSize": 72,
+      "gap": 40
     }
   },
   "assets": {
     "room": "kit-round2/assets/C/01-notifications-room.jpg",
     "phone": "kit-round2/assets/C/02-phone-sofa.jpg"
+  },
+  "phone": {
+    "dir": "kit-round3/prepared/phones/c02",
+    "corners": [
+      [
+        342.1,
+        1138.9
+      ],
+      [
+        559.3,
+        1082.8
+      ],
+      [
+        808.9,
+        1409.9
+      ],
+      [
+        547.3,
+        1490.7
+      ]
+    ],
+    "glass": 0.14
   }
 }

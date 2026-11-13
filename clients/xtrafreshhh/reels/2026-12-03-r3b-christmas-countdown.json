@@ -9,7 +9,7 @@
   "intro": "3 jobs to do now",
   "introPos": {
     "x": 90,
-    "y": 330,
+    "y": 280,
     "w": 900
   },
   "jobs": [
@@ -17,9 +17,9 @@
       "text": "1. Ask about December dates early.",
       "photo": "kit-round2/assets/B/02-phone-table.jpg",
       "pos": {
-        "x": 190,
-        "y": 605,
-        "w": 650
+        "x": 220,
+        "y": 540,
+        "w": 620
       },
       "from": {
         "scale": 1.0
@@ -27,27 +27,33 @@
       "to": {
         "scale": 1.07
       },
-      "screen": [
-        [
-          167,
-          897
-        ],
-        [
-          478,
-          819
-        ],
-        [
-          778,
-          1392
-        ],
-        [
-          411,
-          1489
-        ]
-      ],
       "page": "kit-round3/screens/quote-2.png",
       "size": 70,
-      "grade": 0.78
+      "grade": 0.72,
+      "phone": {
+        "dir": "kit-round3/prepared/phones/b02",
+        "corners": [
+          [
+            149.2,
+            899.2
+          ],
+          [
+            460.3,
+            812.9
+          ],
+          [
+            795.1,
+            1380.2
+          ],
+          [
+            417.3,
+            1502.5
+          ]
+        ],
+        "glass": 0.08,
+        "light": "brightness(1.24) saturate(0.95) sepia(0.04)",
+        "_light": "the shot is graded to 0.72 for the white text; a real screen emits light, so its content is lifted back"
+      }
     },
     {
       "text": "2. Clear shelves before decorating.",
@@ -91,26 +97,32 @@
   "end": {
     "line": "Ask about December dates at",
     "url": "xtrafreshhh.com",
-    "origin": "100% 30%",
     "scale": [
-      1.0,
-      1.04
+      1.15,
+      1.19
     ],
+    "x": 0,
+    "y": 144,
     "block": {
-      "x": 320,
-      "y": 330,
-      "w": 700,
+      "x": 90,
+      "y": 240,
+      "w": 930,
       "align": "left",
-      "size": 84,
-      "logoW": 440,
+      "size": 110,
+      "logoW": 760,
       "order": "line-url-logo",
-      "urlSize": 60,
-      "gap": 56
+      "urlSize": 72,
+      "gap": 40
     }
   },
   "assets": {
     "room": "kit-round2/assets/B/01-flipboard-room.jpg",
     "strip": "kit-round2/assets/B/06-pan-strip.jpg"
   },
-  "handSize": 108
+  "handSize": 108,
+  "introCam": {
+    "scale": 1.6,
+    "x": 0,
+    "y": -214
+  }
 }

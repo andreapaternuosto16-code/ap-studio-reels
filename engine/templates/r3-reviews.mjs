@@ -40,9 +40,9 @@ export function build(reel, brand) {
   <div class="nm txt">${esc(r.name)}</div></div>`;
   const body = `
 ${shot("s1", "c/room.jpg", { origin: "50% 35%" })}
-${shot("s2", "c/phone.jpg", { origin: "50% 60%", extra: phone("cs", reel.screen, safariScreen(["c/page.png"], { url: "xtrafreshhh.com" }).replace('id="pg0"', 'id="cp0" style="visibility:inherit"'), { radius: 46 }) })}
+${shot("s2", "c/phone.jpg", { origin: "50% 60%", extra: phone("cs", { corners: reel.phone.corners, mask: "c/ph-mask.png", maskData: globalThis.__dataUri?.(`${reel.phone.dir}-mask.png`), shadow: "c/ph-shadow.png", glass: "c/ph-glass.png" }, safariScreen(["c/page.png"], { url: "xtrafreshhh.com" }).replace('id="pg0"', 'id="cp0" style="visibility:inherit"'), { glass: reel.phone.glass ?? 0.14 }) })}
 ${shot("s3", "c/detail.jpg", { origin: C.origin ?? "30% 45%" })}
-${shot("s4", "c/room.jpg", { origin: E.origin ?? "100% 40%" })}
+${shot("s4", "c/room.jpg", { origin: "540px 960px" })}
 ${lines("tt", wrap(reel.title, 8), { ...reel.titlePos, size: 156, align: "center" })}
 ${R.map(card).join("\n")}
 ${lines("cl", wrap(reel.careLine, C.wrap ?? 11), { ...C.pos, size: C.size ?? 88 })}
@@ -61,9 +61,10 @@ ${endBlock("eb", { line: E.line, url: E.url, ...E.block })}`;
   s += `tl.set("#rc2",{visibility:"hidden"},${f3(T.care)});\n`;
   s += cutIn("s3", T.care, T.end) + camera("s3", T.care, T.end - T.care, C.from ?? { scale: 1.0 }, C.to ?? { scale: 1.07 }, "sine.inOut");
   s += linesIn("cl", T.care + 0.1) + linesOut("cl", T.end);
-  s += cutIn("s4", T.end) + camera("s4", T.end, duration - T.end, { scale: E.scale[0] }, { scale: E.scale[1] }, "sine.out");
+  s += cutIn("s4", T.end) + camera("s4", T.end, duration - T.end, { scale: E.scale[0], x: E.x ?? 0, y: E.y ?? 0 }, { scale: E.scale[1], x: E.x ?? 0, y: E.y ?? 0 }, "sine.out");
   s += `gsap.set("#eb",{opacity:1});` + endIn("eb", T.end + 0.12);
-  const assets = { "c/room.jpg": A.room, "c/phone.jpg": A.phone, "c/detail.jpg": C.photo, "c/page.png": reel.page };
+  const assets = { "c/room.jpg": A.room, "c/phone.jpg": A.phone, "c/detail.jpg": C.photo, "c/page.png": reel.page,
+    ...Object.fromEntries(["mask", "shadow", "glass"].map((k) => [`c/ph-${k}.png`, `${reel.phone.dir}-${k}.png`])) };
   const contact = Array.from({ length: 30 }, (_, i) => +(i * 0.5 + 0.25).toFixed(2));
   const legibility = [1.5, T.cards[0] + 1.5, T.cards[1] + 1.5, T.cards[2] + 1.5, T.care + 1.2, 14.3];
   return { duration, html: page({ id: "r3-reviews", duration, brand, css, body, script: s }), assets, beats: legibility, contact, legibility };

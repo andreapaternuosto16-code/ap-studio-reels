@@ -19,6 +19,8 @@ const clientDir = resolve(dirname(reelPath), "..");
 const brand = JSON.parse(readFileSync(join(clientDir, "brand.json"), "utf8"));
 const name = basename(reelPath, ".json");
 const { build } = await import(`./templates/${reel.template}.mjs`);
+// templates can ask for small files inlined as data URIs (e.g. phone screen masks)
+globalThis.__dataUri = (rel) => "data:image/png;base64," + readFileSync(join(resolve(dirname(reelPath), ".."), rel)).toString("base64");
 const out = build(reel, brand);
 
 const buildDir = join(clientDir, "renders", ".build", name);
