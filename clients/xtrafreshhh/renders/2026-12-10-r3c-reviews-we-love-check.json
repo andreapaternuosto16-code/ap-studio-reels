@@ -1,7 +1,7 @@
 {
   "ok": true,
   "legibility": {
-    "checked": 16,
+    "checked": 15,
     "failing": [],
     "worst": 3.73,
     "all": [
@@ -97,23 +97,15 @@
         "t": 11.4,
         "id": "cl-l0",
         "text": "Care in the",
-        "contrast": 4.2,
+        "contrast": 5.66,
         "need": 3,
         "ok": true
       },
       {
         "t": 11.4,
         "id": "cl-l1",
-        "text": "little",
-        "contrast": 4.25,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 11.4,
-        "id": "cl-l2",
-        "text": "details.",
-        "contrast": 3.86,
+        "text": "little details.",
+        "contrast": 5.68,
         "need": 3,
         "ok": true
       },
@@ -135,8 +127,8 @@
       }
     ]
   },
-  "summary": "0 safe-zone/overflow issue(s); smallest caption 50px on 1080 canvas ≈ 18.0px on a 390px phone; duration 15s; legibility 16/16 lines pass (worst 3.7:1)",
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 58px on 1080 canvas ≈ 20.9px on a 390px phone; duration 15s; legibility 15/15 lines pass (worst 3.7:1)",
   "duration": 15,
-  "minFontPx": 49.9655561453273,
+  "minFontPx": 58,
   "problems": []
 }

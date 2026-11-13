@@ -3,13 +3,13 @@
   "legibility": {
     "checked": 13,
     "failing": [],
-    "worst": 3.04,
+    "worst": 3.39,
     "all": [
       {
         "t": 3.4,
         "id": "in-l0",
         "text": "3 jobs to",
-        "contrast": 5.52,
+        "contrast": 5.5,
         "need": 3,
         "ok": true
       },
@@ -17,7 +17,7 @@
         "t": 3.4,
         "id": "in-l1",
         "text": "do now",
-        "contrast": 4.91,
+        "contrast": 4.74,
         "need": 3,
         "ok": true
       },
@@ -25,39 +25,39 @@
         "t": 4.96,
         "id": "jt0-l0",
         "text": "1. Ask about",
-        "contrast": 3.42,
+        "contrast": 4.01,
         "need": 3,
         "ok": true
       },
       {
         "t": 4.96,
         "id": "jt0-l1",
-        "text": "December dates",
-        "contrast": 3.94,
+        "text": "December",
+        "contrast": 4.04,
         "need": 3,
         "ok": true
       },
       {
         "t": 4.96,
         "id": "jt0-l2",
-        "text": "early.",
-        "contrast": 3.99,
+        "text": "dates early.",
+        "contrast": 4.12,
         "need": 3,
         "ok": true
       },
       {
         "t": 6.53,
         "id": "jt1-l0",
-        "text": "2. Clear",
-        "contrast": 6.95,
+        "text": "2. Clear shelves",
+        "contrast": 4.96,
         "need": 3,
         "ok": true
       },
       {
         "t": 6.53,
         "id": "jt1-l1",
-        "text": "shelves before",
-        "contrast": 4.12,
+        "text": "before",
+        "contrast": 5.14,
         "need": 3,
         "ok": true
       },
@@ -65,7 +65,7 @@
         "t": 6.53,
         "id": "jt1-l2",
         "text": "decorating.",
-        "contrast": 3.54,
+        "contrast": 5.31,
         "need": 3,
         "ok": true
       },
@@ -73,7 +73,7 @@
         "t": 8.09,
         "id": "jt2-l0",
         "text": "3. Plan the",
-        "contrast": 3.04,
+        "contrast": 4.89,
         "need": 3,
         "ok": true
       },
@@ -81,7 +81,7 @@
         "t": 8.09,
         "id": "jt2-l1",
         "text": "guest room.",
-        "contrast": 3.73,
+        "contrast": 4.95,
         "need": 3,
         "ok": true
       },
@@ -111,8 +111,8 @@
       }
     ]
   },
-  "summary": "0 safe-zone/overflow issue(s); smallest caption 70px on 1080 canvas ≈ 25.2px on a 390px phone; duration 15s; legibility 13/13 lines pass (worst 3.0:1)",
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 13/13 lines pass (worst 3.4:1)",
   "duration": 15,
-  "minFontPx": 69.8557611695421,
+  "minFontPx": 72,
   "problems": []
 }
