@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 48px on 1080 canvas ≈ 17.4px on a 390px phone; duration 17.3077s",
+  "duration": 17.3077,
+  "minFontPx": 48.199269041739285,
+  "problems": []
+}

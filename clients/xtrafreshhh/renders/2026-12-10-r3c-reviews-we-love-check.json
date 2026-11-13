@@ -1,0 +1,134 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 15,
+    "failing": [],
+    "worst": 3.73,
+    "all": [
+      {
+        "t": 1.5,
+        "id": "tt-l0",
+        "text": "Reviews",
+        "contrast": 5.55,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.5,
+        "id": "tt-l1",
+        "text": "we love",
+        "contrast": 5.78,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.6,
+        "id": "txt",
+        "text": "Google review",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.6,
+        "id": "q txt",
+        "text": "“It's lovely to come home to a clean hou",
+        "contrast": 9.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.6,
+        "id": "nm txt",
+        "text": "Rachel H.",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.3,
+        "id": "txt",
+        "text": "Google review",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.3,
+        "id": "q txt",
+        "text": "“…my house is absolutely spotless. Very ",
+        "contrast": 9.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.3,
+        "id": "nm txt",
+        "text": "Adam S.",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9,
+        "id": "txt",
+        "text": "Google review",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9,
+        "id": "q txt",
+        "text": "“They are the best cleaning service we h",
+        "contrast": 9.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9,
+        "id": "nm txt",
+        "text": "Creative Recovery",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.4,
+        "id": "cl-l0",
+        "text": "Care in the",
+        "contrast": 5.66,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.4,
+        "id": "cl-l1",
+        "text": "little details.",
+        "contrast": 5.68,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eh txt",
+        "text": "Thank you for every review.",
+        "contrast": 5.11,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 3.73,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 58px on 1080 canvas ≈ 20.9px on a 390px phone; duration 15s; legibility 15/15 lines pass (worst 3.7:1)",
+  "duration": 15,
+  "minFontPx": 58,
+  "problems": []
+}

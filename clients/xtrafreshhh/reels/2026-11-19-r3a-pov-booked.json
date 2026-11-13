@@ -1,0 +1,171 @@
+{
+  "template": "r3-pov-booked",
+  "date": "2026-11-19",
+  "pairsWith": "P1 New website",
+  "bpm": 104,
+  "music": "r2-a-bright-104.m4a",
+  "_wording": "REVIEWED-WORDING.md WR01, used exactly. 'Bedroom' replaces the review's 'Living room' because picture A/04 is a bedroom (flagged in the PR).",
+  "_screens": "Real xtrafreshhh.com screenshots (round-3 kit): home → Get my price → Pick a time with the estimate. The production owner checks the live flow and email confirmation before posting.",
+  "hook": "POV: the clean is booked.",
+  "exampleLabel": "Example booking",
+  "sender": "XtraFreshhh",
+  "notes": [
+    "Request received.",
+    "We agree the details.",
+    "Booking confirmed by email."
+  ],
+  "roomsLine": "Your agreed rooms, freshly cleaned.",
+  "rooms": [
+    {
+      "label": "Kitchen",
+      "photo": "kit-round2/assets/A/02-kitchen.jpg",
+      "grade": 0.85,
+      "cam": {
+        "scale": 1.4,
+        "x": 0,
+        "y": -128
+      },
+      "block": {
+        "x": 220,
+        "y": 1110
+      }
+    },
+    {
+      "label": "Bathroom",
+      "photo": "kit-round2/assets/A/03-bathroom.jpg",
+      "grade": 0.85,
+      "cam": {
+        "scale": 1.2,
+        "x": 108,
+        "y": -128
+      },
+      "block": {
+        "x": 220,
+        "y": 1230
+      }
+    },
+    {
+      "label": "Bedroom",
+      "photo": "kit-round2/assets/A/04-bedroom.jpg",
+      "grade": 0.85,
+      "cam": {
+        "scale": 1.4,
+        "x": -216,
+        "y": -256
+      },
+      "block": {
+        "x": 220,
+        "y": 1150
+      }
+    },
+    {
+      "label": "Hallway",
+      "photo": "kit-round2/assets/A/05-hallway.jpg",
+      "grade": 1.05,
+      "cam": {
+        "scale": 1.2,
+        "x": -108,
+        "y": -192
+      },
+      "block": {
+        "x": 140,
+        "y": 1230
+      },
+      "color": "var(--ink)"
+    }
+  ],
+  "feetLine": "Now the sofa is all yours.",
+  "feetLinePos": {
+    "x": 380,
+    "y": 700,
+    "w": 640
+  },
+  "feetGrade": [
+    0.86,
+    0.76
+  ],
+  "end": {
+    "photo": "kit-round2/assets/A/04-bedroom.jpg",
+    "origin": "540px 960px",
+    "scale": [
+      1.6,
+      1.64
+    ],
+    "x": -162,
+    "y": 576,
+    "line": "Get your estimate at",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 90,
+      "y": 240,
+      "w": 720,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 56
+    },
+    "focusPull": 7
+  },
+  "pages": [
+    "kit-round3/screens/home.png",
+    "kit-round3/screens/quote-top.png",
+    "kit-round3/screens/quote-1.png"
+  ],
+  "assets": {
+    "phone": "kit-round2/assets/A/01-phone.jpg",
+    "feet": "kit-round2/assets/A/06-feet-up.jpg"
+  },
+  "hookPos": {
+    "x": 60,
+    "y": 1172,
+    "w": 600
+  },
+  "phone": {
+    "dir": "kit-round3/prepared/phones/a01",
+    "corners": [
+      [
+        240.3,
+        479.6
+      ],
+      [
+        652.1,
+        448.7
+      ],
+      [
+        742.6,
+        1366.1
+      ],
+      [
+        327.2,
+        1411.9
+      ]
+    ],
+    "glass": 0.12
+  },
+  "hookSize": 110,
+  "hookWrap": 9,
+  "cam": {
+    "start": {
+      "scale": 1.5,
+      "x": 250,
+      "y": -460
+    },
+    "screen": {
+      "scale": 1.5,
+      "x": 0,
+      "y": -50
+    }
+  },
+  "noteTop": [
+    66,
+    163,
+    260
+  ],
+  "chipTop": 832,
+  "roomNameSize": 140,
+  "roomLineSize": 46,
+  "roomLineWrap": 60
+}

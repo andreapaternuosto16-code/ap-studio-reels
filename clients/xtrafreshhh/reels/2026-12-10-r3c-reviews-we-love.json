@@ -1,0 +1,100 @@
+{
+  "template": "r3-reviews",
+  "date": "2026-12-10",
+  "pairsWith": "P3 Guest-ready",
+  "bpm": 100,
+  "music": "r2-c-warm-100.m4a",
+  "_wording": "REVIEWED-WORDING.md WR03 fixed lines, used exactly. No count-up frame (round-3 brief).",
+  "_reviews": "Real Google reviews supplied by Andrea (round 3.3), text exactly as given. All 5 stars.",
+  "sample": false,
+  "title": "Reviews we love",
+  "titlePos": {
+    "x": 170,
+    "y": 330,
+    "w": 740
+  },
+  "label": "Google review",
+  "reviews": [
+    {
+      "excerpt": "It's lovely to come home to a clean house every week.",
+      "name": "Rachel H.",
+      "rating": 5
+    },
+    {
+      "excerpt": "…my house is absolutely spotless. Very professional, friendly service and great comms.",
+      "name": "Adam S.",
+      "rating": 5
+    },
+    {
+      "excerpt": "They are the best cleaning service we have had.",
+      "name": "Creative Recovery",
+      "rating": 5
+    }
+  ],
+  "cardTop": 280,
+  "page": "kit-round3/screens/home.png",
+  "careLine": "Care in the little details.",
+  "care": {
+    "photo": "kit-round2/assets/C/04-bathroom-detail.jpg",
+    "pos": {
+      "x": 140,
+      "y": 500,
+      "w": 880
+    },
+    "size": 110,
+    "wrap": 15,
+    "cam": {
+      "scale": 1.6,
+      "x": 0,
+      "y": -192
+    },
+    "grade": 1.08
+  },
+  "end": {
+    "line": "Thank you for every review.",
+    "url": "xtrafreshhh.com",
+    "scale": [
+      1.0,
+      1.04
+    ],
+    "x": 0,
+    "y": 0,
+    "block": {
+      "x": 150,
+      "y": 260,
+      "w": 870,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  },
+  "assets": {
+    "room": "kit-round2/assets/C/01-notifications-room.jpg",
+    "phone": "kit-round2/assets/C/02-phone-sofa.jpg"
+  },
+  "phone": {
+    "dir": "kit-round3/prepared/phones/c02",
+    "corners": [
+      [
+        342.1,
+        1138.9
+      ],
+      [
+        559.3,
+        1082.8
+      ],
+      [
+        808.9,
+        1409.9
+      ],
+      [
+        547.3,
+        1490.7
+      ]
+    ],
+    "glass": 0.14
+  }
+}

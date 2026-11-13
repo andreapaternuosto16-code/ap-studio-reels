@@ -1,0 +1,21 @@
+{
+  "template": "before-after",
+  "date": "2026-12-17",
+  "pairsWith": "P6 Oven clean",
+  "music": "calm-keys-01.wav",
+  "_photos": "SAMPLE: kit stills stand in for Alexandra's real oven photos (same oven, same angle). Swap them and set sample to false.",
+  "before": "open-oven-side.jpg",
+  "after": "oven-side.jpg",
+  "sample": true,
+  "photoPosition": "0% 50%",
+  "hook": "Before the roast...",
+  "labels": {
+    "before": "Before",
+    "after": "After"
+  },
+  "closing": "...start with the oven.",
+  "endCard": {
+    "line": "Ask about oven cleaning.",
+    "url": "xtrafreshhh.com"
+  }
+}

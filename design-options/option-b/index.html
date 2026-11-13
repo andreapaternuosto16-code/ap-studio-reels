@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<style>
+:root{--ink:#1F4F5B;--teal:#296675;--cream:#FFF7F4;--blush:#FADBD2;
+--head:'Bricolage Grotesque',sans-serif;--text:'Figtree',sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--cream)}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);font-family:var(--text)}
+.photo{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover;transform-origin:0% 30%}
+.abs{position:absolute}
+.label{font-family:var(--text);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:38px}
+.head{font-family:var(--head);font-weight:700;letter-spacing:-.02em;line-height:1.02}
+.logo{display:block;height:auto}
+
+.wrap{left:96px;width:880px}
+#lab{top:300px}
+#hd{top:360px;font-size:128px}
+.num{top:300px;font-family:var(--head);font-weight:700;font-size:400px;line-height:.8;color:var(--ink)}
+.tx{top:690px;font-family:var(--head);font-weight:700;font-size:88px;width:660px;line-height:1.04;letter-spacing:-.015em}
+#count{top:1460px;left:96px;font-size:36px;font-weight:600;letter-spacing:.08em;color:var(--teal)}
+#end{inset:0;background:var(--cream)}
+#end .in{position:absolute;left:96px;right:96px;top:560px;text-align:center}
+#end .head{font-size:112px}
+#end .logo{width:640px;margin:90px auto 0}
+#end .url{font-family:var(--head);font-weight:600;font-size:64px;margin-top:28px;color:var(--teal)}
+
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="option-b" data-start="0" data-duration="12" data-width="1080" data-height="1920">
+
+<img class="photo" id="ph" src="photo.jpg" style="object-position:0% 50%" />
+<div class="abs wrap label" id="lab">Regular clean</div>
+<div class="abs wrap head" id="hd">3 easy habits between cleans</div>
+<div class="abs wrap num" id="n1">1</div>
+<div class="abs wrap tx" id="x1">Ten-minute reset each evening.</div>
+<div class="abs wrap num" id="n2">2</div>
+<div class="abs wrap tx" id="x2">Wipe the hob after cooking.</div>
+<div class="abs wrap num" id="n3">3</div>
+<div class="abs wrap tx" id="x3">A home for keys, post and shoes.</div>
+<div class="abs" id="end"><div class="in">
+  <div class="head">We'll handle the rest.</div>
+  <img class="logo" src="logo.png" alt="XtraFreshhh" />
+  <div class="url">xtrafreshhh.com</div>
+</div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+
+gsap.set("#n1,#n2,#n3,#x1,#x2,#x3,#end",{opacity:0});
+tl.fromTo("#ph",{scale:1.0},{scale:1.12,duration:9.4,ease:"none"},0);
+tl.fromTo("#lab",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},0.2);tl.fromTo("#hd",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},0.35);
+tl.to("#lab,#hd",{opacity:0,duration:0.35,ease:"power1.in"},2.6);
+tl.fromTo("#n1",{opacity:0,y:40},{opacity:1,y:0,duration:0.7,ease:"power2.out"},3);tl.fromTo("#x1",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},3.15);tl.to("#n1,#x1",{opacity:0,duration:0.35,ease:"power1.in"},4.6);
+tl.fromTo("#n2",{opacity:0,y:40},{opacity:1,y:0,duration:0.7,ease:"power2.out"},5);tl.fromTo("#x2",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},5.15);tl.to("#n2,#x2",{opacity:0,duration:0.35,ease:"power1.in"},6.6);
+tl.fromTo("#n3",{opacity:0,y:40},{opacity:1,y:0,duration:0.7,ease:"power2.out"},7);tl.fromTo("#x3",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},7.15);tl.to("#n3,#x3",{opacity:0,duration:0.35,ease:"power1.in"},9);
+tl.set("#end",{opacity:1},9.4);
+tl.fromTo("#end .in",{opacity:0,y:30},{opacity:1,y:0,duration:0.8,ease:"power2.out"},9.4);
+tl.to({}, { duration: 12 }, 0); // fill the slot (Herk law 11)
+window.__timelines["option-b"] = tl;
+tl.seek(0);
+</script>
+</body>
+</html>

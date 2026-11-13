@@ -1,0 +1,94 @@
+{
+  "template": "review-notifications",
+  "date": "2026-12-10",
+  "pairsWith": "P3 Guest-ready (replaces the single review card)",
+  "bpm": 100,
+  "music": "r2-c-warm-100.m4a",
+  "_wording": "REVIEWED-WORDING.md WR03, fixed lines used exactly.",
+  "_reviews": "SAMPLE ONLY — placeholders, never post. Replace with real excerpts (exact, self-contained, ≤15 words), each review's own rating, the matching public name, with permission/basis and evidence kept. Set sample to false.",
+  "_count": "Verified current Google total + check date, or set count.value to \"\" to drop the frame. Never reuse 19. SAMPLE value below is a placeholder.",
+  "sample": true,
+  "sampleText": "SAMPLE — NOT FOR POSTING",
+  "title": "Reviews we love",
+  "label": "Google review",
+  "reviews": [
+    {
+      "excerpt": "[Exact excerpt from review 1]",
+      "name": "[Public name 1]",
+      "rating": 5
+    },
+    {
+      "excerpt": "[Exact excerpt from review 2]",
+      "name": "[Public name 2]",
+      "rating": 5
+    },
+    {
+      "excerpt": "[Exact excerpt from review 3]",
+      "name": "[Public name 3]",
+      "rating": 4
+    },
+    {
+      "excerpt": "[Exact excerpt from review 4]",
+      "name": "[Public name 4]",
+      "rating": 5
+    },
+    {
+      "excerpt": "[Exact excerpt from review 5]",
+      "name": "[Public name 5]",
+      "rating": 5
+    }
+  ],
+  "count": {
+    "value": "48",
+    "label": "Google reviews",
+    "checked": "Checked [date]"
+  },
+  "careLine": "Care in the little details.",
+  "rooms": [
+    {
+      "word": "Kitchens.",
+      "photo": "kit-round2/assets/C/03-kitchen-detail.jpg",
+      "offset": 300,
+      "circle": {
+        "cx": 520,
+        "cy": 1130,
+        "rx": 190,
+        "ry": 300,
+        "rot": -6
+      }
+    },
+    {
+      "word": "Bathrooms.",
+      "photo": "kit-round2/assets/C/04-bathroom-detail.jpg",
+      "offset": 420,
+      "circle": {
+        "cx": 830,
+        "cy": 1290,
+        "rx": 230,
+        "ry": 190,
+        "rot": -8
+      }
+    },
+    {
+      "word": "The little details.",
+      "photo": "kit-round2/assets/C/05-little-details.jpg",
+      "offset": 520,
+      "circle": {
+        "cx": 590,
+        "cy": 1200,
+        "rx": 270,
+        "ry": 250,
+        "rot": -5
+      }
+    }
+  ],
+  "endCard": {
+    "line": "Thank you for every review.",
+    "url": "xtrafreshhh.com"
+  },
+  "kitD": "kit-round2/assets/D",
+  "assets": {
+    "title": "kit-round2/assets/C/01-notifications-room.jpg",
+    "phone": "kit-round2/assets/C/02-phone-sofa.jpg"
+  }
+}
