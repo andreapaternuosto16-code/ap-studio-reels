@@ -129,14 +129,14 @@
         "t": 14.3,
         "id": "eu txt",
         "text": "xtrafreshhh.com",
-        "contrast": 3.99,
+        "contrast": 4.01,
         "need": 3,
         "ok": true
       }
     ]
   },
-  "summary": "0 safe-zone/overflow issue(s); smallest caption 42px on 1080 canvas ≈ 15.2px on a 390px phone; duration 15s; legibility 16/16 lines pass (worst 3.9:1)",
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 50px on 1080 canvas ≈ 18.0px on a 390px phone; duration 15s; legibility 16/16 lines pass (worst 3.9:1)",
   "duration": 15,
-  "minFontPx": 41.99881112447786,
+  "minFontPx": 49.9655561453273,
   "problems": []
 }
