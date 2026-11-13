@@ -1,0 +1,116 @@
+{
+  "template": "r3-countdown",
+  "date": "2026-12-03",
+  "pairsWith": "Christmas countdown",
+  "bpm": 96,
+  "music": "r2-b-sleigh-96.m4a",
+  "_wording": "REVIEWED-WORDING.md WR02, used exactly. 22 = days from 3 Dec 2026 to 25 Dec; change 'days' if the posting date moves.",
+  "days": 22,
+  "intro": "3 jobs to do now",
+  "introPos": {
+    "x": 90,
+    "y": 330,
+    "w": 900
+  },
+  "jobs": [
+    {
+      "text": "1. Ask about December dates early.",
+      "photo": "kit-round2/assets/B/02-phone-table.jpg",
+      "pos": {
+        "x": 190,
+        "y": 605,
+        "w": 650
+      },
+      "from": {
+        "scale": 1.0
+      },
+      "to": {
+        "scale": 1.07
+      },
+      "screen": [
+        [
+          167,
+          897
+        ],
+        [
+          478,
+          819
+        ],
+        [
+          778,
+          1392
+        ],
+        [
+          411,
+          1489
+        ]
+      ],
+      "page": "kit-round3/screens/quote-2.png",
+      "size": 70,
+      "grade": 0.78
+    },
+    {
+      "text": "2. Clear shelves before decorating.",
+      "photo": "kit-round2/assets/B/03-garland.jpg",
+      "pos": {
+        "x": 64,
+        "y": 1190,
+        "w": 680
+      },
+      "from": {
+        "scale": 1.07,
+        "x": 24
+      },
+      "to": {
+        "scale": 1.07,
+        "x": -24
+      }
+    },
+    {
+      "text": "3. Plan the guest room.",
+      "photo": "kit-round2/assets/B/04-guest-room.jpg",
+      "pos": {
+        "x": 380,
+        "y": 1290,
+        "w": 640
+      },
+      "from": {
+        "scale": 1.1
+      },
+      "to": {
+        "scale": 1.0
+      }
+    }
+  ],
+  "handwritten": "You've got this.",
+  "handTop": 250,
+  "pan": [
+    1900,
+    2900
+  ],
+  "end": {
+    "line": "Ask about December dates at",
+    "url": "xtrafreshhh.com",
+    "origin": "100% 30%",
+    "scale": [
+      1.0,
+      1.04
+    ],
+    "block": {
+      "x": 320,
+      "y": 330,
+      "w": 700,
+      "align": "left",
+      "size": 84,
+      "logoW": 440,
+      "order": "line-url-logo",
+      "urlSize": 60,
+      "gap": 56
+    }
+  },
+  "assets": {
+    "room": "kit-round2/assets/B/01-flipboard-room.jpg",
+    "strip": "kit-round2/assets/B/06-pan-strip.jpg"
+  },
+  "handSize": 108
+}

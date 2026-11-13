@@ -1,0 +1,97 @@
+{
+  "template": "r3-reviews",
+  "date": "2026-12-10",
+  "pairsWith": "P3 Guest-ready",
+  "bpm": 100,
+  "music": "r2-c-warm-100.m4a",
+  "_wording": "REVIEWED-WORDING.md WR03 fixed lines, used exactly. No count-up frame (round-3 brief).",
+  "_reviews": "SAMPLE ONLY — placeholders, never post. Replace with 3 real excerpts (exact, self-contained, ≤12 words), each review's own rating, the matching public name, with permission/basis + evidence. Set sample to false.",
+  "sample": true,
+  "sampleText": "SAMPLE — NOT FOR POSTING",
+  "title": "Reviews we love",
+  "titlePos": {
+    "x": 170,
+    "y": 330,
+    "w": 740
+  },
+  "label": "Google review",
+  "reviews": [
+    {
+      "excerpt": "[Exact excerpt from review 1]",
+      "name": "[Public name 1]",
+      "rating": 5
+    },
+    {
+      "excerpt": "[Exact excerpt from review 2]",
+      "name": "[Public name 2]",
+      "rating": 5
+    },
+    {
+      "excerpt": "[Exact excerpt from review 3]",
+      "name": "[Public name 3]",
+      "rating": 4
+    }
+  ],
+  "cardTop": 300,
+  "screen": [
+    [
+      358,
+      1141
+    ],
+    [
+      564,
+      1092
+    ],
+    [
+      789,
+      1400
+    ],
+    [
+      533,
+      1492
+    ]
+  ],
+  "page": "kit-round3/screens/home.png",
+  "careLine": "Care in the little details.",
+  "care": {
+    "photo": "kit-round2/assets/C/04-bathroom-detail.jpg",
+    "pos": {
+      "x": 64,
+      "y": 760,
+      "w": 560
+    },
+    "size": 86,
+    "wrap": 11,
+    "origin": "15% 45%",
+    "from": {
+      "scale": 1.0
+    },
+    "to": {
+      "scale": 1.06
+    }
+  },
+  "end": {
+    "line": "Thank you for every review.",
+    "url": "xtrafreshhh.com",
+    "origin": "100% 40%",
+    "scale": [
+      1.0,
+      1.05
+    ],
+    "block": {
+      "x": 320,
+      "y": 400,
+      "w": 700,
+      "align": "left",
+      "size": 84,
+      "logoW": 440,
+      "order": "line-url-logo",
+      "urlSize": 60,
+      "gap": 56
+    }
+  },
+  "assets": {
+    "room": "kit-round2/assets/C/01-notifications-room.jpg",
+    "phone": "kit-round2/assets/C/02-phone-sofa.jpg"
+  }
+}

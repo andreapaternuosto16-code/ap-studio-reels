@@ -22,3 +22,13 @@ Pictures and cleaning kit: `kit-round2/` (assets A, B, C, D, research, reviewed 
 | A Thu 19 Nov | `2026-11-19-r2a-pov-booked.json` | pov-booking | Sample rendered. Before posting: check the live estimate/request flow and email confirmation match the story; confirm "Bedroom ✓" (the review listed "Living room", but picture A/04 is a bedroom). |
 | B Thu 3 Dec | `2026-12-03-r2b-christmas-countdown.json` | countdown | Sample rendered. `days` = 22 for 3 Dec 2026; change it if the posting date moves. |
 | C Thu 10 Dec | `2026-12-10-r2c-reviews-we-love.json` | review-notifications | **Sample only (placeholders, never post).** Needs the real excerpts, each review's rating, public names, permission/basis + evidence, and a verified total with check date (or set `count.value` to "" to drop that frame). |
+
+## Round 3 (13 Nov): real, clean, ≤ 15 s (current)
+New: `kit-round3/screens/` (real xtrafreshhh.com phone screenshots + a screen recording; `kit-round3/prepared/` holds an
+edit of the recording, not used in the end because the recording's page fills only the top 690 px of each frame).
+
+| Reel | JSON | Template | Status |
+|---|---|---|---|
+| A Thu 19 Nov | `2026-11-19-r3a-pov-booked.json` | r3-pov-booked | Sample rendered. Check the live estimate flow + email confirmation before posting; confirm "Bedroom ✓". The phone shows the real £67.50 estimate. |
+| B Thu 3 Dec | `2026-12-03-r3b-christmas-countdown.json` | r3-countdown | Sample rendered. `days` = 22 for 3 Dec 2026. |
+| C Thu 10 Dec | `2026-12-10-r3c-reviews-we-love.json` | r3-reviews | **Sample only (placeholders, never post).** Needs 3 real excerpts (≤ 12 words), each review's rating, public names, permission/basis + evidence. |

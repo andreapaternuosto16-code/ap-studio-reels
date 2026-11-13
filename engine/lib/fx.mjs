@@ -211,6 +211,6 @@ export const fxCss = `
   border:6px solid var(--teal);border-radius:18px;padding:10px 26px 12px;white-space:nowrap;opacity:0}
 .stampb b{font-weight:800}
 .hw{font-family:'Caveat',cursive;font-weight:700;color:var(--ink);line-height:1;white-space:nowrap}
-.hwc{display:inline-block}
-.hw-u{display:block;width:100%;height:34px;margin-top:-6px}
+.hwc{display:inline-block;line-height:1.05;vertical-align:top}
+.hw-u{display:block;width:100%;height:30px;margin-top:-14px}
 `;

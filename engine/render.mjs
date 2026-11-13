@@ -60,17 +60,21 @@ if (reel.music) {
       join(renders, `${name}.mp4`)]);
 }
 rmSync(raw, { force: true });
-// 6-frame contact sheet, taken from the finished (no-music) MP4, labelled with each frame's time
+// Contact sheet from the finished (no-music) MP4: 6 frames (round 2) or a frame every 0.5 s (round 3),
+// each labelled with its time, at phone-preview size.
 if (out.contact) {
-  const tmp = join(buildDir, "contact"); mkdirSync(tmp, { recursive: true });
+  const tmp = join(buildDir, "contact"); rmSync(tmp, { recursive: true, force: true }); mkdirSync(tmp, { recursive: true });
   const font = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf";
-  const frames = out.contact.slice(0, 6).map((t, i) => {
-    const f = join(tmp, `c${i}.png`);
+  const many = out.contact.length > 6;
+  const [w, h, cols] = many ? [216, 384, 6] : [360, 640, 3];
+  const times = many ? out.contact : out.contact.slice(0, 6);
+  const frames = times.map((t, i) => {
+    const f = join(tmp, `c${String(i).padStart(2, "0")}.png`);
     ff(["-ss", String(t), "-i", nomusic, "-frames:v", "1", "-vf",
-        `scale=360:640,drawtext=fontfile=${font}:text='${t.toFixed(1)} s':x=10:y=10:fontsize=22:fontcolor=white:box=1:boxcolor=0x1F4F5B@0.85:boxborderw=6`, f]);
+        `scale=${w}:${h},drawtext=fontfile=${font}:text='${t.toFixed(2)} s':x=8:y=8:fontsize=${many ? 18 : 22}:fontcolor=white:box=1:boxcolor=0x1F4F5B@0.85:boxborderw=5`, f]);
     return f;
   });
-  ff([...frames.flatMap((f) => ["-i", f]), "-filter_complex",
-      "[0][1][2]hstack=3[t];[3][4][5]hstack=3[b];[t][b]vstack=2", "-q:v", "3", join(renders, `${name}-contact.jpg`)]);
+  const rows = Math.ceil(frames.length / cols);
+  ff(["-framerate", "1", "-i", join(tmp, "c%02d.png"), "-vf", `tile=${cols}x${rows}:padding=4:color=white`, "-frames:v", "1", "-q:v", "3", join(renders, `${name}-contact.jpg`)]);
 }
 console.log(`rendered → ${renders}/${name}.mp4 and ${name}-nomusic.mp4`);
