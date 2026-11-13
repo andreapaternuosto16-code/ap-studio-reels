@@ -64,6 +64,8 @@ ${endBlock("eb", { line: end.line, url: end.url, urlColor: end.urlColor, ...end.
   // 4 · end card: clean bathroom mirror, slow push
   s += cutIn("s4", T.end);
   s += camera("s4", T.end, duration - T.end, { scale: end.scale[0], x: end.x ?? 0, y: end.y ?? 0 }, { scale: end.scale[1], x: end.x ?? 0, y: end.y ?? 0 }, "sine.out");
+  // rack focus: the lens pulls focus off the room so the title sits on a soft background (a real camera move)
+  if (end.focusPull) s += `tl.fromTo("#s4-cam .pic",{filter:"blur(0px)"},{filter:"blur(${end.focusPull}px)",duration:0.7,ease:"power2.inOut",immediateRender:false},${f3(T.end + 0.05)});\n`;
   s += endIn("eb", T.end + 0.12);
 
   const assets = {

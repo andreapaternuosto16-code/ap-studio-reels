@@ -99,14 +99,15 @@
     "block": {
       "x": 90,
       "y": 240,
-      "w": 930,
+      "w": 720,
       "align": "left",
       "size": 110,
-      "logoW": 840,
+      "logoW": 860,
       "order": "line-url-logo",
       "urlSize": 72,
-      "gap": 40
-    }
+      "gap": 56
+    },
+    "focusPull": 7
   },
   "pages": [
     "kit-round3/screens/home.png",

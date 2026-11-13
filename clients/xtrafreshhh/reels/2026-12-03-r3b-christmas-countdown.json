@@ -8,9 +8,9 @@
   "days": 22,
   "intro": "3 jobs to do now",
   "introPos": {
-    "x": 90,
+    "x": 150,
     "y": 280,
-    "w": 900
+    "w": 860
   },
   "jobs": [
     {
