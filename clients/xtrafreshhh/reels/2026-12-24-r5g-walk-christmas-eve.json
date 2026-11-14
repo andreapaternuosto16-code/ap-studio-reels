@@ -1,0 +1,338 @@
+{
+  "template": "r5-walk",
+  "date": "2026-12-24",
+  "pairsWith": "Christmas Eve",
+  "music": "r5-g-sleigh-80.m4a",
+  "_wording": "Round-4/5 brief wording, exact. Pictures: kit-round5 G2 only (a different home).",
+  "shots": [
+    {
+      "photo": "kit-round5/assets/G2/G2-01.jpg",
+      "sx": 168,
+      "sy": 596,
+      "z": 1.45,
+      "grade": 0.72,
+      "start": 0,
+      "end": 1.5,
+      "snow": [
+        14,
+        9,
+        5
+      ],
+      "moves": [
+        {
+          "at": 0,
+          "dur": 1.5,
+          "from": {
+            "scale": 1
+          },
+          "to": {
+            "scale": 1.05
+          },
+          "ease": "none"
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-02.jpg",
+      "sx": 0,
+      "sy": 0,
+      "z": 1,
+      "ox": 580,
+      "oy": 900,
+      "start": 1.5,
+      "end": 2.25,
+      "snow": [
+        14,
+        9,
+        5
+      ],
+      "moves": [
+        {
+          "at": 0,
+          "dur": 0.35,
+          "from": {
+            "scale": 1
+          },
+          "to": {
+            "scale": 1.12
+          },
+          "ease": "sine.in"
+        },
+        {
+          "at": 0.35,
+          "dur": 0.4,
+          "from": {
+            "scale": 1.12
+          },
+          "to": {
+            "scale": 2.6
+          },
+          "ease": "power2.in"
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-03.jpg",
+      "sx": 251,
+      "sy": 99,
+      "z": 1.45,
+      "grade": 1.1,
+      "start": 2.25,
+      "end": 3.75,
+      "moves": [
+        {
+          "at": 0,
+          "dur": 0.6,
+          "from": {
+            "scale": 1.3
+          },
+          "to": {
+            "scale": 1.0
+          },
+          "ease": "power2.out"
+        },
+        {
+          "at": 0.6,
+          "dur": 0.65,
+          "from": {
+            "scale": 1.0
+          },
+          "to": {
+            "scale": 1.03
+          },
+          "ease": "none"
+        },
+        {
+          "at": 1.25,
+          "dur": 0.25,
+          "from": {
+            "x": 0,
+            "blur": 0
+          },
+          "to": {
+            "x": -700,
+            "blur": 18
+          },
+          "ease": "power2.in"
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-04.jpg",
+      "sx": 0,
+      "sy": 596,
+      "z": 1.45,
+      "grade": 1.1,
+      "start": 3.75,
+      "end": 5.25,
+      "moves": [
+        {
+          "at": 0,
+          "dur": 0.35,
+          "from": {
+            "x": 700,
+            "blur": 18
+          },
+          "to": {
+            "x": 0,
+            "blur": 0
+          },
+          "ease": "power2.out"
+        },
+        {
+          "at": 0.35,
+          "dur": 1.15,
+          "from": {
+            "scale": 1.0
+          },
+          "to": {
+            "scale": 1.05
+          },
+          "ease": "none"
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-05.jpg",
+      "sx": 405,
+      "sy": 120,
+      "z": 1.6,
+      "grade": 1.1,
+      "start": 5.25,
+      "end": 6.75,
+      "moves": [
+        {
+          "at": 0,
+          "dur": 1.5,
+          "from": {
+            "scale": 1.08
+          },
+          "to": {
+            "scale": 1.0
+          },
+          "ease": "sine.out"
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-08.jpg",
+      "w": 4320,
+      "h": 1920,
+      "sx": 700,
+      "sy": 0,
+      "z": 1,
+      "start": 6.75,
+      "end": 8.25,
+      "moves": [
+        {
+          "at": 0,
+          "dur": 1.5,
+          "from": {
+            "x": 0
+          },
+          "to": {
+            "x": -1300
+          },
+          "ease": "power1.inOut"
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-06.jpg",
+      "sx": 405,
+      "sy": 480,
+      "z": 1.6,
+      "grade": 0.62,
+      "start": 8.25,
+      "end": 9.75,
+      "moves": [
+        {
+          "at": 0,
+          "dur": 1.5,
+          "from": {
+            "scale": 1.0
+          },
+          "to": {
+            "scale": 1.05
+          },
+          "ease": "none"
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-07.jpg",
+      "sx": 101,
+      "sy": 0,
+      "z": 1.6,
+      "grade": 0.62,
+      "start": 9.75,
+      "end": 11.25,
+      "moves": [
+        {
+          "at": 0,
+          "dur": 1.5,
+          "from": {
+            "scale": 1.05
+          },
+          "to": {
+            "scale": 1.0
+          },
+          "ease": "none"
+        }
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "id": "hook",
+      "lines": [
+        "Guests on",
+        "the way?"
+      ],
+      "start": 0,
+      "end": 1.5,
+      "x": 180,
+      "y": 830,
+      "w": 840,
+      "size": 120,
+      "color": "var(--cream)"
+    },
+    {
+      "id": "t1",
+      "lines": [
+        "1. Clear the",
+        "hallway."
+      ],
+      "start": 2.25,
+      "end": 3.75,
+      "x": 60,
+      "y": 390,
+      "size": 120
+    },
+    {
+      "id": "t2",
+      "lines": [
+        "2. Put out a",
+        "fresh towel."
+      ],
+      "start": 3.75,
+      "end": 5.25,
+      "x": 100,
+      "y": 630,
+      "size": 120
+    },
+    {
+      "id": "t3",
+      "lines": [
+        "3. Empty the",
+        "bins."
+      ],
+      "start": 5.25,
+      "end": 6.75,
+      "x": 260,
+      "y": 390,
+      "size": 115
+    },
+    {
+      "id": "greet",
+      "lines": [
+        "Happy Christmas",
+        "from the",
+        "XtraFreshhh",
+        "team."
+      ],
+      "start": 8.25,
+      "end": 11.25,
+      "x": 100,
+      "y": 830,
+      "size": 110,
+      "color": "var(--cream)"
+    }
+  ],
+  "end": {
+    "start": 11.25,
+    "crop": {
+      "photo": "kit-round5/assets/G2/G2-08.jpg",
+      "w": 4320,
+      "h": 1920,
+      "sx": 3341,
+      "sy": 240,
+      "z": 1.6,
+      "grade": 1.1
+    },
+    "line": "",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 60,
+      "y": 510,
+      "w": 940,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 110,
+      "gap": 40
+    }
+  }
+}

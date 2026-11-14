@@ -1,0 +1,291 @@
+{
+  "template": "r5-split",
+  "date": "2026-11-26",
+  "pairsWith": "P2 Regular clean",
+  "bpm": 86,
+  "music": "r5-e-bright-86.m4a",
+  "_wording": "Round-4/5 brief wording, exact. Crops: each half shows a different crop; the end card's strip section is never shown before.",
+  "opening": {
+    "photo": "kit-round4/assets/E/E01-mirror-mid-wipe.jpg",
+    "reveal": "kit-round4/assets/E/E02-mirror-clear.jpg",
+    "crop": {
+      "sx": 0,
+      "sy": 0,
+      "z": 1,
+      "grade": 0.52
+    },
+    "end": 2,
+    "wipeAt": 0.1,
+    "wipeDur": 1.0
+  },
+  "halves": [
+    {
+      "id": "a1",
+      "pane": "top",
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 40,
+      "sy": 0,
+      "z": 1.06,
+      "start": 2,
+      "end": 4,
+      "grade": 0.62,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "id": "a2",
+      "pane": "bottom",
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 40,
+      "sy": 960,
+      "z": 1.06,
+      "start": 2,
+      "end": 4,
+      "grade": 0.62,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "id": "b1",
+      "pane": "top",
+      "photo": "kit-round4/assets/E/E05-living-room-tidy.jpg",
+      "sx": 49,
+      "sy": 0,
+      "z": 1.1,
+      "start": 4,
+      "end": 6,
+      "grade": 0.62
+    },
+    {
+      "id": "b2",
+      "pane": "bottom",
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 3280,
+      "sy": 960,
+      "z": 1.08,
+      "start": 4,
+      "end": 6,
+      "grade": 0.62,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "id": "c1",
+      "pane": "top",
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 3280,
+      "sy": 0,
+      "z": 1.08,
+      "start": 6,
+      "end": 8,
+      "grade": 0.62,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "id": "c2",
+      "pane": "bottom",
+      "photo": "kit-round4/assets/E/E05-living-room-tidy.jpg",
+      "sx": 49,
+      "sy": 960,
+      "z": 1.1,
+      "start": 6,
+      "end": 8,
+      "grade": 0.62
+    },
+    {
+      "id": "d1",
+      "pane": "top",
+      "photo": "kit-round4/assets/E/E03-hob-wipe.jpg",
+      "sx": 49,
+      "sy": 960,
+      "z": 1.1,
+      "start": 8,
+      "end": 10,
+      "grade": 0.62
+    },
+    {
+      "id": "d2",
+      "pane": "bottom",
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 1110,
+      "sy": 960,
+      "z": 1.06,
+      "start": 8,
+      "end": 10,
+      "grade": 0.62,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "id": "e1",
+      "pane": "top",
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 1110,
+      "sy": 0,
+      "z": 1.06,
+      "start": 10,
+      "end": 12,
+      "grade": 0.62,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "id": "e2",
+      "pane": "bottom",
+      "photo": "kit-round4/assets/E/E03-hob-wipe.jpg",
+      "sx": 49,
+      "sy": 0,
+      "z": 1.1,
+      "start": 10,
+      "end": 12,
+      "grade": 0.62
+    },
+    {
+      "id": "f1",
+      "pane": "top",
+      "photo": "kit-round4/assets/E/E04-hallway-habits.jpg",
+      "sx": 30,
+      "sy": 0,
+      "z": 1.06,
+      "start": 12,
+      "end": 14,
+      "grade": 0.62,
+      "move": {
+        "scale": [
+          1.0,
+          1.08
+        ]
+      }
+    },
+    {
+      "id": "f2",
+      "pane": "bottom",
+      "photo": "kit-round4/assets/E/E04-hallway-habits.jpg",
+      "sx": 30,
+      "sy": 960,
+      "z": 1.06,
+      "start": 12,
+      "end": 14,
+      "grade": 0.62,
+      "move": {
+        "scale": [
+          1.08,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "g1",
+      "pane": "top",
+      "photo": "kit-round4/assets/E/E04-hallway-habits.jpg",
+      "sx": 480,
+      "sy": 400,
+      "z": 2.0,
+      "start": 14,
+      "end": 16,
+      "grade": 0.62,
+      "move": {
+        "scale": [
+          1.0,
+          1.08
+        ]
+      }
+    },
+    {
+      "id": "g2",
+      "pane": "bottom",
+      "photo": "kit-round4/assets/E/E04-hallway-habits.jpg",
+      "sx": 400,
+      "sy": 1290,
+      "z": 2.0,
+      "start": 14,
+      "end": 16,
+      "grade": 0.62,
+      "move": {
+        "scale": [
+          1.08,
+          1.0
+        ]
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hook",
+      "lines": [
+        "3 easy habits",
+        "between cleans"
+      ],
+      "start": 0,
+      "end": 4,
+      "delay": 0.3,
+      "y": 830,
+      "size": 130,
+      "color": "var(--cream)"
+    },
+    {
+      "id": "l1",
+      "lines": [
+        "1. Ten-minute",
+        "evening reset."
+      ],
+      "start": 4,
+      "end": 8,
+      "y": 840,
+      "size": 120,
+      "color": "var(--cream)"
+    },
+    {
+      "id": "l2",
+      "lines": [
+        "2. Wipe the hob",
+        "once cool."
+      ],
+      "start": 8,
+      "end": 12,
+      "y": 840,
+      "size": 120,
+      "color": "var(--cream)"
+    },
+    {
+      "id": "l3",
+      "lines": [
+        "3. Put keys,",
+        "post and shoes",
+        "away."
+      ],
+      "start": 12,
+      "end": 16,
+      "y": 850,
+      "size": 110,
+      "color": "var(--cream)"
+    }
+  ],
+  "end": {
+    "start": 16,
+    "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+    "crop": {
+      "sx": 2160,
+      "sy": 0,
+      "z": 1,
+      "w": 4320,
+      "h": 1920,
+      "grade": 1.27
+    },
+    "line": "A little help?",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 90,
+      "y": 250,
+      "w": 900,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  }
+}
