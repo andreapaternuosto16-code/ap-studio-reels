@@ -1,239 +1,118 @@
 {
-  "ok": false,
+  "ok": true,
   "legibility": {
-    "checked": 14,
-    "failing": [
-      {
-        "t": 1,
-        "id": "hook-l0",
-        "text": "Guests on",
-        "contrast": 1.03,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 1,
-        "id": "hook-l1",
-        "text": "the way?",
-        "contrast": 1.2,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 3.61,
-        "id": "t1-l0",
-        "text": "1. Clear the",
-        "contrast": 2.72,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 3.61,
-        "id": "t1-l1",
-        "text": "hallway.",
-        "contrast": 1.77,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 5.57,
-        "id": "t2-l0",
-        "text": "2. Put out a",
-        "contrast": 1.26,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 5.57,
-        "id": "t2-l1",
-        "text": "fresh towel.",
-        "contrast": 1.45,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 7.52,
-        "id": "t3-l0",
-        "text": "3. Empty the",
-        "contrast": 1.41,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 7.52,
-        "id": "t3-l1",
-        "text": "bins.",
-        "contrast": 2.21,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 11.11,
-        "id": "greet-l0",
-        "text": "Happy",
-        "contrast": 1.04,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 11.11,
-        "id": "greet-l1",
-        "text": "Christmas from",
-        "contrast": 1.36,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 11.11,
-        "id": "greet-l2",
-        "text": "the",
-        "contrast": 2.07,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 11.11,
-        "id": "greet-l3",
-        "text": "XtraFreshhh",
-        "contrast": 1.05,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 11.11,
-        "id": "greet-l4",
-        "text": "team.",
-        "contrast": 1.78,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 14.4,
-        "id": "eu txt",
-        "text": "xtrafreshhh.com",
-        "contrast": 1.14,
-        "need": 3,
-        "ok": false
-      }
-    ],
-    "worst": 1.03,
+    "checked": 13,
+    "failing": [],
+    "worst": 3.7,
     "all": [
       {
         "t": 1,
         "id": "hook-l0",
         "text": "Guests on",
-        "contrast": 1.03,
+        "contrast": 5.97,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 1,
         "id": "hook-l1",
         "text": "the way?",
-        "contrast": 1.2,
+        "contrast": 6.28,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 3.61,
         "id": "t1-l0",
         "text": "1. Clear the",
-        "contrast": 2.72,
+        "contrast": 6.56,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 3.61,
         "id": "t1-l1",
         "text": "hallway.",
-        "contrast": 1.77,
+        "contrast": 7.63,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 5.57,
         "id": "t2-l0",
         "text": "2. Put out a",
-        "contrast": 1.26,
+        "contrast": 5.34,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 5.57,
         "id": "t2-l1",
         "text": "fresh towel.",
-        "contrast": 1.45,
+        "contrast": 5.1,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 7.52,
         "id": "t3-l0",
         "text": "3. Empty the",
-        "contrast": 1.41,
+        "contrast": 4.59,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 7.52,
         "id": "t3-l1",
         "text": "bins.",
-        "contrast": 2.21,
+        "contrast": 4.55,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 11.11,
         "id": "greet-l0",
-        "text": "Happy",
-        "contrast": 1.04,
+        "text": "Happy Christmas",
+        "contrast": 4.51,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 11.11,
         "id": "greet-l1",
-        "text": "Christmas from",
-        "contrast": 1.36,
+        "text": "from the",
+        "contrast": 4.33,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 11.11,
         "id": "greet-l2",
-        "text": "the",
-        "contrast": 2.07,
+        "text": "XtraFreshhh",
+        "contrast": 4.5,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 11.11,
         "id": "greet-l3",
-        "text": "XtraFreshhh",
-        "contrast": 1.05,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 11.11,
-        "id": "greet-l4",
         "text": "team.",
-        "contrast": 1.78,
+        "contrast": 3.7,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 14.4,
         "id": "eu txt",
         "text": "xtrafreshhh.com",
-        "contrast": 1.14,
+        "contrast": 4.14,
         "need": 3,
-        "ok": false
+        "ok": true
       }
     ]
   },
-  "summary": "0 safe-zone/overflow issue(s); smallest caption 110px on 1080 canvas ≈ 39.7px on a 390px phone; duration 15s; legibility 0/14 lines pass (worst 1.0:1)",
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 110px on 1080 canvas ≈ 39.7px on a 390px phone; duration 15s; legibility 13/13 lines pass (worst 3.7:1)",
   "duration": 15,
-  "minFontPx": 109.99999364217103,
+  "minFontPx": 109.99998728434171,
   "problems": []
 }

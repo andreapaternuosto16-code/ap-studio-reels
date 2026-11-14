@@ -1,191 +1,102 @@
 {
-  "ok": false,
+  "ok": true,
   "legibility": {
     "checked": 11,
-    "failing": [
-      {
-        "t": 1,
-        "id": "hook-l0",
-        "text": "3 easy habits",
-        "contrast": 1.14,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 1,
-        "id": "hook-l1",
-        "text": "between cleans",
-        "contrast": 1.12,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 4.6,
-        "id": "t1-l0",
-        "text": "1. Ten-minute",
-        "contrast": 1.57,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 4.6,
-        "id": "t1-l1",
-        "text": "evening reset.",
-        "contrast": 1.13,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 7,
-        "id": "t2-l0",
-        "text": "2. Wipe the hob",
-        "contrast": 1.2,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 7,
-        "id": "t2-l1",
-        "text": "once cool.",
-        "contrast": 1.48,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 9.4,
-        "id": "t3-l0",
-        "text": "3. Put keys,",
-        "contrast": 1.36,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 9.4,
-        "id": "t3-l1",
-        "text": "post and shoes",
-        "contrast": 2.34,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 9.4,
-        "id": "t3-l2",
-        "text": "away.",
-        "contrast": 1.09,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 14.4,
-        "id": "eh txt",
-        "text": "A little help?",
-        "contrast": 2.42,
-        "need": 3,
-        "ok": false
-      },
-      {
-        "t": 14.4,
-        "id": "eu txt",
-        "text": "xtrafreshhh.com",
-        "contrast": 1.24,
-        "need": 3,
-        "ok": false
-      }
-    ],
-    "worst": 1.09,
+    "failing": [],
+    "worst": 3.63,
     "all": [
       {
         "t": 1,
         "id": "hook-l0",
         "text": "3 easy habits",
-        "contrast": 1.14,
+        "contrast": 4.72,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 1,
         "id": "hook-l1",
         "text": "between cleans",
-        "contrast": 1.12,
+        "contrast": 4.69,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 4.6,
         "id": "t1-l0",
         "text": "1. Ten-minute",
-        "contrast": 1.57,
+        "contrast": 8.56,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 4.6,
         "id": "t1-l1",
         "text": "evening reset.",
-        "contrast": 1.13,
+        "contrast": 9.85,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 7,
         "id": "t2-l0",
         "text": "2. Wipe the hob",
-        "contrast": 1.2,
+        "contrast": 12.13,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 7,
         "id": "t2-l1",
         "text": "once cool.",
-        "contrast": 1.48,
+        "contrast": 12.65,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 9.4,
         "id": "t3-l0",
         "text": "3. Put keys,",
-        "contrast": 1.36,
+        "contrast": 5.23,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 9.4,
         "id": "t3-l1",
         "text": "post and shoes",
-        "contrast": 2.34,
+        "contrast": 5.23,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 9.4,
         "id": "t3-l2",
         "text": "away.",
-        "contrast": 1.09,
+        "contrast": 5.45,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 14.4,
         "id": "eh txt",
         "text": "A little help?",
-        "contrast": 2.42,
+        "contrast": 4.02,
         "need": 3,
-        "ok": false
+        "ok": true
       },
       {
         "t": 14.4,
         "id": "eu txt",
         "text": "xtrafreshhh.com",
-        "contrast": 1.24,
+        "contrast": 3.63,
         "need": 3,
-        "ok": false
+        "ok": true
       }
     ]
   },
-  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 0/11 lines pass (worst 1.1:1)",
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 11/11 lines pass (worst 3.6:1)",
   "duration": 15,
-  "minFontPx": 72,
+  "minFontPx": 71.99998722519872,
   "problems": []
 }
