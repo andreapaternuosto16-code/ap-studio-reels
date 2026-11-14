@@ -32,3 +32,12 @@ edit of the recording, not used in the end because the recording's page fills on
 | A Thu 19 Nov | `2026-11-19-r3a-pov-booked.json` | r3-pov-booked | Sample rendered. Check the live estimate flow + email confirmation before posting; confirm "Bedroom ✓". The phone shows the real £67.50 estimate. |
 | B Thu 3 Dec | `2026-12-03-r3b-christmas-countdown.json` | r3-countdown | Sample rendered. `days` = 22 for 3 Dec 2026. |
 | C Thu 10 Dec | `2026-12-10-r3c-reviews-we-love.json` | r3-reviews | **Sample only (placeholders, never post).** Needs 3 real excerpts (≤ 12 words), each review's rating, public names, permission/basis + evidence. |
+
+## Round 4 (14 Nov): the last three reels (E, F, G)
+Pictures: `kit-round4/assets/E|F|G` only. Template: `engine/templates/r4-sequence.mjs` (each reel is fully described by its JSON).
+
+| Reel | JSON | Status |
+|---|---|---|
+| E Thu 26 Nov · 3 easy habits | `2026-11-26-r4e-3-easy-habits.json` | Rendered, 15 s. |
+| F Thu 17 Dec · oven before the roast | `2026-12-17-r4f-oven-before-the-roast.json` | Rendered, 15 s. Not a before/after; no numbers. |
+| G Thu 24 Dec · Christmas Eve | `2026-12-24-r4g-christmas-eve.json` | Rendered, 15 s. |

@@ -25,7 +25,12 @@
       },
       "ease": "sine.out",
       "snow": true,
-      "grade": 0.72
+      "grade": 0.72,
+      "snowCount": [
+        18,
+        11,
+        5
+      ]
     },
     {
       "id": "s1b",
@@ -89,16 +94,16 @@
       "end": 13,
       "from": {
         "scale": 1.6,
-        "x": 0,
-        "y": 192
+        "x": -324,
+        "y": 576
       },
       "to": {
         "scale": 1.66,
-        "x": 0,
-        "y": 192
+        "x": -324,
+        "y": 576
       },
       "ease": "sine.out",
-      "grade": 1.1
+      "grade": 0.72
     },
     {
       "id": "s5",
@@ -197,11 +202,11 @@
       "wrap": 14,
       "start": 10,
       "end": 13,
-      "x": 220,
-      "y": 470,
-      "w": 800,
+      "x": 300,
+      "y": 270,
+      "w": 720,
       "size": 110,
-      "color": "var(--ink)"
+      "color": "var(--cream)"
     },
     {
       "id": "greet",
