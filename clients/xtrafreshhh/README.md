@@ -41,3 +41,11 @@ Pictures: `kit-round4/assets/E|F|G` only. Template: `engine/templates/r4-sequenc
 | E Thu 26 Nov · 3 easy habits | `2026-11-26-r4e-3-easy-habits.json` | Rendered, 15 s. |
 | F Thu 17 Dec · oven before the roast | `2026-12-17-r4f-oven-before-the-roast.json` | Rendered, 15 s. Not a before/after; no numbers. |
 | G Thu 24 Dec · Christmas Eve | `2026-12-24-r4g-christmas-eve.json` | Rendered, 15 s. |
+
+## Round 5 (14 Nov): E, F, G rebuilt — each its own structure (current)
+| Reel | JSON | Template | Notes |
+|---|---|---|---|
+| E Thu 26 Nov | `2026-11-26-r5e-split-habits.json` | `r5-split` (split screen) | 15 s; every half-shot 1.40 s; end card on an unused strip crop. |
+| F Thu 17 Dec | `2026-12-17-r5f-kinetic-oven.json` | `r5-kinetic` (kinetic type) | 15 s; reviewed lines/timings exact; 14 cuts, each ≤ 1 s. |
+| G Thu 24 Dec | `2026-12-24-r5g-walk-christmas-eve.json` | `r5-walk` (walk-through) | 15 s; G2 pictures only; every shot ≤ 1.5 s. |
+Round-4 E/F/G files are kept for reference but superseded.

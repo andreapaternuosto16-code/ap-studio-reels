@@ -110,10 +110,10 @@
             "blur": 0
           },
           "to": {
-            "x": -700,
-            "blur": 18
+            "x": -1080,
+            "blur": 24
           },
-          "ease": "power2.in"
+          "ease": "power2.inOut"
         }
       ]
     },
@@ -123,25 +123,25 @@
       "sy": 596,
       "z": 1.45,
       "grade": 1.1,
-      "start": 3.75,
-      "end": 5.25,
+      "start": 3.5,
+      "end": 5.0,
       "moves": [
         {
           "at": 0,
-          "dur": 0.35,
+          "dur": 0.25,
           "from": {
-            "x": 700,
-            "blur": 18
+            "x": 1080,
+            "blur": 24
           },
           "to": {
             "x": 0,
             "blur": 0
           },
-          "ease": "power2.out"
+          "ease": "power2.inOut"
         },
         {
-          "at": 0.35,
-          "dur": 1.15,
+          "at": 0.25,
+          "dur": 1.25,
           "from": {
             "scale": 1.0
           },
@@ -158,8 +158,8 @@
       "sy": 120,
       "z": 1.6,
       "grade": 1.1,
-      "start": 5.25,
-      "end": 6.75,
+      "start": 5.0,
+      "end": 6.5,
       "moves": [
         {
           "at": 0,
@@ -181,8 +181,8 @@
       "sx": 700,
       "sy": 0,
       "z": 1,
-      "start": 6.75,
-      "end": 8.25,
+      "start": 6.5,
+      "end": 8.0,
       "moves": [
         {
           "at": 0,
@@ -203,8 +203,8 @@
       "sy": 480,
       "z": 1.6,
       "grade": 0.62,
-      "start": 8.25,
-      "end": 9.75,
+      "start": 8.0,
+      "end": 9.5,
       "moves": [
         {
           "at": 0,
@@ -225,8 +225,8 @@
       "sy": 0,
       "z": 1.6,
       "grade": 0.62,
-      "start": 9.75,
-      "end": 11.25,
+      "start": 9.5,
+      "end": 11.0,
       "moves": [
         {
           "at": 0,
@@ -264,7 +264,7 @@
         "hallway."
       ],
       "start": 2.25,
-      "end": 3.75,
+      "end": 3.5,
       "x": 60,
       "y": 390,
       "size": 120
@@ -276,7 +276,7 @@
         "fresh towel."
       ],
       "start": 3.75,
-      "end": 5.25,
+      "end": 5.0,
       "x": 100,
       "y": 630,
       "size": 120
@@ -287,8 +287,8 @@
         "3. Empty the",
         "bins."
       ],
-      "start": 5.25,
-      "end": 6.75,
+      "start": 5.0,
+      "end": 6.5,
       "x": 260,
       "y": 390,
       "size": 115
@@ -301,8 +301,8 @@
         "XtraFreshhh",
         "team."
       ],
-      "start": 8.25,
-      "end": 11.25,
+      "start": 8.0,
+      "end": 11.0,
       "x": 100,
       "y": 830,
       "size": 110,
@@ -310,7 +310,7 @@
     }
   ],
   "end": {
-    "start": 11.25,
+    "start": 11.0,
     "crop": {
       "photo": "kit-round5/assets/G2/G2-08.jpg",
       "w": 4320,

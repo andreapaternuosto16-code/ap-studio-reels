@@ -41,7 +41,7 @@
         "t": 4.45,
         "id": "t2-l0",
         "text": "2. Put out a",
-        "contrast": 6.01,
+        "contrast": 6.04,
         "need": 3,
         "ok": true
       },
@@ -54,7 +54,7 @@
         "ok": true
       },
       {
-        "t": 5.95,
+        "t": 5.7,
         "id": "t3-l0",
         "text": "3. Empty the",
         "contrast": 5.09,
@@ -62,7 +62,7 @@
         "ok": true
       },
       {
-        "t": 5.95,
+        "t": 5.7,
         "id": "t3-l1",
         "text": "bins.",
         "contrast": 5.18,
@@ -70,7 +70,7 @@
         "ok": true
       },
       {
-        "t": 8.95,
+        "t": 8.7,
         "id": "greet-l0",
         "text": "Happy Christmas",
         "contrast": 4.26,
@@ -78,7 +78,7 @@
         "ok": true
       },
       {
-        "t": 8.95,
+        "t": 8.7,
         "id": "greet-l1",
         "text": "from the",
         "contrast": 5.44,
@@ -86,7 +86,7 @@
         "ok": true
       },
       {
-        "t": 8.95,
+        "t": 8.7,
         "id": "greet-l2",
         "text": "XtraFreshhh",
         "contrast": 5.47,
@@ -94,7 +94,7 @@
         "ok": true
       },
       {
-        "t": 8.95,
+        "t": 8.7,
         "id": "greet-l3",
         "text": "team.",
         "contrast": 6.92,
