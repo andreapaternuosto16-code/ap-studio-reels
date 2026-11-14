@@ -49,3 +49,12 @@ Pictures: `kit-round4/assets/E|F|G` only. Template: `engine/templates/r4-sequenc
 | F Thu 17 Dec | `2026-12-17-r5f-kinetic-oven.json` | `r5-kinetic` (kinetic type) | 15 s; reviewed lines/timings exact; 14 cuts, each ≤ 1 s. |
 | G Thu 24 Dec | `2026-12-24-r5g-walk-christmas-eve.json` | `r5-walk` (walk-through) | 15 s; G2 pictures only; every shot ≤ 1.5 s. |
 Round-4 E/F/G files are kept for reference but superseded.
+
+## Round 6 (14 Nov): E, F, G from Andrea's picked motion only (current)
+Template `engine/templates/r6-reel.mjs` (allowed moves: #1 kinetic, #2 mask, #3 push+blur, #6 parallax, #8 rack with a line, #9 cube, #10 callout).
+| Reel | JSON |
+|---|---|
+| E Thu 26 Nov | `2026-11-26-r6e-habits.json` |
+| F Thu 17 Dec | `2026-12-17-r6f-kinetic-oven.json` |
+| G Thu 24 Dec | `2026-12-24-r6g-christmas-eve.json` |
+Round 4/5 E/F/G files kept for reference, superseded.
