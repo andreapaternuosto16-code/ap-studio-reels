@@ -12,29 +12,39 @@
       "photo": "kit-round4/assets/G/G01-front-door-snow.jpg",
       "start": 0,
       "end": 4,
-      "origin": "600px 1000px",
+      "origin": "540px 960px",
       "from": {
-        "scale": 1.0
+        "scale": 1.4,
+        "x": -121,
+        "y": -144
       },
       "to": {
-        "scale": 1.06
+        "scale": 1.45,
+        "x": -121,
+        "y": -144
       },
       "ease": "sine.out",
-      "snow": true
+      "snow": true,
+      "grade": 0.72
     },
     {
       "id": "s1b",
       "photo": "kit-round4/assets/G/G01-front-door-snow.jpg",
       "start": 3.4,
       "end": 4,
-      "origin": "600px 1000px",
+      "origin": "540px 960px",
       "from": {
-        "scale": 1.06
+        "scale": 1.45,
+        "x": -121,
+        "y": -144
       },
       "to": {
-        "scale": 2.4
+        "scale": 3.2,
+        "x": -121,
+        "y": -144
       },
-      "ease": "power2.in"
+      "ease": "power2.in",
+      "grade": 0.72
     },
     {
       "id": "s2",
@@ -42,12 +52,17 @@
       "start": 4,
       "end": 7,
       "from": {
-        "scale": 1.3
+        "scale": 1.75,
+        "x": -243,
+        "y": -288
       },
       "to": {
-        "scale": 1.04
+        "scale": 1.45,
+        "x": -243,
+        "y": -288
       },
-      "ease": "power2.out"
+      "ease": "power2.out",
+      "grade": 0.72
     },
     {
       "id": "s3",
@@ -55,12 +70,17 @@
       "start": 7,
       "end": 10,
       "from": {
-        "scale": 1.08
+        "scale": 1.66,
+        "x": 162,
+        "y": -192
       },
       "to": {
-        "scale": 1.0
+        "scale": 1.6,
+        "x": 162,
+        "y": -192
       },
-      "ease": "sine.out"
+      "ease": "sine.out",
+      "grade": 1.1
     },
     {
       "id": "s4",
@@ -68,12 +88,17 @@
       "start": 10,
       "end": 13,
       "from": {
-        "scale": 1.0
+        "scale": 1.6,
+        "x": 0,
+        "y": 192
       },
       "to": {
-        "scale": 1.07
+        "scale": 1.66,
+        "x": 0,
+        "y": 192
       },
-      "ease": "sine.out"
+      "ease": "sine.out",
+      "grade": 1.1
     },
     {
       "id": "s5",
@@ -95,27 +120,37 @@
       "start": 15.5,
       "end": 19,
       "from": {
-        "scale": 1.0
+        "scale": 1.56,
+        "x": 0,
+        "y": 576
       },
       "to": {
-        "scale": 1.06
+        "scale": 1.6,
+        "x": 0,
+        "y": 576
       },
-      "ease": "sine.out"
+      "ease": "sine.out",
+      "grade": 0.72
     },
     {
       "id": "s7",
-      "photo": "kit-round4/assets/G/G05-tree-and-gifts.jpg",
+      "photo": "kit-round4/assets/G/G02-hallway-ready.jpg",
       "start": 19,
       "end": 23,
       "last": true,
       "from": {
-        "scale": 1.06
+        "scale": 1.56,
+        "x": 0,
+        "y": 576
       },
       "to": {
-        "scale": 1.09
+        "scale": 1.6,
+        "x": 0,
+        "y": 576
       },
       "ease": "sine.out",
-      "focusPull": 7
+      "focusPull": 7,
+      "grade": 1.18
     }
   ],
   "texts": [
@@ -126,10 +161,11 @@
       "start": 0,
       "end": 3.4,
       "delay": 0.1,
-      "x": 90,
-      "y": 260,
-      "w": 900,
-      "size": 130
+      "x": 380,
+      "y": 1030,
+      "w": 640,
+      "size": 130,
+      "color": "var(--cream)"
     },
     {
       "id": "t1",
@@ -137,10 +173,11 @@
       "wrap": 14,
       "start": 4,
       "end": 7,
-      "x": 90,
-      "y": 260,
-      "w": 900,
-      "size": 110
+      "x": 180,
+      "y": 1030,
+      "w": 840,
+      "size": 110,
+      "color": "var(--cream)"
     },
     {
       "id": "t2",
@@ -148,10 +185,11 @@
       "wrap": 14,
       "start": 7,
       "end": 10,
-      "x": 90,
-      "y": 260,
+      "x": 100,
+      "y": 1110,
       "w": 900,
-      "size": 110
+      "size": 110,
+      "color": "var(--ink)"
     },
     {
       "id": "t3",
@@ -159,38 +197,45 @@
       "wrap": 14,
       "start": 10,
       "end": 13,
-      "x": 90,
-      "y": 260,
-      "w": 900,
-      "size": 110
+      "x": 220,
+      "y": 470,
+      "w": 800,
+      "size": 110,
+      "color": "var(--ink)"
     },
     {
       "id": "greet",
-      "text": "Happy Christmas from the XtraFreshhh team.",
+      "text": [
+        "Happy Christmas",
+        "from the",
+        "XtraFreshhh",
+        "team."
+      ],
       "wrap": 14,
       "start": 15.5,
       "end": 19,
-      "x": 90,
-      "y": 260,
-      "w": 900,
-      "size": 110
+      "x": 140,
+      "y": 270,
+      "w": 880,
+      "size": 110,
+      "color": "var(--cream)"
     }
   ],
   "end": {
     "start": 19,
     "line": "",
     "url": "xtrafreshhh.com",
-    "urlColor": "var(--ink)",
     "block": {
-      "x": 90,
-      "y": 240,
-      "w": 900,
+      "x": 100,
+      "y": 270,
+      "w": 920,
       "align": "left",
       "size": 110,
       "logoW": 860,
       "order": "line-url-logo",
       "urlSize": 110,
       "gap": 40
-    }
+    },
+    "urlColor": "var(--ink)"
   }
 }

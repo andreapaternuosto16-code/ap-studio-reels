@@ -12,14 +12,34 @@
       "kind": "strip",
       "photo": "kit-round4/assets/F/F06-worktop-oven-dining-strip.jpg",
       "start": 0,
-      "end": 7,
+      "end": 3.6,
+      "grade": 0.6,
       "from": {
         "x": 0
       },
       "to": {
+        "x": -1200
+      },
+      "ease": "sine.in"
+    },
+    {
+      "id": "s1b",
+      "kind": "strip",
+      "photo": "kit-round4/assets/F/F06-worktop-oven-dining-strip.jpg",
+      "start": 3.6,
+      "end": 7,
+      "grade": 0.6,
+      "light": {
+        "to": 1.0,
+        "dur": 1.0
+      },
+      "from": {
+        "x": -1200
+      },
+      "to": {
         "x": -3240
       },
-      "ease": "sine.inOut"
+      "ease": "power1.out"
     },
     {
       "id": "s2",
@@ -39,14 +59,19 @@
       "photo": "kit-round4/assets/F/F03-oven-glass.jpg",
       "start": 10,
       "end": 14.5,
-      "origin": "540px 760px",
+      "origin": "540px 960px",
       "from": {
-        "scale": 1.0
+        "scale": 1.3,
+        "x": 0,
+        "y": -96
       },
       "to": {
-        "scale": 1.12
+        "scale": 1.38,
+        "x": 0,
+        "y": -96
       },
-      "ease": "sine.inOut"
+      "ease": "sine.inOut",
+      "grade": 0.85
     },
     {
       "id": "s4",
@@ -74,22 +99,28 @@
       "to": {
         "scale": 1.02
       },
-      "ease": "sine.out"
+      "ease": "sine.out",
+      "grade": 1.04
     },
     {
       "id": "s6",
-      "photo": "kit-round4/assets/F/F01-festive-kitchen.jpg",
+      "photo": "kit-round4/assets/F/F05-christmas-table.jpg",
       "start": 18.5,
       "end": 21,
       "last": true,
       "from": {
-        "scale": 1.0
+        "scale": 1.86,
+        "x": -243,
+        "y": 864
       },
       "to": {
-        "scale": 1.04
+        "scale": 1.9,
+        "x": -243,
+        "y": 864
       },
       "ease": "sine.out",
-      "focusPull": 7
+      "focusPull": 7,
+      "grade": 1.25
     }
   ],
   "texts": [
@@ -98,12 +129,13 @@
       "text": "Before the roast…",
       "wrap": 10,
       "start": 0,
-      "end": 7,
+      "end": 3.6,
       "delay": 0.1,
-      "x": 90,
-      "y": 260,
-      "w": 900,
-      "size": 130
+      "x": 420,
+      "y": 1070,
+      "w": 600,
+      "size": 130,
+      "color": "var(--cream)"
     },
     {
       "id": "t1",
@@ -111,27 +143,29 @@
       "wrap": 12,
       "start": 10,
       "end": 14.5,
-      "x": 90,
-      "y": 260,
+      "x": 100,
+      "y": 240,
       "w": 900,
-      "size": 120
+      "size": 120,
+      "color": "var(--cream)"
     }
   ],
   "end": {
     "start": 18.5,
     "line": "Ask about oven cleaning.",
     "url": "xtrafreshhh.com",
-    "urlColor": "var(--ink)",
     "block": {
-      "x": 90,
+      "x": 60,
       "y": 240,
-      "w": 900,
+      "w": 940,
       "align": "left",
       "size": 110,
       "logoW": 860,
       "order": "line-url-logo",
       "urlSize": 72,
       "gap": 40
-    }
-  }
+    },
+    "urlColor": "var(--ink)"
+  },
+  "_light": "Opening glide starts in low evening light (exposure 0.6) for the hook, and the light comes up as the camera moves on to the oven."
 }

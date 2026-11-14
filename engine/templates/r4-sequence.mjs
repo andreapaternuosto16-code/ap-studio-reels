@@ -73,6 +73,7 @@ export function build(reel, brand) {
 
   const E = reel.end;
   body += endBlock("eb", { line: E.line, url: E.url, urlColor: E.urlColor, ...E.block }) + "\n";
+  if (E.color) body += `<style>#eb .eh,#eb .eu{color:${E.color}!important}</style>\n`;
   s += endIn("eb", t(E.start) + 0.15);
   legibility.push(+(duration - 0.6).toFixed(2));
 
