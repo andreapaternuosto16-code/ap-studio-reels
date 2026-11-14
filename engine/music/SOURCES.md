@@ -9,6 +9,9 @@ loops, no third-party audio), so they are ours and royalty-free for any client u
 | `r2-a-bright-104.m4a` | `make-beat-track.py r2-a-bright-104 104 19 bright`: soft kick/snap/shaker, keys, bass, 104 bpm | Round 2 · A and round 3 · A |
 | `r2-b-sleigh-96.m4a` | `make-beat-track.py r2-b-sleigh-96 96 20 xmas`: same kit + sleigh-style jingle and bells, 96 bpm | Round 2 · B and round 3 · B |
 | `r2-c-warm-100.m4a` | `make-beat-track.py r2-c-warm-100 100 32 warm`: softer kit, warm chords, 100 bpm | Round 2 · C and round 3 · C |
+| `r4-e-bright-100.m4a` | `make-beat-track.py r4-e-bright-100 100 17 bright` | Round 4 · E "3 easy habits" |
+| `r4-f-warm-84.m4a` | `make-beat-track.py r4-f-warm-84 84 17 warm` | Round 4 · F oven before the roast |
+| `r4-g-sleigh-92.m4a` | `make-beat-track.py r4-g-sleigh-92 92 17 xmas` | Round 4 · G Christmas Eve |
 
 The beat tracks start on beat 1 at 0 s; the round-2 templates place their cuts on that beat grid, so cuts land on the kick.
 Every reel also exports `-nomusic.mp4`. On Instagram, a business account may instead pick a track from the in-app

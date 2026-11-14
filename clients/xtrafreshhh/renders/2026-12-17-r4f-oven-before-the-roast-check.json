@@ -1,0 +1,103 @@
+{
+  "ok": false,
+  "legibility": {
+    "checked": 6,
+    "failing": [
+      {
+        "t": 1,
+        "id": "hook-l1",
+        "text": "roast…",
+        "contrast": 1.74,
+        "need": 3,
+        "ok": false
+      },
+      {
+        "t": 8.14,
+        "id": "t1-l0",
+        "text": "…start with",
+        "contrast": 1.2,
+        "need": 3,
+        "ok": false
+      },
+      {
+        "t": 8.14,
+        "id": "t1-l1",
+        "text": "the oven.",
+        "contrast": 1.93,
+        "need": 3,
+        "ok": false
+      },
+      {
+        "t": 14.4,
+        "id": "eh txt",
+        "text": "Ask about oven cleaning.",
+        "contrast": 1.13,
+        "need": 3,
+        "ok": false
+      },
+      {
+        "t": 14.4,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 1.31,
+        "need": 3,
+        "ok": false
+      }
+    ],
+    "worst": 1.13,
+    "all": [
+      {
+        "t": 1,
+        "id": "hook-l0",
+        "text": "Before the",
+        "contrast": 4.03,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1,
+        "id": "hook-l1",
+        "text": "roast…",
+        "contrast": 1.74,
+        "need": 3,
+        "ok": false
+      },
+      {
+        "t": 8.14,
+        "id": "t1-l0",
+        "text": "…start with",
+        "contrast": 1.2,
+        "need": 3,
+        "ok": false
+      },
+      {
+        "t": 8.14,
+        "id": "t1-l1",
+        "text": "the oven.",
+        "contrast": 1.93,
+        "need": 3,
+        "ok": false
+      },
+      {
+        "t": 14.4,
+        "id": "eh txt",
+        "text": "Ask about oven cleaning.",
+        "contrast": 1.13,
+        "need": 3,
+        "ok": false
+      },
+      {
+        "t": 14.4,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 1.31,
+        "need": 3,
+        "ok": false
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 1/6 lines pass (worst 1.1:1)",
+  "duration": 15,
+  "minFontPx": 72,
+  "problems": []
+}

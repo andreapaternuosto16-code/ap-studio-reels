@@ -1,0 +1,137 @@
+{
+  "template": "r4-sequence",
+  "id": "r4-f",
+  "date": "2026-12-17",
+  "pairsWith": "P6 Oven clean",
+  "bpm": 84,
+  "music": "r4-f-warm-84.m4a",
+  "_wording": "Round-4 brief, used exactly. Not a before/after: nothing is labelled Before/After.",
+  "shots": [
+    {
+      "id": "s1",
+      "kind": "strip",
+      "photo": "kit-round4/assets/F/F06-worktop-oven-dining-strip.jpg",
+      "start": 0,
+      "end": 7,
+      "from": {
+        "x": 0
+      },
+      "to": {
+        "x": -3240
+      },
+      "ease": "sine.inOut"
+    },
+    {
+      "id": "s2",
+      "photo": "kit-round4/assets/F/F02-oven-opening.jpg",
+      "start": 7,
+      "end": 10,
+      "from": {
+        "scale": 1.0
+      },
+      "to": {
+        "scale": 1.06
+      },
+      "ease": "sine.out"
+    },
+    {
+      "id": "s3",
+      "photo": "kit-round4/assets/F/F03-oven-glass.jpg",
+      "start": 10,
+      "end": 14.5,
+      "origin": "540px 760px",
+      "from": {
+        "scale": 1.0
+      },
+      "to": {
+        "scale": 1.12
+      },
+      "ease": "sine.inOut"
+    },
+    {
+      "id": "s4",
+      "photo": "kit-round4/assets/F/F04-raw-vegetables.jpg",
+      "start": 14.5,
+      "end": 16.5,
+      "from": {
+        "scale": 1.06,
+        "x": -20
+      },
+      "to": {
+        "scale": 1.06,
+        "x": 20
+      },
+      "ease": "none"
+    },
+    {
+      "id": "s5",
+      "photo": "kit-round4/assets/F/F05-christmas-table.jpg",
+      "start": 16.5,
+      "end": 18.5,
+      "from": {
+        "scale": 1.08
+      },
+      "to": {
+        "scale": 1.02
+      },
+      "ease": "sine.out"
+    },
+    {
+      "id": "s6",
+      "photo": "kit-round4/assets/F/F01-festive-kitchen.jpg",
+      "start": 18.5,
+      "end": 21,
+      "last": true,
+      "from": {
+        "scale": 1.0
+      },
+      "to": {
+        "scale": 1.04
+      },
+      "ease": "sine.out",
+      "focusPull": 7
+    }
+  ],
+  "texts": [
+    {
+      "id": "hook",
+      "text": "Before the roast…",
+      "wrap": 10,
+      "start": 0,
+      "end": 7,
+      "delay": 0.1,
+      "x": 90,
+      "y": 260,
+      "w": 900,
+      "size": 130
+    },
+    {
+      "id": "t1",
+      "text": "…start with the oven.",
+      "wrap": 12,
+      "start": 10,
+      "end": 14.5,
+      "x": 90,
+      "y": 260,
+      "w": 900,
+      "size": 120
+    }
+  ],
+  "end": {
+    "start": 18.5,
+    "line": "Ask about oven cleaning.",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 90,
+      "y": 240,
+      "w": 900,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  }
+}
