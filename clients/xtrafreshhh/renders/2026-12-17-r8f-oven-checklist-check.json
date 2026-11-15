@@ -1,55 +1,191 @@
 {
   "ok": true,
   "legibility": {
-    "checked": 21,
+    "checked": 30,
     "failing": [],
-    "worst": 4.63,
+    "worst": 6,
     "all": [
       {
-        "t": 1.2,
-        "id": "nbd txt",
-        "text": "Planning Christmas dinner?",
-        "contrast": 12.6,
+        "t": 0.3,
+        "id": "nts-title txt",
+        "text": "Christmas dinner",
+        "contrast": 17.21,
         "need": 3,
         "ok": true
       },
       {
-        "t": 5.99,
-        "id": "nbd txt",
+        "t": 0.3,
+        "id": "n0",
         "text": "Planning Christmas dinner?",
-        "contrast": 12.73,
+        "contrast": 17.21,
         "need": 3,
         "ok": true
       },
       {
-        "t": 5.99,
-        "id": "nbd txt",
+        "t": 1.17,
+        "id": "nts-title txt",
+        "text": "Christmas dinner",
+        "contrast": 17.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.17,
+        "id": "n0",
+        "text": "Planning Christmas dinner?",
+        "contrast": 17.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.17,
+        "id": "n1",
         "text": "Turkey ✓",
-        "contrast": 14.47,
+        "contrast": 16.17,
+        "need": 4.5,
+        "ok": true
+      },
+      {
+        "t": 1.85,
+        "id": "fw0-l0",
+        "text": "Turkey ✓",
+        "contrast": 6.48,
         "need": 3,
         "ok": true
       },
       {
-        "t": 5.99,
-        "id": "nbd txt",
+        "t": 2.61,
+        "id": "nts-title txt",
+        "text": "Christmas dinner",
+        "contrast": 17.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.61,
+        "id": "n0",
+        "text": "Planning Christmas dinner?",
+        "contrast": 17.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.61,
+        "id": "n1",
+        "text": "Turkey ✓",
+        "contrast": 16.03,
+        "need": 4.5,
+        "ok": true
+      },
+      {
+        "t": 2.61,
+        "id": "n2",
         "text": "Sprouts ✓",
-        "contrast": 14.43,
+        "contrast": 16.46,
         "need": 3,
         "ok": true
       },
       {
-        "t": 5.99,
-        "id": "nbd txt",
+        "t": 3.29,
+        "id": "fw1-l0",
+        "text": "Sprouts ✓",
+        "contrast": 6,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.05,
+        "id": "nts-title txt",
+        "text": "Christmas dinner",
+        "contrast": 17.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.05,
+        "id": "n0",
+        "text": "Planning Christmas dinner?",
+        "contrast": 17.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.05,
+        "id": "n1",
+        "text": "Turkey ✓",
+        "contrast": 16.17,
+        "need": 4.5,
+        "ok": true
+      },
+      {
+        "t": 4.05,
+        "id": "n2",
+        "text": "Sprouts ✓",
+        "contrast": 16.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.05,
+        "id": "n3",
         "text": "Gravy ✓",
-        "contrast": 14.32,
+        "contrast": 15.89,
         "need": 3,
         "ok": true
       },
       {
-        "t": 5.99,
-        "id": "nbd txt",
+        "t": 4.73,
+        "id": "fw2-l0",
+        "text": "Gravy ✓",
+        "contrast": 7.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.49,
+        "id": "nts-title txt",
+        "text": "Christmas dinner",
+        "contrast": 17.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.49,
+        "id": "n0",
+        "text": "Planning Christmas dinner?",
+        "contrast": 17.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.49,
+        "id": "n1",
+        "text": "Turkey ✓",
+        "contrast": 16.17,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.49,
+        "id": "n2",
+        "text": "Sprouts ✓",
+        "contrast": 16.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.49,
+        "id": "n3",
+        "text": "Gravy ✓",
+        "contrast": 16.04,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.49,
+        "id": "n4",
         "text": "The oven…?",
-        "contrast": 14.32,
+        "contrast": 16.91,
         "need": 3,
         "ok": true
       },
@@ -57,7 +193,7 @@
         "t": 7.53,
         "id": "cl0-l0",
         "text": "…start with",
-        "contrast": 12.39,
+        "contrast": 12.32,
         "need": 3,
         "ok": true
       },
@@ -70,90 +206,26 @@
         "ok": true
       },
       {
-        "t": 8.59,
-        "id": "cl0-l0",
-        "text": "…start with",
-        "contrast": 13.59,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 8.59,
-        "id": "cl0-l1",
-        "text": "the oven.",
-        "contrast": 10.46,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 9.74,
+        "t": 10.42,
         "id": "cl1-l0",
         "text": "One less job",
-        "contrast": 7.04,
+        "contrast": 6.64,
         "need": 3,
         "ok": true
       },
       {
-        "t": 9.74,
+        "t": 10.42,
         "id": "cl1-l1",
         "text": "before festive",
-        "contrast": 4.63,
+        "contrast": 7.48,
         "need": 3,
         "ok": true
       },
       {
-        "t": 9.74,
+        "t": 10.42,
         "id": "cl1-l2",
         "text": "cooking.",
-        "contrast": 16.88,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 10.9,
-        "id": "cl1-l0",
-        "text": "One less job",
-        "contrast": 6.7,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 10.9,
-        "id": "cl1-l1",
-        "text": "before festive",
-        "contrast": 7.58,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 10.9,
-        "id": "cl1-l2",
-        "text": "cooking.",
-        "contrast": 9.15,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 12.25,
-        "id": "cl1-l0",
-        "text": "One less job",
-        "contrast": 6.41,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 12.25,
-        "id": "cl1-l1",
-        "text": "before festive",
-        "contrast": 7.16,
-        "need": 3,
-        "ok": true
-      },
-      {
-        "t": 12.25,
-        "id": "cl1-l2",
-        "text": "cooking.",
-        "contrast": 9.25,
+        "contrast": 9.12,
         "need": 3,
         "ok": true
       },
@@ -175,8 +247,8 @@
       }
     ]
   },
-  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 21/21 lines pass (worst 4.6:1)",
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 47px on 1080 canvas ≈ 17.1px on a 390px phone; duration 15s; legibility 30/30 lines pass (worst 6.0:1)",
   "duration": 15,
-  "minFontPx": 72,
+  "minFontPx": 47.237112344313424,
   "problems": []
 }
