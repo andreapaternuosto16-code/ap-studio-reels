@@ -42,9 +42,12 @@ export function build(reel, brand) {
     } else if (L.mode === "kinetic") {
       let k = 0;
       L.lines.forEach((ln, j) => ln.split(" ").forEach((_, q) => {
-        s += tw(`#${id}-${j}-${q}`, L.start + 0.02 + k * (L.stagger ?? 0.11), 0.38, { scale: 2.4, opacity: 0 }, { scale: 1, opacity: 1 }, "power3.out");
+        s += `gsap.set("#${id}-${j}-${q}",{opacity:0});` + tw(`#${id}-${j}-${q}`, L.start + 0.02 + k * (L.stagger ?? 0.11), 0.38, { scale: 2.4, opacity: 0 }, { scale: 1, opacity: 1 }, "power3.out");
         k++;
       }));
+    } else if (L.mode === "fade") {
+      // simple slide-up + fade (G only)
+      s += tw(`#${id}`, L.start + 0.02, 0.4, { y: 40, autoAlpha: 0 }, { y: 0, autoAlpha: 1 }, "power2.out");
     } else {
       L.lines.forEach((_, j) => {
         // wipe from left; the clip box is padded so no glyph edge is ever cut
@@ -59,7 +62,10 @@ export function build(reel, brand) {
   // #10 hand-drawn circle on the detail the line is about
   (reel.circles ?? []).forEach((C, i) => {
     const id = `ci${i}`;
-    const ch = `<div class="cw6" style="z-index:${90 + i}">${callout(id, { ...C.circle, color: C.color === "cream" ? brand.colors.cream : brand.colors.ink, width: 11 })}</div>\n`;
+    const col = C.color === "cream" ? brand.colors.cream : brand.colors.ink;
+    const lab = C.label ? `<div class="clab txt" id="${id}-lab" style="left:${C.label.x}px;top:${C.label.y}px;font-size:${C.label.size ?? 80}px;color:${col}">${esc(C.label.text)}</div>` : "";
+    const ch = `<div class="cw6" style="z-index:${90 + i}">${callout(id, { ...C.circle, color: col, width: 11 })}${lab}</div>\n`;
+    if (C.label) s += `gsap.set("#${id}-lab",{opacity:0});` + tw(`#${id}-lab`, C.start + 0.45, 0.35, { opacity: 0, y: 16 }, { opacity: 1, y: 0 }, "power3.out");
     if (C.in != null) overlay[C.in] += ch; else body += ch;
     s += `gsap.set("#${id}",{opacity:0});`;
     s += `tl.set("#${id}",{opacity:1},${f3(C.start)});` + calloutDraw(id, C.start, 0.55) + (C.in != null ? "\n" : `tl.to("#${id}",{opacity:0,duration:0.12},${f3(C.end - 0.13)});\n`);
@@ -75,10 +81,14 @@ export function build(reel, brand) {
     let inner = "";
     if (c.kind === "cube") {
       // #9 cuboid carousel on cream: each face is one picture, the cube turns on the beat
-      const Wc = c.faceW ?? 720, Hc = c.faceH ?? 1040;
-      inner = `<div class="cube-wrap" style="left:${(1080 - Wc) / 2}px;top:${c.cubeTop ?? 640}px;width:${Wc}px;height:${Hc}px"><div class="cube" id="${id}-cube">${c.faces.map((f, j) =>
-        `<div class="face" style="width:${Wc}px;height:${Hc}px;transform:rotateY(${j * 90}deg) translateZ(${Wc / 2}px)"><img src="${esc(add(f.photo))}" style="object-position:${f.pos ?? "50% 50%"}" /></div>`).join("")}</div></div>`;
-      s += tw(`#${id}-cube`, c.start, 0.01, { rotationY: 0, rotationX: -5, z: -Wc / 2 }, { rotationY: 0, rotationX: -5, z: -Wc / 2 });
+      const full = !!c.full;
+      const Wc = full ? 1080 : c.faceW ?? 720, Hc = full ? 1920 : c.faceH ?? 1040;
+      const face = (f, j) => full
+        ? `<div class="face" style="width:${Wc}px;height:${Hc}px;border-radius:0;transform:rotateY(${j * 90}deg) translateZ(${Wc / 2}px)">${imgTag(`${id}-f${j}`, { ...f, ox: 540, oy: 960 }, "", 1920)}</div>`
+        : `<div class="face" style="width:${Wc}px;height:${Hc}px;transform:rotateY(${j * 90}deg) translateZ(${Wc / 2}px)"><img src="${esc(add(f.photo))}" style="object-position:${f.pos ?? "50% 50%"}" /></div>`;
+      inner = `<div class="cube-wrap" style="left:${full ? 0 : (1080 - Wc) / 2}px;top:${full ? 0 : c.cubeTop ?? 640}px;width:${Wc}px;height:${Hc}px"><div class="cube" id="${id}-cube">${c.faces.map(face).join("")}</div></div>`;
+      const rx = full ? 0 : -5;
+      s += tw(`#${id}-cube`, c.start, 0.01, { rotationY: 0, rotationX: rx, z: -Wc / 2 }, { rotationY: 0, rotationX: rx, z: -Wc / 2 });
       c.turns.forEach((t, j) => { s += tw(`#${id}-cube`, t, 0.65, { rotationY: -90 * j }, { rotationY: -90 * (j + 1) }, "power3.inOut"); });
       // each face is held from the end of the previous turn to the start of the next one
       const holds = [[c.start, c.turns[0]], ...c.turns.map((t, k) => [t + 0.65, c.turns[k + 1] ?? c.end])];
@@ -103,7 +113,7 @@ export function build(reel, brand) {
       const mv = c.move ?? { scale: [1.0, 1.04] };   // the gentle push-in every real shot has
       s += tw(`#${id}-i`, c.start, outEnd - c.start, { scale: mv.scale[0] }, { scale: mv.scale[1] });
     }
-    body += `<div class="shot6${c.kind === "cube" ? " cream" : ""}" id="${id}" style="z-index:${i + 1};${PANEL ? `top:${PANEL}px;height:${1920 - PANEL}px;` : ""}"><svg width="0" height="0" style="position:absolute"><filter id="hb${i}" x="-10%" y="0" width="120%" height="100%"><feGaussianBlur id="hb${i}-g" stdDeviation="0 0"/></filter></svg><div class="mv" id="${id}-mv">${inner}${overlay[i]}</div></div>\n`;
+    body += `<div class="shot6${c.kind === "cube" ? (c.full ? " deep" : " cream") : ""}" id="${id}" style="z-index:${i + 1};${PANEL ? `top:${PANEL}px;height:${1920 - PANEL}px;` : ""}"><svg width="0" height="0" style="position:absolute"><filter id="hb${i}" x="-10%" y="0" width="120%" height="100%"><feGaussianBlur id="hb${i}-g" stdDeviation="0 0"/></filter></svg><div class="mv" id="${id}-mv">${inner}${overlay[i]}</div></div>\n`;
     s += vis(id, c.start, outEnd);
     if (c.push && i > 0) {
       // #3 push: incoming and outgoing pictures travel together; a horizontal motion-blur streak rides the move
@@ -135,6 +145,9 @@ export function build(reel, brand) {
   css += `${realCss}
 .shot6{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden;visibility:hidden}
 .shot6.cream{background:var(--cream)}
+.shot6.deep{background:var(--ink)}
+.face .pic{position:absolute;max-width:none}
+.clab{position:absolute;font-family:var(--head);font-weight:700;line-height:1;white-space:nowrap;z-index:2}
 .mv{position:absolute;inset:0}
 .pic{position:absolute;max-width:none}
 .cube-wrap{position:absolute;perspective:2400px}

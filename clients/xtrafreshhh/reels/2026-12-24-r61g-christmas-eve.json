@@ -1,0 +1,260 @@
+{
+  "template": "r6-reel",
+  "id": "r61-g",
+  "date": "2026-12-24",
+  "pairsWith": "Christmas Eve",
+  "music": "r5-g-sleigh-80.m4a",
+  "_motion": "G only: #9 full-screen cuboid carousel for the three steps; #6 parallax on the front door and on the tree; #3 push with motion blur between scenes; text by simple slide/fade. G2 pictures only.",
+  "shots": [
+    {
+      "photo": "kit-round5/assets/G2/G2-01.jpg",
+      "sx": 168,
+      "sy": 596,
+      "z": 1.45,
+      "start": 0,
+      "end": 1.5,
+      "push": false,
+      "parallax": [
+        {
+          "from": {
+            "x": -8
+          },
+          "to": {
+            "x": 8
+          }
+        },
+        {
+          "mask": "linear-gradient(180deg,transparent 29%,#000 34%,#000 73%,transparent 78%)",
+          "from": {
+            "x": 14,
+            "scale": 1.0
+          },
+          "to": {
+            "x": -14,
+            "scale": 1.02
+          }
+        },
+        {
+          "mask": "linear-gradient(180deg,transparent 76%,#000 82%)",
+          "from": {
+            "x": 40,
+            "scale": 1.0
+          },
+          "to": {
+            "x": -40,
+            "scale": 1.05
+          }
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-02.jpg",
+      "sx": 0,
+      "sy": 0,
+      "z": 1,
+      "start": 1.5,
+      "end": 3.0,
+      "push": true
+    },
+    {
+      "kind": "cube",
+      "full": true,
+      "start": 3.0,
+      "end": 8.0,
+      "push": true,
+      "turns": [
+        4.4,
+        6.2
+      ],
+      "faces": [
+        {
+          "photo": "kit-round5/assets/G2/G2-03.jpg",
+          "sx": 202,
+          "sy": 120,
+          "z": 1.6,
+          "grade": 1.2
+        },
+        {
+          "photo": "kit-round5/assets/G2/G2-04.jpg",
+          "sx": 0,
+          "sy": 240,
+          "z": 1.6,
+          "grade": 1.2
+        },
+        {
+          "photo": "kit-round5/assets/G2/G2-05.jpg",
+          "sx": 202,
+          "sy": 720,
+          "z": 1.6
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-08.jpg",
+      "sx": 1300,
+      "sy": 240,
+      "z": 1.33,
+      "w": 4320,
+      "h": 1920,
+      "start": 8.0,
+      "end": 9.5,
+      "push": true
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-06.jpg",
+      "sx": 0,
+      "sy": 0,
+      "z": 1,
+      "grade": 1.15,
+      "start": 9.5,
+      "end": 11.0,
+      "push": true,
+      "parallax": [
+        {
+          "from": {
+            "x": -10
+          },
+          "to": {
+            "x": 10
+          }
+        },
+        {
+          "mask": "radial-gradient(ellipse 230px 470px at 960px 900px,#000 62%,transparent 100%)",
+          "from": {
+            "x": 40,
+            "scale": 1.0
+          },
+          "to": {
+            "x": -40,
+            "scale": 1.04
+          }
+        }
+      ]
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-07.jpg",
+      "sx": 101,
+      "sy": 360,
+      "z": 1.6,
+      "start": 11.0,
+      "end": 12.0,
+      "push": true
+    }
+  ],
+  "texts": [
+    {
+      "in": 0,
+      "mode": "fade",
+      "lines": [
+        "Guests on",
+        "the way?"
+      ],
+      "start": 0,
+      "end": 1.5,
+      "x": 240,
+      "y": 840,
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "mode": "fade",
+      "lines": [
+        "1. Clear the",
+        "hallway."
+      ],
+      "start": 3.0,
+      "end": 4.5,
+      "x": 220,
+      "y": 390,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "mode": "fade",
+      "lines": [
+        "2. Put out a",
+        "fresh towel."
+      ],
+      "start": 4.95,
+      "end": 6.3,
+      "x": 100,
+      "y": 1270,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "mode": "fade",
+      "lines": [
+        "3. Empty the",
+        "bins."
+      ],
+      "start": 6.75,
+      "end": 8.0,
+      "x": 300,
+      "y": 1230,
+      "size": 120,
+      "color": "var(--cream)"
+    },
+    {
+      "in": 4,
+      "mode": "fade",
+      "lines": [
+        "Happy",
+        "Christmas from",
+        "the XtraFreshhh",
+        "team."
+      ],
+      "start": 9.5,
+      "end": 11.0,
+      "x": 64,
+      "y": 220,
+      "w": 860,
+      "size": 100,
+      "color": "var(--ink)"
+    },
+    {
+      "in": 5,
+      "mode": "static",
+      "lines": [
+        "Happy",
+        "Christmas from",
+        "the XtraFreshhh",
+        "team."
+      ],
+      "start": 11.0,
+      "end": 12.0,
+      "x": 60,
+      "y": 230,
+      "w": 900,
+      "size": 100,
+      "color": "var(--cream)"
+    }
+  ],
+  "end": {
+    "start": 12.0,
+    "push": true,
+    "crop": {
+      "photo": "kit-round5/assets/G2/G2-08.jpg",
+      "sx": 3600,
+      "sy": 0,
+      "z": 1.9,
+      "grade": 1.15,
+      "w": 4320,
+      "h": 1920
+    },
+    "line": "",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 64,
+      "y": 232,
+      "w": 952,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 110,
+      "gap": 40
+    }
+  }
+}

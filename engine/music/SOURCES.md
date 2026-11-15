@@ -16,6 +16,7 @@ loops, no third-party audio), so they are ours and royalty-free for any client u
 | `r5-f-bright-120.m4a` | `make-beat-track.py r5-f-bright-120 120 17 xmas` | Round 5 · F kinetic type |
 | `r5-g-sleigh-80.m4a` | `make-beat-track.py r5-g-sleigh-80 80 17 xmas` | Round 5 · G walk-through |
 | `menu-bright-100.m4a` | `make-beat-track.py menu-bright-100 100 46 bright` | Motion menu (demo reel) |
+| `r6-e-bright-80.m4a` | `make-beat-track.py r6-e-bright-80 80 17 bright` | Round 6.1 · E (cuts every 2 beats) |
 
 The beat tracks start on beat 1 at 0 s; the round-2 templates place their cuts on that beat grid, so cuts land on the kick.
 Every reel also exports `-nomusic.mp4`. On Instagram, a business account may instead pick a track from the in-app
