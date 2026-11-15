@@ -1,0 +1,110 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 12,
+    "failing": [],
+    "worst": 4.37,
+    "all": [
+      {
+        "t": 1.5,
+        "id": "tt-l0",
+        "text": "3 easy habits",
+        "contrast": 5.68,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.5,
+        "id": "tt-l1",
+        "text": "between cleans",
+        "contrast": 4.37,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.6,
+        "id": "txt",
+        "text": "Habit 1",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.6,
+        "id": "q txt",
+        "text": "1. Ten-minute evening reset.",
+        "contrast": 9.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.3,
+        "id": "txt",
+        "text": "Habit 2",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.3,
+        "id": "q txt",
+        "text": "2. Wipe the hob once cool.",
+        "contrast": 9.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9,
+        "id": "txt",
+        "text": "Habit 3",
+        "contrast": 6.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9,
+        "id": "q txt",
+        "text": "3. Put keys, post and shoes away.",
+        "contrast": 9.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.4,
+        "id": "cl-l0",
+        "text": "A little help",
+        "contrast": 5.03,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.4,
+        "id": "cl-l1",
+        "text": "between cleans.",
+        "contrast": 4.87,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eh txt",
+        "text": "A little help?",
+        "contrast": 5.03,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 5.5,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 58px on 1080 canvas ≈ 20.9px on a 390px phone; duration 15s; legibility 12/12 lines pass (worst 4.4:1)",
+  "duration": 15,
+  "minFontPx": 57.94362545241667,
+  "problems": []
+}
