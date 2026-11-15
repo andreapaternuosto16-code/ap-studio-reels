@@ -1,0 +1,150 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 17,
+    "failing": [],
+    "worst": 3.14,
+    "all": [
+      {
+        "t": 0.75,
+        "id": "t0-0",
+        "text": "Guests on",
+        "contrast": 14.28,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 0.75,
+        "id": "t0-1",
+        "text": "the way?",
+        "contrast": 14.16,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.75,
+        "id": "t1-0",
+        "text": "1. Clear the",
+        "contrast": 5.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.75,
+        "id": "t1-1",
+        "text": "hallway.",
+        "contrast": 5.47,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.7,
+        "id": "t2-0",
+        "text": "2. Put out a",
+        "contrast": 7.12,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.7,
+        "id": "t2-1",
+        "text": "fresh towel.",
+        "contrast": 7.26,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.5,
+        "id": "t3-0",
+        "text": "3. Empty the",
+        "contrast": 3.17,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.5,
+        "id": "t3-1",
+        "text": "bins.",
+        "contrast": 3.14,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t4-0",
+        "text": "Happy",
+        "contrast": 6.12,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t4-1",
+        "text": "Christmas from",
+        "contrast": 6.28,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t4-2",
+        "text": "the XtraFreshhh",
+        "contrast": 4.84,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t4-3",
+        "text": "team.",
+        "contrast": 4.78,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.75,
+        "id": "t5-0",
+        "text": "Happy",
+        "contrast": 6.47,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.75,
+        "id": "t5-1",
+        "text": "Christmas from",
+        "contrast": 3.74,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.75,
+        "id": "t5-2",
+        "text": "the XtraFreshhh",
+        "contrast": 5.32,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.75,
+        "id": "t5-3",
+        "text": "team.",
+        "contrast": 8.01,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.5,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 5.83,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 100px on 1080 canvas ≈ 36.1px on a 390px phone; duration 15s; legibility 17/17 lines pass (worst 3.1:1)",
+  "duration": 15,
+  "minFontPx": 99.96582183649043,
+  "problems": []
+}
