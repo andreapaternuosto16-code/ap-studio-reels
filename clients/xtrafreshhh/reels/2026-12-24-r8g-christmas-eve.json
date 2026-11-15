@@ -1,0 +1,146 @@
+{
+  "template": "r3-countdown",
+  "date": "2026-12-24",
+  "pairsWith": "Christmas Eve",
+  "bpm": 96,
+  "music": "r2-b-sleigh-96.m4a",
+  "_template": "Round 8: approved template B (Christmas countdown) recycled for Christmas Eve: same flip board in, same snow, clean cuts, same step style, same handwriting, same end card. G2 pictures only.",
+  "days": 1,
+  "boardTop": 330,
+  "boardCam": {
+    "scale": 1.45,
+    "x": 0,
+    "y": -432
+  },
+  "snowOn": [
+    [
+      0,
+      4
+    ]
+  ],
+  "intro": "Guests on the way?",
+  "introSize": 130,
+  "introPos": {
+    "x": 80,
+    "y": 536,
+    "w": 900
+  },
+  "introCam": {
+    "scale": 1.33,
+    "x": 0,
+    "y": 317
+  },
+  "introObjPos": "20.93% 50%",
+  "introGrade": 1.2,
+  "jobs": [
+    {
+      "text": "1. Clear the hallway.",
+      "photo": "kit-round5/assets/G2/G2-03.jpg",
+      "cam": {
+        "scale": 1.6,
+        "x": 0,
+        "y": 384
+      },
+      "grade": 1.2,
+      "pos": {
+        "x": 220,
+        "y": 390,
+        "w": 800
+      },
+      "size": 110,
+      "wrap": 14,
+      "color": "var(--ink)"
+    },
+    {
+      "text": "2. Put out a fresh towel.",
+      "photo": "kit-round5/assets/G2/G2-04.jpg",
+      "cam": {
+        "scale": 1.6,
+        "x": 324,
+        "y": 192
+      },
+      "grade": 1.2,
+      "pos": {
+        "x": 100,
+        "y": 1270,
+        "w": 900
+      },
+      "size": 110,
+      "wrap": 14,
+      "color": "var(--ink)"
+    },
+    {
+      "text": "3. Empty the bins.",
+      "photo": "kit-round5/assets/G2/G2-05.jpg",
+      "cam": {
+        "scale": 1.45,
+        "x": -192,
+        "y": -432
+      },
+      "pos": {
+        "x": 288,
+        "y": 707,
+        "w": 730
+      },
+      "size": 110,
+      "wrap": 14,
+      "color": "var(--ink)",
+      "grade": 1.32
+    }
+  ],
+  "handShots": [
+    {
+      "photo": "kit-round5/assets/G2/G2-07.jpg",
+      "cam": {
+        "scale": 1.6,
+        "x": 162,
+        "y": 0
+      },
+      "at": 14
+    },
+    {
+      "photo": "kit-round5/assets/G2/G2-06.jpg",
+      "cam": {
+        "scale": 1.0,
+        "x": 0,
+        "y": 0
+      },
+      "grade": 1.15,
+      "at": 15.5
+    }
+  ],
+  "handwritten": "Happy Christmas",
+  "handBeat": 15.6,
+  "handPer": 0.06,
+  "handTop": 250,
+  "handSize": 110,
+  "end": {
+    "photo": "kit-round5/assets/G2/G2-08.jpg",
+    "objPos": "100% 50%",
+    "grade": 1.15,
+    "line": "From the XtraFreshhh team.",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "scale": [
+      1.9,
+      1.94
+    ],
+    "x": -198,
+    "y": 864,
+    "block": {
+      "x": 64,
+      "y": 232,
+      "w": 940,
+      "align": "left",
+      "size": 100,
+      "logoW": 700,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 36
+    }
+  },
+  "assets": {
+    "board": "kit-round5/assets/G2/G2-01.jpg",
+    "intro": "kit-round5/assets/G2/G2-08.jpg"
+  }
+}

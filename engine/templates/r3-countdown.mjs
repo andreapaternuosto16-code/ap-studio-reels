@@ -17,6 +17,7 @@ export function build(reel, brand) {
   const A = reel.assets, J = reel.jobs, E = reel.end;
   const sn = snow("sn", { start: 0, end: duration, count: [9, 6, 3] });
   const hw = [...reel.handwritten].length;
+  const HS = reel.handShots;  // optional: photos under the handwriting instead of the strip pan
   const css = `${realCss}${board.css}${hwCss}
 #fb{left:0;right:0;top:${reel.boardTop ?? 330}px;z-index:5}
 #strip{position:absolute;left:0;top:0;height:1920px;width:auto}
@@ -25,23 +26,24 @@ export function build(reel, brand) {
 .flake{visibility:hidden}
 `;
   const body = `
-${shot("s1", "b/room.jpg", { origin: "50% 30%" })}
-${shot("s2", "b/room.jpg", { origin: "540px 960px" })}
+${shot("s1", A.board ? "b/board.jpg" : "b/room.jpg", { origin: A.board ? "540px 960px" : "50% 30%", grade: reel.boardGrade ?? 1 })}
+${shot("s2", A.intro ? "b/intro.jpg" : "b/room.jpg", { origin: "540px 960px", grade: reel.introGrade ?? 1, pos: reel.introObjPos ?? "50% 50%" })}
 ${J.map((j, i) => shot(`j${i}`, `b/job${i}.jpg`, { grade: j.grade ?? 1, origin: "540px 960px", extra: j.phone ? phone(`ps${i}`, { corners: j.phone.corners, mask: `b/ph${i}-mask.png`, maskData: globalThis.__dataUri?.(`${j.phone.dir}-mask.png`), shadow: `b/ph${i}-shadow.png`, glass: `b/ph${i}-glass.png` }, safariScreen([`b/page${i}.png`], { url: "xtrafreshhh.com" }).replace(`id="pg0"`, `id="pp${i}" style="visibility:inherit"`), { glass: j.phone.glass ?? 0.16, ...(j.phone.light ? { light: j.phone.light } : {}) }) : "" })).join("\n")}
-<div id="pan"><img id="strip" src="b/strip.jpg" /></div>
-${shot("s4", "b/room.jpg", { origin: "540px 960px" })}
+${HS ? HS.map((h, i) => shot(`h${i}`, `b/hand${i}.jpg`, { origin: "540px 960px", grade: h.grade ?? 1 })).join("\n") : `<div id="pan"><img id="strip" src="b/strip.jpg" /></div>`}
+${shot("s4", E.photo ? "b/end.jpg" : "b/room.jpg", { origin: "540px 960px", grade: E.grade ?? 1, pos: E.objPos ?? "50% 50%" })}
 ${board.html}
 ${lines("in", wrap(reel.intro, 9), { ...reel.introPos, size: reel.introSize ?? 130 })}
 ${J.map((j, i) => lines(`jt${i}`, wrap(j.text, j.wrap ?? 14), { ...j.pos, size: j.size ?? 110, color: j.color ?? "var(--ink)" })).join("\n")}
 ${handwrite("yg", reel.handwritten, { size: reel.handSize ?? 128 })}
-${endBlock("eb", { line: E.line, url: E.url, ...E.block })}
+${endBlock("eb", { line: E.line, url: E.url, urlColor: E.urlColor, ...E.block })}
 ${sn.html}`;
 
   let s = sn.script;
   // flakes only on the wide shots of the room and the house, never on the close-ups
-  for (const [a, z] of [[0, T.jobs[0]], [T.pan, duration]]) s += `tl.set(".flake",{visibility:"visible"},${f3(a)});tl.set(".flake",{visibility:"hidden"},${f3(z)});\n`;
+  for (const [a, z] of (reel.snowOn ? reel.snowOn.map(([x, y]) => [b(x), b(y)]) : [[0, T.jobs[0]], [T.pan, duration]])) s += `tl.set(".flake",{visibility:"visible"},${f3(a)});tl.set(".flake",{visibility:"hidden"},${f3(z)});\n`;
   // 1 · flip board in (kept), slow push
-  s += cutIn("s1", 0, T.intro) + camera("s1", 0, T.intro, { scale: 1.0 }, { scale: 1.04 }, "sine.out");
+  const BC = reel.boardCam ?? { scale: 1.0 };
+  s += cutIn("s1", 0, T.intro) + camera("s1", 0, T.intro, BC, { ...BC, scale: BC.scale + 0.04 }, "sine.out");
   s += `tl.fromTo("#fb",{opacity:0},{opacity:1,duration:0.15},0.02);` + board.script(0.06, { flip: 0.035, stagger: 0.025 });
   s += `tl.set("#fb",{visibility:"hidden"},${f3(T.intro)});\n`; // clean cut out
   // 2 · clean cut to a closer framing
@@ -54,15 +56,22 @@ ${sn.html}`;
     s += linesIn(`jt${i}`, t + 0.1) + linesOut(`jt${i}`, next);
   });
   // 4 · slow pan across the house; handwriting completes, then holds
-  s += `tl.set("#pan",{visibility:"visible"},${f3(T.pan)});tl.set("#pan",{visibility:"hidden"},${f3(T.end)});`;
-  s += `tl.fromTo("#strip",{x:${-reel.pan[0]}},{x:${-reel.pan[1]},duration:${f3(T.end - T.pan)},ease:"sine.inOut"},${f3(T.pan)});\n`;
-  s += `gsap.set("#yg",{opacity:0});tl.set("#yg",{opacity:1},${f3(T.hand - 0.01)});` + handwriteIn("yg", hw, T.hand, 0.07) + linesOut("yg", T.end);
+  if (HS) HS.forEach((h, i) => { const a = b(h.at), z = i < HS.length - 1 ? b(HS[i + 1].at) : T.end; s += cutIn(`h${i}`, a, z) + camera(`h${i}`, a, z - a, h.cam, { ...h.cam, scale: h.cam.scale + 0.04 }, "sine.out"); });
+  else {
+    s += `tl.set("#pan",{visibility:"visible"},${f3(T.pan)});tl.set("#pan",{visibility:"hidden"},${f3(T.end)});`;
+    s += `tl.fromTo("#strip",{x:${-reel.pan[0]}},{x:${-reel.pan[1]},duration:${f3(T.end - T.pan)},ease:"sine.inOut"},${f3(T.pan)});\n`;
+  }
+  const HB = reel.handBeat != null ? b(reel.handBeat) : T.hand;
+  s += `gsap.set("#yg",{opacity:0});tl.set("#yg",{opacity:1},${f3(HB - 0.01)});` + handwriteIn("yg", hw, HB, reel.handPer ?? 0.07) + linesOut("yg", T.end);
   // 5 · end card on the wall
   s += cutIn("s4", T.end) + camera("s4", T.end, duration - T.end, { scale: E.scale[0], x: E.x ?? 0, y: E.y ?? 0 }, { scale: E.scale[1], x: E.x ?? 0, y: E.y ?? 0 }, "sine.out");
+  const HC = reel.handColor; if (HC) s += `gsap.set("#yg",{color:"${HC}"});\n`;
   s += `gsap.set("#eb",{opacity:1});` + endIn("eb", T.end + 0.12);
 
   const assets = {
-    "b/room.jpg": A.room, "b/strip.jpg": A.strip,
+    ...(A.room ? { "b/room.jpg": A.room } : {}), ...(A.strip ? { "b/strip.jpg": A.strip } : {}),
+    ...(A.board ? { "b/board.jpg": A.board } : {}), ...(A.intro ? { "b/intro.jpg": A.intro } : {}), ...(E.photo ? { "b/end.jpg": E.photo } : {}),
+    ...(HS ? Object.fromEntries(HS.map((h, i) => [`b/hand${i}.jpg`, h.photo])) : {}),
     ...Object.fromEntries(J.map((j, i) => [`b/job${i}.jpg`, j.photo])),
     ...Object.fromEntries(J.filter((j) => j.page).map((j) => [`b/page${J.indexOf(j)}.png`, j.page])),
     ...Object.fromEntries(J.flatMap((j, i) => (j.phone ? ["mask", "shadow", "glass"].map((k) => [`b/ph${i}-${k}.png`, `${j.phone.dir}-${k}.png`]) : []))),

@@ -15,8 +15,8 @@ export function build(reel, brand) {
   if (R.length !== 3) throw new Error("reviews: give exactly 3 reviews");
   for (const r of R) {
     const n = r.excerpt.trim().split(/\s+/).length;
-    if (n > 12) throw new Error(`reviews: excerpt has ${n} words, max 12`);
-    if (![1, 2, 3, 4, 5].includes(r.rating)) throw new Error("reviews: rating must be that review's own 1–5");
+    if (n > 12 && reel.cardStyle !== "check") throw new Error(`reviews: excerpt has ${n} words, max 12`);
+    if (reel.cardStyle !== "check" && ![1, 2, 3, 4, 5].includes(r.rating)) throw new Error("reviews: rating must be that review's own 1–5");
   }
   const T = { cards: [b(3.5), b(8), b(12.5)], care: b(17), end: b(20.5) };
   const duration = 15;
@@ -32,39 +32,46 @@ export function build(reel, brand) {
 .rc .nm{margin-top:28px;font-size:58px;font-weight:600;color:var(--teal)}
 `;
   const ic = `<svg viewBox="0 0 24 24" width="38" height="38"><path fill="${brand.colors.cream}" d="M12 2.6l2.8 6 6.6.7-5 4.5 1.4 6.5L12 17l-5.8 3.3 1.4-6.5-5-4.5 6.6-.7z"/></svg>`;
+  const check = `<svg viewBox="0 0 24 24" width="80" height="80"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="${brand.colors.teal}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const habit = reel.cardStyle === "check";
   const card = (r, i) => `<div class="rc" id="rc${i}">
   ${reel.sample ? `<div class="smp ui">${esc(reel.sampleText)}</div>` : ""}
-  <div class="hd"><div class="ic">${ic}</div><span class="txt">${esc(reel.label)}</span></div>
-  <div class="stars" aria-label="${r.rating} out of 5">${[0, 1, 2, 3, 4].map((k) => starSvg(k < r.rating ? brand.colors.teal : "none", brand.colors.teal)).join("")}</div>
-  <div class="q txt">“${esc(r.excerpt)}”</div>
-  <div class="nm txt">${esc(r.name)}</div></div>`;
+  <div class="hd"><div class="ic">${habit ? check.replace(brand.colors.teal, brand.colors.cream).replace('width="80" height="80"', 'width="44" height="44"') : ic}</div><span class="txt">${esc(r.label ?? reel.label)}</span></div>
+  ${habit ? `<div class="stars">${check}</div>` : `<div class="stars" aria-label="${r.rating} out of 5">${[0, 1, 2, 3, 4].map((k) => starSvg(k < r.rating ? brand.colors.teal : "none", brand.colors.teal)).join("")}</div>`}
+  <div class="q txt">${habit ? esc(r.excerpt) : `“${esc(r.excerpt)}”`}</div>
+  ${r.name ? `<div class="nm txt">${esc(r.name)}</div>` : ""}</div>`;
+  const cardShots = reel.cardShots;
+  const tCam = reel.titleCam;
   const body = `
-${shot("s1", "c/room.jpg", { origin: "50% 35%" })}
-${shot("s2", "c/phone.jpg", { origin: "50% 60%", extra: phone("cs", { corners: reel.phone.corners, mask: "c/ph-mask.png", maskData: globalThis.__dataUri?.(`${reel.phone.dir}-mask.png`), shadow: "c/ph-shadow.png", glass: "c/ph-glass.png" }, safariScreen(["c/page.png"], { url: "xtrafreshhh.com" }).replace('id="pg0"', 'id="cp0" style="visibility:inherit"'), { glass: reel.phone.glass ?? 0.14 }) })}
-${shot("s3", "c/detail.jpg", { origin: "540px 960px", grade: C.grade ?? 1 })}
-${shot("s4", "c/room.jpg", { origin: "540px 960px" })}
-${lines("tt", wrap(reel.title, 8), { ...reel.titlePos, size: 156, align: "center" })}
+${shot("s1", "c/room.jpg", { origin: tCam ? "540px 960px" : "50% 35%", grade: reel.titleGrade ?? 1 })}
+${cardShots ? cardShots.map((k, i) => shot(`k${i}`, `c/card${i}.jpg`, { origin: "540px 960px", grade: k.grade ?? 1 })).join("\n") : shot("s2", "c/phone.jpg", { origin: "50% 60%", extra: phone("cs", { corners: reel.phone.corners, mask: "c/ph-mask.png", maskData: globalThis.__dataUri?.(`${reel.phone.dir}-mask.png`), shadow: "c/ph-shadow.png", glass: "c/ph-glass.png" }, safariScreen(["c/page.png"], { url: "xtrafreshhh.com" }).replace('id="pg0"', 'id="cp0" style="visibility:inherit"'), { glass: reel.phone.glass ?? 0.14 }) })}
+${shot("s3", "c/detail.jpg", { origin: "540px 960px", grade: C.grade ?? 1, pos: C.objPos ?? "50% 50%" })}
+${shot("s4", E.photo ? "c/end.jpg" : "c/room.jpg", { origin: "540px 960px", grade: E.grade ?? 1, pos: E.objPos ?? "50% 50%" })}
+${lines("tt", wrap(reel.title, reel.titleWrap ?? 8), { ...reel.titlePos, size: reel.titleSize ?? 156, align: "center" })}
 ${R.map(card).join("\n")}
 ${lines("cl", wrap(reel.careLine, C.wrap ?? 11), { ...C.pos, size: C.size ?? 110, color: "var(--ink)" })}
-${endBlock("eb", { line: E.line, url: E.url, ...E.block })}`;
+${endBlock("eb", { line: E.line, url: E.url, urlColor: E.urlColor, ...E.block })}`;
 
   let s = "";
-  s += cutIn("s1", 0, T.cards[0]) + camera("s1", 0, T.cards[0], { scale: 1.0 }, { scale: 1.05 }, "sine.out");
+  s += cutIn("s1", 0, T.cards[0]) + (tCam ? camera("s1", 0, T.cards[0], tCam, { ...tCam, scale: tCam.scale + 0.05 }, "sine.out") : camera("s1", 0, T.cards[0], { scale: 1.0 }, { scale: 1.05 }, "sine.out"));
   s += linesIn("tt", 0.06) + linesOut("tt", T.cards[0]);
-  s += cutIn("s2", T.cards[0], T.care) + camera("s2", T.cards[0], T.care - T.cards[0], { scale: 1.0 }, { scale: 1.08 }, "sine.inOut");
+  if (cardShots) cardShots.forEach((k, i) => { const a = T.cards[i], z = i < 2 ? T.cards[i + 1] : T.care; s += cutIn(`k${i}`, a, z) + camera(`k${i}`, a, z - a, k.cam, { ...k.cam, scale: k.cam.scale + 0.05 }, "sine.out"); });
+  else s += cutIn("s2", T.cards[0], T.care) + camera("s2", T.cards[0], T.care - T.cards[0], { scale: 1.0 }, { scale: 1.08 }, "sine.inOut");
   T.cards.forEach((t, i) => {
     // incoming and outgoing cards travel together, 1100 px apart: a clean slide, never overlapping
     s += `tl.set("#rc${i}",{visibility:"visible"},${f3(t)});tl.fromTo("#rc${i}",{x:1100},{x:0,duration:0.55,ease:"power3.inOut"},${f3(t)});`;
     if (i > 0) s += `tl.to("#rc${i - 1}",{x:-1100,duration:0.55,ease:"power3.inOut"},${f3(t)});tl.set("#rc${i - 1}",{visibility:"hidden"},${f3(t + 0.56)});`;
-    s += `tl.fromTo("#rc${i} .stars svg",{opacity:0},{opacity:1,duration:0.2,stagger:0.05},${f3(t + 0.35)});\n`;
+    s += "\n"; // stars are fully drawn from the card's first frame
   });
   s += `tl.set("#rc2",{visibility:"hidden"},${f3(T.care)});\n`;
   s += cutIn("s3", T.care, T.end) + camera("s3", T.care, T.end - T.care, { ...C.cam, scale: C.cam.scale + 0.05 }, C.cam, "sine.out");
   s += linesIn("cl", T.care + 0.1) + linesOut("cl", T.end);
   s += cutIn("s4", T.end) + camera("s4", T.end, duration - T.end, { scale: E.scale[0], x: E.x ?? 0, y: E.y ?? 0 }, { scale: E.scale[1], x: E.x ?? 0, y: E.y ?? 0 }, "sine.out");
   s += `gsap.set("#eb",{opacity:1});` + endIn("eb", T.end + 0.12);
-  const assets = { "c/room.jpg": A.room, "c/phone.jpg": A.phone, "c/detail.jpg": C.photo, "c/page.png": reel.page,
-    ...Object.fromEntries(["mask", "shadow", "glass"].map((k) => [`c/ph-${k}.png`, `${reel.phone.dir}-${k}.png`])) };
+  const assets = { "c/room.jpg": A.room, "c/detail.jpg": C.photo,
+    ...(E.photo ? { "c/end.jpg": E.photo } : {}),
+    ...(cardShots ? Object.fromEntries(cardShots.map((k, i) => [`c/card${i}.jpg`, k.photo])) : { "c/phone.jpg": A.phone, "c/page.png": reel.page,
+      ...Object.fromEntries(["mask", "shadow", "glass"].map((k) => [`c/ph-${k}.png`, `${reel.phone.dir}-${k}.png`])) }) };
   const contact = Array.from({ length: 30 }, (_, i) => +(i * 0.5 + 0.25).toFixed(2));
   const legibility = [1.5, T.cards[0] + 1.5, T.cards[1] + 1.5, T.cards[2] + 1.5, T.care + 1.2, 14.3];
   return { duration, html: page({ id: "r3-reviews", duration, brand, css, body, script: s }), assets, beats: legibility, contact, legibility };

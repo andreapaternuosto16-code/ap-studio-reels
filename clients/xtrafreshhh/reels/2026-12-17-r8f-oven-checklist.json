@@ -1,0 +1,137 @@
+{
+  "template": "r3-pov-booked",
+  "date": "2026-12-17",
+  "pairsWith": "P6 Oven clean",
+  "bpm": 104,
+  "music": "r2-a-bright-104.m4a",
+  "_template": "Round 8: approved template A (booked POV) recycled for the oven reel: same traced phone (bezel, fit, reflection), solid cards arriving one by one with no overlap, push-through into full-frame line shots, same end card with rack focus.",
+  "phone": {
+    "dir": "kit-round3/prepared/phones/b02",
+    "corners": [
+      [
+        149.2,
+        899.2
+      ],
+      [
+        460.3,
+        812.9
+      ],
+      [
+        795.1,
+        1380.2
+      ],
+      [
+        417.3,
+        1502.5
+      ]
+    ],
+    "glass": 0.1
+  },
+  "_phone": "Round-2 B02 (phone on table) — not used in A or C.",
+  "notesList": {
+    "title": "Christmas dinner",
+    "items": [
+      "Planning Christmas dinner?",
+      "Turkey ✓",
+      "Sprouts ✓",
+      "Gravy ✓",
+      "The oven…?"
+    ],
+    "at": [
+      0.3,
+      2.2,
+      4.1,
+      6.0,
+      7.9
+    ],
+    "top": 160,
+    "step": 96,
+    "size": 32,
+    "tops": [
+      160,
+      296,
+      395,
+      494,
+      593
+    ]
+  },
+  "cam": {
+    "start": {
+      "scale": 2.05,
+      "x": 183,
+      "y": -245
+    },
+    "screen": {
+      "scale": 2.08,
+      "x": 183,
+      "y": -245
+    }
+  },
+  "scenes": [
+    {
+      "photo": "kit-round4/assets/F/F02-oven-opening.jpg",
+      "at": 11.5,
+      "cam": {
+        "scale": 1.35,
+        "x": -54,
+        "y": 336
+      },
+      "line": "…start with the oven.",
+      "wrap": 13,
+      "pos": {
+        "x": 144,
+        "y": 1016,
+        "w": 870
+      },
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "photo": "kit-round4/assets/F/F03-oven-glass.jpg",
+      "at": 16.5,
+      "cam": {
+        "scale": 1.2,
+        "x": -108,
+        "y": -192
+      },
+      "line": "One less job before festive cooking.",
+      "wrap": 14,
+      "pos": {
+        "x": 64,
+        "y": 808,
+        "w": 950
+      },
+      "size": 110,
+      "color": "var(--cream)"
+    }
+  ],
+  "end": {
+    "photo": "kit-round4/assets/F/F05-christmas-table.jpg",
+    "origin": "540px 960px",
+    "scale": [
+      1.9,
+      1.94
+    ],
+    "x": -243,
+    "y": 864,
+    "grade": 1.3,
+    "focusPull": 7,
+    "line": "Ask about oven cleaning.",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 64,
+      "y": 232,
+      "w": 940,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  },
+  "assets": {
+    "phone": "kit-round2/assets/B/02-phone-table.jpg"
+  }
+}
