@@ -58,3 +58,10 @@ Template `engine/templates/r6-reel.mjs` (allowed moves: #1 kinetic, #2 mask, #3 
 | F Thu 17 Dec | `2026-12-17-r6f-kinetic-oven.json` |
 | G Thu 24 Dec | `2026-12-24-r6g-christmas-eve.json` |
 Round 4/5 E/F/G files kept for reference, superseded.
+
+## Round 6.1 (15 Nov): each reel its own effects (current)
+| Reel | JSON | Effects (used nowhere else) |
+|---|---|---|
+| E Thu 26 Nov | `2026-11-26-r61e-habits.json` | #10 hand-drawn circle + label, #2 mask-reveal text, hard cuts |
+| F Thu 17 Dec | `2026-12-17-r61f-kinetic-oven.json` | #1 kinetic word-by-word over full-bleed photos, #8 rack focus, hard cuts |
+| G Thu 24 Dec | `2026-12-24-r61g-christmas-eve.json` | #9 full-screen cube, #6 parallax, #3 push with motion blur, slide/fade text |
