@@ -74,7 +74,7 @@ export function build(reel, brand) {
   shots.forEach((c, i) => {
     const id = `s${i}`;
     const len = c.end - c.start;
-    if (len > 1.5 + 1e-6 && c.kind !== "cube") throw new Error(`r6: shot ${i} is ${len.toFixed(2)} s (max 1.5)`);
+    if (len > (reel.maxShot ?? 1.5) + 1e-6 && c.kind !== "cube") throw new Error(`r6: shot ${i} is ${len.toFixed(2)} s (max 1.5)`);
     if ((c.grade ?? 1) < 1) throw new Error(`r6: shot ${i} is dimmed (grade ${c.grade}); bright photos only`);
     const next = shots[i + 1];
     const outEnd = next?.push ? next.start + PUSH : c.end;   // stays on screen while the next shot pushes it out
@@ -137,9 +137,11 @@ export function build(reel, brand) {
   }
   body += endBlock("eb", { line: E.line, url: E.url, urlColor: E.urlColor, ...E.block });
   const endAt = E.start + (E.push ? PUSH : 0.1);
-  s += endIn("eb", endAt);
-  const holdFrom = endAt + 0.6 + 0.24;
-  if (duration - holdFrom > 2.5 + 1e-6) throw new Error(`r6: end card holds ${(duration - holdFrom).toFixed(2)} s (max 2.5)`);
+  // instant: the end-card text is on screen from the end card's first frame (changes with the picture)
+  if (E.instant) s += `gsap.set("#eb",{visibility:"hidden"});tl.set("#eb",{visibility:"visible"},${f3(E.start)});\n`;
+  else s += endIn("eb", endAt);
+  const holdFrom = E.instant ? E.start : endAt + 0.6 + 0.24;
+  if (!reel.longEndCard && duration - holdFrom > 2.5 + 1e-6) throw new Error(`r6: end card holds ${(duration - holdFrom).toFixed(2)} s (max 2.5)`);
   leg.push(14.5);
 
   css += `${realCss}
@@ -161,6 +163,7 @@ export function build(reel, brand) {
 #eb{z-index:200}
 .cw6{position:absolute;inset:0;pointer-events:none}
 `;
-  const contact = Array.from({ length: 30 }, (_, i) => +(i * 0.5 + 0.25).toFixed(2));
+  const step = reel.contactStep ?? 0.5;
+  const contact = Array.from({ length: Math.round(duration / step) }, (_, i) => +(i * step + step / 2).toFixed(3));
   return { duration, html: page({ id: reel.id ?? "r6", duration, brand, css, body, script: s }), assets, beats: leg.slice(0, 8), contact, legibility: leg };
 }

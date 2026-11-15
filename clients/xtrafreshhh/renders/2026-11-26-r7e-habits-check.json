@@ -1,0 +1,102 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 11,
+    "failing": [],
+    "worst": 3.25,
+    "all": [
+      {
+        "t": 0.75,
+        "id": "t0-0",
+        "text": "3 easy habits",
+        "contrast": 5.64,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 0.75,
+        "id": "t0-1",
+        "text": "between cleans",
+        "contrast": 4.92,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.25,
+        "id": "t1-0",
+        "text": "1. Ten-minute",
+        "contrast": 4.03,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.25,
+        "id": "t1-1",
+        "text": "evening reset.",
+        "contrast": 5.3,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.25,
+        "id": "t2-0",
+        "text": "2. Wipe the hob",
+        "contrast": 11.21,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.25,
+        "id": "t2-1",
+        "text": "once cool.",
+        "contrast": 11.96,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.25,
+        "id": "t3-0",
+        "text": "3. Put keys,",
+        "contrast": 5.4,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.25,
+        "id": "t3-1",
+        "text": "post and shoes",
+        "contrast": 3.25,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.25,
+        "id": "t3-2",
+        "text": "away.",
+        "contrast": 4.96,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.5,
+        "id": "eh txt",
+        "text": "A little help?",
+        "contrast": 5.06,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.5,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 5.45,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 11/11 lines pass (worst 3.3:1)",
+  "duration": 15,
+  "minFontPx": 72,
+  "problems": []
+}

@@ -1,0 +1,164 @@
+{
+  "template": "r6-reel",
+  "id": "r7-e",
+  "date": "2026-11-26",
+  "pairsWith": "P2 Regular clean",
+  "music": "r7-e-bright-120.m4a",
+  "_approach": "Round 7 = the round-3.2 A/B/C approach: one line per picture, line and picture change on the same frame; text on screen from the shot's first frame; no effects, only a slow push-in and clean cuts on the beat (120 bpm).",
+  "maxShot": 3.0,
+  "longEndCard": true,
+  "contactStep": 0.25,
+  "shots": [
+    {
+      "photo": "kit-round4/assets/E/E02-mirror-clear.jpg",
+      "sx": 168,
+      "sy": 0,
+      "z": 1.45,
+      "grade": 1.2,
+      "start": 0,
+      "end": 2.5,
+      "push": false,
+      "move": {
+        "scale": [
+          1.0,
+          1.05
+        ]
+      }
+    },
+    {
+      "photo": "kit-round4/assets/E/E05-living-room-tidy.jpg",
+      "sx": 251,
+      "sy": 298,
+      "z": 1.45,
+      "grade": 1.0,
+      "start": 2.5,
+      "end": 5.5,
+      "push": false,
+      "move": {
+        "scale": [
+          1.0,
+          1.05
+        ]
+      }
+    },
+    {
+      "photo": "kit-round4/assets/E/E03-hob-wipe.jpg",
+      "sx": 0,
+      "sy": 497,
+      "z": 1.45,
+      "grade": 1.0,
+      "start": 5.5,
+      "end": 8.5,
+      "push": false,
+      "move": {
+        "scale": [
+          1.0,
+          1.05
+        ]
+      }
+    },
+    {
+      "photo": "kit-round4/assets/E/E04-hallway-habits.jpg",
+      "sx": 0,
+      "sy": 0,
+      "z": 1.6,
+      "grade": 1.2,
+      "start": 8.5,
+      "end": 11.5,
+      "push": false,
+      "move": {
+        "scale": [
+          1.0,
+          1.05
+        ]
+      }
+    }
+  ],
+  "texts": [
+    {
+      "in": 0,
+      "mode": "static",
+      "lines": [
+        "3 easy habits",
+        "between cleans"
+      ],
+      "start": 0,
+      "end": 2.5,
+      "x": 176,
+      "y": 280,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "in": 1,
+      "mode": "static",
+      "lines": [
+        "1. Ten-minute",
+        "evening reset."
+      ],
+      "start": 2.5,
+      "end": 5.5,
+      "x": 80,
+      "y": 1208,
+      "size": 120,
+      "color": "var(--cream)"
+    },
+    {
+      "in": 2,
+      "mode": "static",
+      "lines": [
+        "2. Wipe the hob",
+        "once cool."
+      ],
+      "start": 5.5,
+      "end": 8.5,
+      "x": 64,
+      "y": 1230,
+      "size": 120,
+      "color": "var(--cream)"
+    },
+    {
+      "in": 3,
+      "mode": "static",
+      "lines": [
+        "3. Put keys,",
+        "post and shoes",
+        "away."
+      ],
+      "start": 8.5,
+      "end": 11.5,
+      "x": 64,
+      "y": 232,
+      "size": 120,
+      "color": "var(--ink)"
+    }
+  ],
+  "end": {
+    "start": 11.5,
+    "push": false,
+    "instant": true,
+    "crop": {
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 1780,
+      "sy": 363,
+      "z": 1.9,
+      "grade": 1.15,
+      "w": 4320,
+      "h": 1920
+    },
+    "line": "A little help?",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 64,
+      "y": 568,
+      "w": 940,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  }
+}
