@@ -37,13 +37,13 @@ export function build(reel, brand) {
   const card = (r, i) => `<div class="rc" id="rc${i}">
   ${reel.sample ? `<div class="smp ui">${esc(reel.sampleText)}</div>` : ""}
   <div class="hd"><div class="ic">${habit ? check.replace(brand.colors.teal, brand.colors.cream).replace('width="80" height="80"', 'width="44" height="44"') : ic}</div><span class="txt">${esc(r.label ?? reel.label)}</span></div>
-  ${habit ? `<div class="stars">${check}</div>` : `<div class="stars" aria-label="${r.rating} out of 5">${[0, 1, 2, 3, 4].map((k) => starSvg(k < r.rating ? brand.colors.teal : "none", brand.colors.teal)).join("")}</div>`}
+  ${habit ? `<div class="stars" style="height:12px;margin:0"></div>` : `<div class="stars" aria-label="${r.rating} out of 5">${[0, 1, 2, 3, 4].map((k) => starSvg(k < r.rating ? brand.colors.teal : "none", brand.colors.teal)).join("")}</div>`}
   <div class="q txt">${habit ? esc(r.excerpt) : `“${esc(r.excerpt)}”`}</div>
   ${r.name ? `<div class="nm txt">${esc(r.name)}</div>` : ""}</div>`;
   const cardShots = reel.cardShots;
   const tCam = reel.titleCam;
   const body = `
-${shot("s1", "c/room.jpg", { origin: tCam ? "540px 960px" : "50% 35%", grade: reel.titleGrade ?? 1 })}
+${shot("s1", "c/room.jpg", { origin: tCam ? "540px 960px" : "50% 35%", grade: reel.titleGrade ?? 1, pos: reel.titleObjPos ?? "50% 50%" })}
 ${cardShots ? cardShots.map((k, i) => shot(`k${i}`, `c/card${i}.jpg`, { origin: "540px 960px", grade: k.grade ?? 1 })).join("\n") : shot("s2", "c/phone.jpg", { origin: "50% 60%", extra: phone("cs", { corners: reel.phone.corners, mask: "c/ph-mask.png", maskData: globalThis.__dataUri?.(`${reel.phone.dir}-mask.png`), shadow: "c/ph-shadow.png", glass: "c/ph-glass.png" }, safariScreen(["c/page.png"], { url: "xtrafreshhh.com" }).replace('id="pg0"', 'id="cp0" style="visibility:inherit"'), { glass: reel.phone.glass ?? 0.14 }) })}
 ${shot("s3", "c/detail.jpg", { origin: "540px 960px", grade: C.grade ?? 1, pos: C.objPos ?? "50% 50%" })}
 ${shot("s4", E.photo ? "c/end.jpg" : "c/room.jpg", { origin: "540px 960px", grade: E.grade ?? 1, pos: E.objPos ?? "50% 50%" })}
@@ -54,7 +54,8 @@ ${endBlock("eb", { line: E.line, url: E.url, urlColor: E.urlColor, ...E.block })
 
   let s = "";
   s += cutIn("s1", 0, T.cards[0]) + (tCam ? camera("s1", 0, T.cards[0], tCam, { ...tCam, scale: tCam.scale + 0.05 }, "sine.out") : camera("s1", 0, T.cards[0], { scale: 1.0 }, { scale: 1.05 }, "sine.out"));
-  s += linesIn("tt", 0.06) + linesOut("tt", T.cards[0]);
+  // round 8.1: the title can sit on screen from the very first frame, like A's hook
+  s += (reel.titleInstant ? `gsap.set("#tt",{opacity:1});\n` : linesIn("tt", 0.06)) + linesOut("tt", T.cards[0]);
   if (cardShots) cardShots.forEach((k, i) => { const a = T.cards[i], z = i < 2 ? T.cards[i + 1] : T.care; s += cutIn(`k${i}`, a, z) + camera(`k${i}`, a, z - a, k.cam, { ...k.cam, scale: k.cam.scale + 0.05 }, "sine.out"); });
   else s += cutIn("s2", T.cards[0], T.care) + camera("s2", T.cards[0], T.care - T.cards[0], { scale: 1.0 }, { scale: 1.08 }, "sine.inOut");
   T.cards.forEach((t, i) => {

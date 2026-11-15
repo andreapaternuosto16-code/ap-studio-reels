@@ -19,18 +19,18 @@
     ]
   ],
   "intro": "Guests on the way?",
-  "introSize": 130,
+  "introSize": 120,
   "introPos": {
-    "x": 80,
-    "y": 536,
-    "w": 900
+    "x": 120,
+    "y": 260,
+    "w": 880
   },
   "introCam": {
-    "scale": 1.33,
-    "x": 0,
-    "y": 317
+    "scale": 1.45,
+    "x": 243,
+    "y": 432
   },
-  "introObjPos": "20.93% 50%",
+  "introObjPos": "83.33% 50%",
   "introGrade": 1.2,
   "jobs": [
     {
@@ -142,5 +142,6 @@
   "assets": {
     "board": "kit-round5/assets/G2/G2-01.jpg",
     "intro": "kit-round5/assets/G2/G2-08.jpg"
-  }
+  },
+  "_round81": "Round 8.1: 'Guests on the way?' moved off the busy hallway onto the plain living-room ceiling/wall of G2-08 (left of the pendant, a crop not used by the end card), 120 px."
 }

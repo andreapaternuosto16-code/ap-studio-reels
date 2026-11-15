@@ -38,33 +38,29 @@
       "The oven…?"
     ],
     "at": [
-      0.3,
-      2.2,
-      4.1,
-      6.0,
-      7.9
+      0,
+      1.5,
+      4.0,
+      6.5,
+      9.0
     ],
-    "top": 160,
-    "step": 96,
-    "size": 32,
-    "tops": [
-      160,
-      296,
-      395,
-      494,
-      593
-    ]
+    "size": 25,
+    "folder": "Notes",
+    "date": "17 December 2026 at 09:41",
+    "titleSize": 32,
+    "row": 46,
+    "firstRow": 176
   },
   "cam": {
     "start": {
-      "scale": 2.05,
-      "x": 183,
-      "y": -245
+      "scale": 1.85,
+      "x": 185,
+      "y": -333
     },
     "screen": {
-      "scale": 2.08,
-      "x": 183,
-      "y": -245
+      "scale": 1.88,
+      "x": 185,
+      "y": -333
     }
   },
   "scenes": [
@@ -133,5 +129,45 @@
   },
   "assets": {
     "phone": "kit-round2/assets/B/02-phone-table.jpg"
-  }
+  },
+  "_round81": "Round 8.1: real iOS Notes screen (status bar, '‹ Notes' header, date, title, ruled Lines paper, toolbar); each tick cuts ~0.9 s to its food close-up with the word in the calm top third; phone holds shortened, closing lines unchanged.",
+  "foodCuts": [
+    {
+      "photo": "kit-round8-1/assets/F/F-food-01.jpg",
+      "at": 2.25,
+      "end": 3.75,
+      "line": "Turkey ✓",
+      "pos": {
+        "x": 96,
+        "y": 240,
+        "w": 900
+      },
+      "size": 130
+    },
+    {
+      "photo": "kit-round8-1/assets/F/F-food-02.jpg",
+      "at": 4.75,
+      "end": 6.25,
+      "line": "Sprouts ✓",
+      "pos": {
+        "x": 96,
+        "y": 240,
+        "w": 900
+      },
+      "size": 130
+    },
+    {
+      "photo": "kit-round8-1/assets/F/F-food-03.jpg",
+      "at": 7.25,
+      "end": 8.75,
+      "line": "Gravy ✓",
+      "pos": {
+        "x": 96,
+        "y": 240,
+        "w": 900
+      },
+      "size": 130,
+      "grade": 1.1
+    }
+  ]
 }

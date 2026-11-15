@@ -10,13 +10,13 @@
   "titleSize": 120,
   "titlePos": {
     "x": 120,
-    "y": 280,
+    "y": 232,
     "w": 840
   },
   "titleCam": {
-    "scale": 1.45,
-    "x": 0,
-    "y": 432
+    "scale": 1.6,
+    "x": 324,
+    "y": 576
   },
   "titleGrade": 1.2,
   "cardStyle": "check",
@@ -107,6 +107,9 @@
     }
   },
   "assets": {
-    "room": "kit-round4/assets/E/E02-mirror-clear.jpg"
-  }
+    "room": "kit-round4/assets/E/E06-kitchen-living-strip.jpg"
+  },
+  "_round81": "Round 8.1: title moved off the mirror onto a calm wall/ceiling crop of E06 (living-room side, above the shelf), 120 px deep teal, on screen from the first frame like A's hook; stray check under each Habit label removed.",
+  "titleObjPos": "97.93% 50%",
+  "titleInstant": true
 }
