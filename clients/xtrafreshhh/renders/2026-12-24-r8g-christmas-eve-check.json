@@ -9,7 +9,7 @@
         "t": 3.4,
         "id": "in-l0",
         "text": "Guests on",
-        "contrast": 6.66,
+        "contrast": 7.19,
         "need": 3,
         "ok": true
       },
@@ -17,7 +17,7 @@
         "t": 3.4,
         "id": "in-l1",
         "text": "the way?",
-        "contrast": 6.81,
+        "contrast": 6.91,
         "need": 3,
         "ok": true
       },
