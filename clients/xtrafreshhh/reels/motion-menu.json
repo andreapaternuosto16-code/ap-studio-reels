@@ -1,0 +1,154 @@
+{
+  "template": "motion-menu",
+  "id": "motion-menu",
+  "music": "menu-bright-100.m4a",
+  "_note": "Demo reel for Andrea to pick motion styles. Not for posting.",
+  "photos": {
+    "A02": "kit-round2/assets/A/02-kitchen.jpg",
+    "A03": "kit-round2/assets/A/03-bathroom.jpg",
+    "A04": "kit-round2/assets/A/04-bedroom.jpg",
+    "A05": "kit-round2/assets/A/05-hallway.jpg",
+    "A06": "kit-round2/assets/A/06-feet-up.jpg",
+    "B01": "kit-round2/assets/B/01-flipboard-room.jpg",
+    "B03": "kit-round2/assets/B/03-garland.jpg",
+    "B04": "kit-round2/assets/B/04-guest-room.jpg",
+    "C01": "kit-round2/assets/C/01-notifications-room.jpg",
+    "E02": "kit-round4/assets/E/E02-mirror-clear.jpg",
+    "E03": "kit-round4/assets/E/E03-hob-wipe.jpg",
+    "E05": "kit-round4/assets/E/E05-living-room-tidy.jpg",
+    "F01": "kit-round4/assets/F/F01-festive-kitchen.jpg",
+    "F05": "kit-round4/assets/F/F05-christmas-table.jpg",
+    "G203": "kit-round5/assets/G2/G2-03.jpg",
+    "G204": "kit-round5/assets/G2/G2-04.jpg",
+    "G205": "kit-round5/assets/G2/G2-05.jpg",
+    "G206": "kit-round5/assets/G2/G2-06.jpg"
+  },
+  "demos": [
+    {
+      "kind": "kinetic",
+      "name": "Kinetic type: word by word, scales big",
+      "photo": "B01",
+      "words": [
+        "Ten-minute",
+        "evening",
+        "reset."
+      ],
+      "y": 430,
+      "size": 150
+    },
+    {
+      "kind": "mask",
+      "name": "Mask-reveal headline wipe",
+      "photo": "C01",
+      "lines": [
+        "Your agreed rooms,",
+        "freshly cleaned."
+      ],
+      "y": 470
+    },
+    {
+      "kind": "push",
+      "name": "Push transition + motion-blur streak",
+      "from": "A02",
+      "to": "A03"
+    },
+    {
+      "kind": "zoom",
+      "name": "Zoom-through into the next room",
+      "from": "G203",
+      "to": "G206",
+      "origin": "525px 830px",
+      "depth": 4.2
+    },
+    {
+      "kind": "whip",
+      "name": "Whip pan with blur",
+      "from": "B03",
+      "to": "B04"
+    },
+    {
+      "kind": "parallax",
+      "name": "2.5D parallax: 3 depth layers",
+      "photo": "E05",
+      "mid": [
+        40,
+        58
+      ],
+      "front": [
+        66,
+        80
+      ]
+    },
+    {
+      "kind": "dolly",
+      "name": "Dolly zoom down a hallway",
+      "photo": "A05",
+      "origin": "540px 860px",
+      "r": "320px 480px"
+    },
+    {
+      "kind": "rack",
+      "name": "Rack focus: foreground to room",
+      "photo": "F01",
+      "front": [
+        60,
+        75
+      ]
+    },
+    {
+      "kind": "cube",
+      "name": "Cuboid carousel: 4 rooms",
+      "faces": [
+        "A04",
+        "A06",
+        "B04",
+        "G206"
+      ]
+    },
+    {
+      "kind": "callout",
+      "name": "Hand-drawn callout + label",
+      "photo": "E03",
+      "circle": {
+        "cx": 800,
+        "cy": 1200,
+        "rx": 250,
+        "ry": 180,
+        "rot": -8
+      },
+      "label": {
+        "x": 80,
+        "y": 930,
+        "text": "Spotless hob"
+      },
+      "arrow": {
+        "x": 360,
+        "y": 1030,
+        "d": "M 10 20 Q 160 20 250 110 M 250 110 L 196 104 M 250 110 L 238 56"
+      },
+      "color": "cream"
+    },
+    {
+      "kind": "freeze",
+      "name": "Beat freeze-cut",
+      "shots": [
+        "G205",
+        "G204",
+        "F05",
+        "B01"
+      ]
+    },
+    {
+      "kind": "flap",
+      "name": "Split-flap board + handwritten title",
+      "photo": "C01",
+      "rows": [
+        "22 DAYS TO",
+        "CHRISTMAS"
+      ],
+      "boardTop": 400,
+      "hand": "You've got this.",
+      "handTop": 820
+    }
+  ]
+}

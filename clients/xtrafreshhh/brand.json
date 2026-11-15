@@ -1,0 +1,19 @@
+{
+  "client": "XtraFreshhh",
+  "site": "xtrafreshhh.com",
+  "colors": {
+    "ink": "#1F4F5B",
+    "teal": "#296675",
+    "cream": "#FFF7F4",
+    "blush": "#FADBD2"
+  },
+  "fonts": {
+    "headline": "Bricolage Grotesque",
+    "text": "Figtree",
+    "googleCss": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap"
+  },
+  "logo": "xf-logo.png",
+  "logoRule": "Use the PNG as-is, end card only, always with the site address.",
+  "logoPath": "kit/xf-logo.png",
+  "photoDir": "kit/photos"
+}

@@ -1,0 +1,115 @@
+{
+  "template": "r3-reviews",
+  "date": "2026-11-26",
+  "pairsWith": "P2 Regular clean",
+  "bpm": 100,
+  "music": "r2-c-warm-100.m4a",
+  "_template": "Round 8: approved template C (reviews) recycled for the habits reel: same card style, size, slide and hold; label 'Habit N' with a teal check instead of stars.",
+  "title": "3 easy habits between cleans",
+  "titleWrap": 14,
+  "titleSize": 120,
+  "titlePos": {
+    "x": 120,
+    "y": 232,
+    "w": 840
+  },
+  "titleCam": {
+    "scale": 1.6,
+    "x": 324,
+    "y": 576
+  },
+  "titleGrade": 1.2,
+  "cardStyle": "check",
+  "label": "Habit",
+  "reviews": [
+    {
+      "label": "Habit 1",
+      "excerpt": "1. Ten-minute evening reset."
+    },
+    {
+      "label": "Habit 2",
+      "excerpt": "2. Wipe the hob once cool."
+    },
+    {
+      "label": "Habit 3",
+      "excerpt": "3. Put keys, post and shoes away."
+    }
+  ],
+  "cardTop": 280,
+  "cardShots": [
+    {
+      "photo": "kit-round4/assets/E/E05-living-room-tidy.jpg",
+      "cam": {
+        "scale": 1.45,
+        "x": -121,
+        "y": 0
+      }
+    },
+    {
+      "photo": "kit-round4/assets/E/E03-hob-wipe.jpg",
+      "cam": {
+        "scale": 1.45,
+        "x": 243,
+        "y": -289
+      }
+    },
+    {
+      "photo": "kit-round4/assets/E/E04-hallway-habits.jpg",
+      "cam": {
+        "scale": 1.6,
+        "x": 324,
+        "y": 576
+      },
+      "grade": 1.1
+    }
+  ],
+  "careLine": "A little help between cleans.",
+  "care": {
+    "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+    "objPos": "0% 50%",
+    "pos": {
+      "x": 64,
+      "y": 408,
+      "w": 940
+    },
+    "size": 110,
+    "wrap": 15,
+    "cam": {
+      "scale": 1.33,
+      "x": 178,
+      "y": 317
+    },
+    "grade": 1.2
+  },
+  "end": {
+    "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+    "objPos": "47.04% 50%",
+    "grade": 1.15,
+    "line": "A little help?",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "scale": [
+      1.9,
+      1.94
+    ],
+    "x": 0,
+    "y": 174,
+    "block": {
+      "x": 64,
+      "y": 568,
+      "w": 940,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  },
+  "assets": {
+    "room": "kit-round4/assets/E/E06-kitchen-living-strip.jpg"
+  },
+  "_round81": "Round 8.1: title moved off the mirror onto a calm wall/ceiling crop of E06 (living-room side, above the shelf), 120 px deep teal, on screen from the first frame like A's hook; stray check under each Habit label removed.",
+  "titleObjPos": "97.93% 50%",
+  "titleInstant": true
+}

@@ -1,0 +1,270 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 32,
+    "failing": [],
+    "worst": 3.01,
+    "all": [
+      {
+        "t": 0.75,
+        "id": "t0-0-0",
+        "text": "Planning",
+        "contrast": 5.94,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 0.75,
+        "id": "t0-1-0",
+        "text": "Christmas",
+        "contrast": 5.67,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 0.75,
+        "id": "t0-2-0",
+        "text": "dinner?",
+        "contrast": 15.1,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.75,
+        "id": "t1-0",
+        "text": "Planning",
+        "contrast": 5.91,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.75,
+        "id": "t1-1",
+        "text": "Christmas",
+        "contrast": 5.97,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 1.75,
+        "id": "t1-2",
+        "text": "dinner?",
+        "contrast": 4.41,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.75,
+        "id": "t2-0-0",
+        "text": "Turkey.",
+        "contrast": 5.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.75,
+        "id": "t2-0-1",
+        "text": "✓",
+        "contrast": 5.68,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.75,
+        "id": "t3-0-0",
+        "text": "Sprouts.",
+        "contrast": 3.92,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.75,
+        "id": "t3-0-1",
+        "text": "✓",
+        "contrast": 3.44,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.75,
+        "id": "t4-0-0",
+        "text": "Gravy.",
+        "contrast": 7.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.75,
+        "id": "t4-0-1",
+        "text": "✓",
+        "contrast": 6.08,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.75,
+        "id": "t5-0-0",
+        "text": "The",
+        "contrast": 14.23,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.75,
+        "id": "t5-0-1",
+        "text": "oven...?",
+        "contrast": 11.26,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.25,
+        "id": "t6-0-0",
+        "text": "Before",
+        "contrast": 5.37,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.25,
+        "id": "t6-0-1",
+        "text": "the",
+        "contrast": 3.88,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.25,
+        "id": "t6-1-0",
+        "text": "roast...",
+        "contrast": 4.84,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.75,
+        "id": "t7-0-0",
+        "text": "...start",
+        "contrast": 3.01,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.75,
+        "id": "t7-0-1",
+        "text": "with",
+        "contrast": 8.35,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.75,
+        "id": "t7-1-0",
+        "text": "the",
+        "contrast": 4.29,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.75,
+        "id": "t7-1-1",
+        "text": "oven.",
+        "contrast": 3.07,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t8-0-0",
+        "text": "One",
+        "contrast": 6.58,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t8-0-1",
+        "text": "less",
+        "contrast": 7.79,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t8-0-2",
+        "text": "job",
+        "contrast": 6,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t8-1-0",
+        "text": "before",
+        "contrast": 8.07,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t8-1-1",
+        "text": "festive",
+        "contrast": 4.74,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t8-2-0",
+        "text": "cooking.",
+        "contrast": 9.47,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.75,
+        "id": "t9-0",
+        "text": "One less job",
+        "contrast": 4.96,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.75,
+        "id": "t9-1",
+        "text": "before festive",
+        "contrast": 7.69,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.75,
+        "id": "t9-2",
+        "text": "cooking.",
+        "contrast": 7.08,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.5,
+        "id": "eh txt",
+        "text": "Ask about oven cleaning.",
+        "contrast": 3.55,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.5,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 7.31,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 70px on 1080 canvas ≈ 25.3px on a 390px phone; duration 15s; legibility 32/32 lines pass (worst 3.0:1)",
+  "duration": 15,
+  "minFontPx": 70,
+  "problems": []
+}

@@ -1,0 +1,192 @@
+{
+  "template": "r4-sequence",
+  "id": "r4-e",
+  "date": "2026-11-26",
+  "pairsWith": "P2 Regular clean",
+  "bpm": 100,
+  "music": "r4-e-bright-100.m4a",
+  "_wording": "Round-4 brief (final, wording-reviewed), used exactly.",
+  "shots": [
+    {
+      "id": "s1",
+      "photo": "kit-round4/assets/E/E01-mirror-mid-wipe.jpg",
+      "start": 0,
+      "end": 6,
+      "from": {
+        "scale": 1.55,
+        "x": 0,
+        "y": 576
+      },
+      "to": {
+        "scale": 1.6,
+        "x": 0,
+        "y": 576
+      },
+      "ease": "sine.out",
+      "reveal": {
+        "photo": "kit-round4/assets/E/E02-mirror-clear.jpg",
+        "at": 0.1,
+        "dur": 1.3,
+        "angle": "100deg"
+      },
+      "grade": 1.1
+    },
+    {
+      "id": "s2",
+      "photo": "kit-round4/assets/E/E05-living-room-tidy.jpg",
+      "start": 6,
+      "end": 10,
+      "from": {
+        "scale": 1.66,
+        "x": 0,
+        "y": -576
+      },
+      "to": {
+        "scale": 1.6,
+        "x": 0,
+        "y": -576
+      },
+      "ease": "sine.out",
+      "grade": 0.72
+    },
+    {
+      "id": "s3",
+      "photo": "kit-round4/assets/E/E03-hob-wipe.jpg",
+      "start": 10,
+      "end": 14,
+      "origin": "540px 960px",
+      "from": {
+        "scale": 1.4,
+        "x": 216,
+        "y": -384
+      },
+      "to": {
+        "scale": 1.5,
+        "x": 270,
+        "y": -480
+      },
+      "ease": "sine.inOut",
+      "grade": 0.9
+    },
+    {
+      "id": "s4",
+      "photo": "kit-round4/assets/E/E04-hallway-habits.jpg",
+      "start": 14,
+      "end": 18,
+      "from": {
+        "scale": 1.66,
+        "x": -324,
+        "y": 0
+      },
+      "to": {
+        "scale": 1.6,
+        "x": -324,
+        "y": 0
+      },
+      "ease": "sine.out",
+      "grade": 0.72
+    },
+    {
+      "id": "s5",
+      "kind": "strip",
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "start": 18,
+      "end": 21.5,
+      "from": {
+        "x": 0
+      },
+      "to": {
+        "x": -3240
+      },
+      "ease": "power1.inOut"
+    },
+    {
+      "id": "s6",
+      "photo": "kit-round4/assets/E/E02-mirror-clear.jpg",
+      "start": 21.5,
+      "end": 25,
+      "last": true,
+      "grade": 1.1,
+      "from": {
+        "scale": 1.45,
+        "x": -121,
+        "y": 432
+      },
+      "to": {
+        "scale": 1.49,
+        "x": -121,
+        "y": 432
+      },
+      "ease": "sine.out",
+      "focusPull": 7
+    }
+  ],
+  "texts": [
+    {
+      "id": "hook",
+      "text": "3 easy habits between cleans",
+      "wrap": 14,
+      "start": 0,
+      "end": 6,
+      "delay": 0.35,
+      "x": 140,
+      "y": 330,
+      "w": 880,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "id": "t1",
+      "text": "1. Ten-minute evening reset.",
+      "wrap": 15,
+      "start": 6,
+      "end": 10,
+      "x": 280,
+      "y": 710,
+      "w": 740,
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "id": "t2",
+      "text": "2. Wipe the hob once cool.",
+      "wrap": 15,
+      "start": 10,
+      "end": 14,
+      "x": 60,
+      "y": 1080,
+      "w": 900,
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "id": "t3",
+      "text": "3. Put keys, post and shoes away.",
+      "wrap": 15,
+      "start": 14,
+      "end": 18,
+      "x": 240,
+      "y": 1030,
+      "w": 780,
+      "size": 110,
+      "color": "var(--cream)"
+    }
+  ],
+  "end": {
+    "start": 21.5,
+    "line": "A little help?",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 60,
+      "y": 310,
+      "w": 940,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  }
+}

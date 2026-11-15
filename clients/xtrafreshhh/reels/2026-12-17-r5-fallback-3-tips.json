@@ -1,0 +1,18 @@
+{
+  "template": "three-tips",
+  "date": "2026-12-17",
+  "pairsWith": "P6 Oven clean (fallback)",
+  "music": "calm-keys-01.wav",
+  "photo": "oven-cover.jpg",
+  "photoPosition": "0% 50%",
+  "headline": "Before the roast: 3 tips",
+  "tips": [
+    "1. Check the oven early.",
+    "2. Clear the worktops.",
+    "3. Ask about cleaning dates."
+  ],
+  "endCard": {
+    "line": "Ask about oven cleaning.",
+    "url": "xtrafreshhh.com"
+  }
+}

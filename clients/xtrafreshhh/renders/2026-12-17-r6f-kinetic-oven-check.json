@@ -1,0 +1,222 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 26,
+    "failing": [],
+    "worst": 3.51,
+    "all": [
+      {
+        "t": 0.75,
+        "id": "t0-0-0",
+        "text": "Planning",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 0.75,
+        "id": "t0-1-0",
+        "text": "Christmas",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 0.75,
+        "id": "t0-2-0",
+        "text": "dinner?",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.75,
+        "id": "t1-0-0",
+        "text": "Turkey.",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.75,
+        "id": "t1-0-1",
+        "text": "✓",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.75,
+        "id": "t2-0-0",
+        "text": "Sprouts.",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.75,
+        "id": "t2-0-1",
+        "text": "✓",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.75,
+        "id": "t3-0-0",
+        "text": "Gravy.",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.75,
+        "id": "t3-0-1",
+        "text": "✓",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.75,
+        "id": "t4-0-0",
+        "text": "The",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.75,
+        "id": "t4-0-1",
+        "text": "oven...?",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.25,
+        "id": "t5-0-0",
+        "text": "Before",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.25,
+        "id": "t5-0-1",
+        "text": "the",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 7.25,
+        "id": "t5-1-0",
+        "text": "roast...",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.75,
+        "id": "t6-0-0",
+        "text": "...start",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.75,
+        "id": "t6-0-1",
+        "text": "with",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.75,
+        "id": "t6-1-0",
+        "text": "the",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.75,
+        "id": "t6-1-1",
+        "text": "oven.",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t7-0-0",
+        "text": "One",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t7-0-1",
+        "text": "less",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t7-0-2",
+        "text": "job",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t7-1-0",
+        "text": "before",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t7-1-1",
+        "text": "festive",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 10.25,
+        "id": "t7-2-0",
+        "text": "cooking.",
+        "contrast": 8.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.5,
+        "id": "eh txt",
+        "text": "Ask about oven cleaning.",
+        "contrast": 3.51,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.5,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 7.32,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 70px on 1080 canvas ≈ 25.3px on a 390px phone; duration 15s; legibility 26/26 lines pass (worst 3.5:1)",
+  "duration": 15,
+  "minFontPx": 69.99998728434129,
+  "problems": []
+}

@@ -1,0 +1,158 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 18,
+    "failing": [],
+    "worst": 3.18,
+    "all": [
+      {
+        "t": 0.75,
+        "id": "t0-0",
+        "text": "3 easy habits",
+        "contrast": 5.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 0.75,
+        "id": "t0-1",
+        "text": "between cleans",
+        "contrast": 4.73,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.75,
+        "id": "t1-0",
+        "text": "1. Ten-minute",
+        "contrast": 3.95,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.75,
+        "id": "t1-1",
+        "text": "evening reset.",
+        "contrast": 5.94,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.25,
+        "id": "t2-0",
+        "text": "1. Ten-minute",
+        "contrast": 5.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.25,
+        "id": "t2-1",
+        "text": "evening reset.",
+        "contrast": 7.01,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.75,
+        "id": "t3-0",
+        "text": "2. Wipe the hob",
+        "contrast": 11.28,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.75,
+        "id": "t3-1",
+        "text": "once cool.",
+        "contrast": 12.14,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.25,
+        "id": "t4-0",
+        "text": "2. Wipe the hob",
+        "contrast": 5,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.25,
+        "id": "t4-1",
+        "text": "once cool.",
+        "contrast": 5.95,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.75,
+        "id": "t5-0",
+        "text": "3. Put keys,",
+        "contrast": 5.39,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.75,
+        "id": "t5-1",
+        "text": "post and shoes",
+        "contrast": 3.18,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.75,
+        "id": "t5-2",
+        "text": "away.",
+        "contrast": 4.95,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.25,
+        "id": "t6-0",
+        "text": "3. Put keys,",
+        "contrast": 5.54,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.25,
+        "id": "t6-1",
+        "text": "post and shoes",
+        "contrast": 3.23,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.25,
+        "id": "t6-2",
+        "text": "away.",
+        "contrast": 4.52,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.5,
+        "id": "eh txt",
+        "text": "A little help?",
+        "contrast": 5.69,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.5,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 5.8,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 18/18 lines pass (worst 3.2:1)",
+  "duration": 15,
+  "minFontPx": 72,
+  "problems": []
+}

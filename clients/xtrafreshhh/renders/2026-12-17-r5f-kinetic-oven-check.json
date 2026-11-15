@@ -1,0 +1,198 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 23,
+    "failing": [],
+    "worst": 4.05,
+    "all": [
+      {
+        "t": 0.45,
+        "id": "w0-l0",
+        "text": "Planning",
+        "contrast": 5.73,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 0.45,
+        "id": "w0-l1",
+        "text": "Christmas",
+        "contrast": 5.29,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 0.45,
+        "id": "w0-l2",
+        "text": "dinner?",
+        "contrast": 5.52,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.45,
+        "id": "w1-l0",
+        "text": "Turkey.",
+        "contrast": 4.47,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 2.45,
+        "id": "w1-l1",
+        "text": "✓",
+        "contrast": 4.3,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.45,
+        "id": "w2-l0",
+        "text": "Sprouts.",
+        "contrast": 5.56,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.45,
+        "id": "w2-l1",
+        "text": "✓",
+        "contrast": 8.92,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.45,
+        "id": "w3-l0",
+        "text": "Gravy.",
+        "contrast": 7.85,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.45,
+        "id": "w3-l1",
+        "text": "✓",
+        "contrast": 6.42,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.45,
+        "id": "w4-l0",
+        "text": "The",
+        "contrast": 5.28,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 5.45,
+        "id": "w4-l1",
+        "text": "oven...?",
+        "contrast": 6.68,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.95,
+        "id": "w5-l0",
+        "text": "Before",
+        "contrast": 4.24,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.95,
+        "id": "w5-l1",
+        "text": "the",
+        "contrast": 4.05,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.95,
+        "id": "w5-l2",
+        "text": "roast...",
+        "contrast": 4.53,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.45,
+        "id": "w6-l0",
+        "text": "...start",
+        "contrast": 6.07,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.45,
+        "id": "w6-l1",
+        "text": "with the",
+        "contrast": 4.62,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.45,
+        "id": "w6-l2",
+        "text": "oven.",
+        "contrast": 7.06,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.95,
+        "id": "w7-l0",
+        "text": "One less",
+        "contrast": 4.84,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.95,
+        "id": "w7-l1",
+        "text": "job before",
+        "contrast": 6.94,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.95,
+        "id": "w7-l2",
+        "text": "festive",
+        "contrast": 5.84,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 9.95,
+        "id": "w7-l3",
+        "text": "cooking.",
+        "contrast": 6.59,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.4,
+        "id": "eh txt",
+        "text": "Ask about oven cleaning.",
+        "contrast": 5.07,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.4,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 8.82,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 23/23 lines pass (worst 4.0:1)",
+  "duration": 15,
+  "minFontPx": 72,
+  "problems": []
+}

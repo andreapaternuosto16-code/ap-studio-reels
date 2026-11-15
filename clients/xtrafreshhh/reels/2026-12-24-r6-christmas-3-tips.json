@@ -1,0 +1,20 @@
+{
+  "template": "three-tips",
+  "date": "2026-12-24",
+  "pairsWith": "Christmas",
+  "music": "calm-keys-01.wav",
+  "photo": "hall-side.jpg",
+  "photoPosition": "48% 50%",
+  "headline": "Guests on the way?",
+  "tips": [
+    "1. Clear the hallway.",
+    "2. Put out a fresh towel.",
+    "3. Empty the bins."
+  ],
+  "outro": "Happy Christmas from the XtraFreshhh team.",
+  "endCard": {
+    "line": "",
+    "url": "xtrafreshhh.com"
+  },
+  "textWidth": 640
+}

@@ -1,0 +1,296 @@
+{
+  "template": "r6-reel",
+  "id": "r61-f",
+  "date": "2026-12-17",
+  "pairsWith": "P6 Oven clean",
+  "music": "r5-f-bright-120.m4a",
+  "_wording": "Reviewed lines and timings, exact. Illustrative only: no before/after, no 'our result'.",
+  "_motion": "F only: #1 kinetic word-by-word type over the full-bleed photos; #8 rack focus vegetables → oven as '...start with the oven.' lands (8.0 s); clean hard cuts on the beat (120 bpm). No push, no mask-reveal, no callouts, no cube.",
+  "shots": [
+    {
+      "photo": "kit-round4/assets/F/F06-worktop-oven-dining-strip.jpg",
+      "sx": 2336,
+      "sy": 882,
+      "z": 1.85,
+      "grade": 1.0,
+      "start": 0,
+      "end": 1,
+      "push": false,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "photo": "kit-round4/assets/F/F06-worktop-oven-dining-strip.jpg",
+      "sx": 1168,
+      "sy": 0,
+      "z": 1.85,
+      "grade": 1.2,
+      "start": 1,
+      "end": 2,
+      "push": false,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "photo": "kit-round4/assets/F/F05-christmas-table.jpg",
+      "sx": 180,
+      "sy": 0,
+      "z": 1.2,
+      "grade": 1.2,
+      "start": 2,
+      "end": 3,
+      "push": false
+    },
+    {
+      "photo": "kit-round4/assets/F/F01-festive-kitchen.jpg",
+      "sx": 180,
+      "sy": 320,
+      "z": 1.2,
+      "grade": 1.2,
+      "start": 3,
+      "end": 4,
+      "push": false
+    },
+    {
+      "photo": "kit-round4/assets/F/F06-worktop-oven-dining-strip.jpg",
+      "sx": 0,
+      "sy": 0,
+      "z": 1.85,
+      "grade": 1.2,
+      "start": 4,
+      "end": 5,
+      "push": false,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "photo": "kit-round4/assets/F/F02-oven-opening.jpg",
+      "sx": 180,
+      "sy": 0,
+      "z": 1.2,
+      "grade": 1.0,
+      "start": 5,
+      "end": 6.5,
+      "push": false
+    },
+    {
+      "photo": "kit-round4/assets/F/F06-worktop-oven-dining-strip.jpg",
+      "sx": 584,
+      "sy": 0,
+      "z": 1.85,
+      "grade": 1.2,
+      "start": 6.5,
+      "end": 8.0,
+      "push": false,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "photo": "kit-round4/assets/F/F04-raw-vegetables.jpg",
+      "sx": 360,
+      "sy": 640,
+      "z": 1.5,
+      "grade": 1.0,
+      "start": 8.0,
+      "end": 9.5,
+      "push": false,
+      "rack": {
+        "at": 8.05,
+        "dur": 0.4,
+        "blur": 9,
+        "mask": "radial-gradient(ellipse 500px 300px at 683px 1590px,#000 60%,transparent 100%)"
+      }
+    },
+    {
+      "photo": "kit-round4/assets/F/F03-oven-glass.jpg",
+      "sx": 180,
+      "sy": 320,
+      "z": 1.2,
+      "grade": 1.0,
+      "start": 9.5,
+      "end": 11.0,
+      "push": false
+    },
+    {
+      "photo": "kit-round4/assets/F/F06-worktop-oven-dining-strip.jpg",
+      "sx": 2920,
+      "sy": 0,
+      "z": 1.85,
+      "grade": 1.2,
+      "start": 11,
+      "end": 12,
+      "push": false,
+      "w": 4320,
+      "h": 1920
+    }
+  ],
+  "texts": [
+    {
+      "mode": "kinetic",
+      "lines": [
+        "Planning",
+        "Christmas",
+        "dinner?"
+      ],
+      "start": 0,
+      "end": 1,
+      "size": 170,
+      "x": 112,
+      "y": 1016,
+      "color": "var(--cream)",
+      "in": 0
+    },
+    {
+      "mode": "static",
+      "lines": [
+        "Planning",
+        "Christmas",
+        "dinner?"
+      ],
+      "start": 1,
+      "end": 2,
+      "size": 170,
+      "x": 64,
+      "y": 760,
+      "color": "var(--ink)",
+      "in": 1
+    },
+    {
+      "mode": "kinetic",
+      "lines": [
+        "Turkey. ✓"
+      ],
+      "start": 2,
+      "end": 3,
+      "size": 200,
+      "x": 96,
+      "y": 360,
+      "color": "var(--ink)",
+      "in": 2
+    },
+    {
+      "mode": "kinetic",
+      "lines": [
+        "Sprouts. ✓"
+      ],
+      "start": 3,
+      "end": 4,
+      "size": 190,
+      "x": 128,
+      "y": 1336,
+      "color": "var(--ink)",
+      "in": 3
+    },
+    {
+      "mode": "kinetic",
+      "lines": [
+        "Gravy. ✓"
+      ],
+      "start": 4,
+      "end": 5,
+      "size": 200,
+      "x": 64,
+      "y": 280,
+      "color": "var(--ink)",
+      "in": 4
+    },
+    {
+      "mode": "kinetic",
+      "lines": [
+        "The oven...?"
+      ],
+      "start": 5,
+      "end": 6.5,
+      "size": 160,
+      "x": 144,
+      "y": 828,
+      "color": "var(--cream)",
+      "in": 5
+    },
+    {
+      "mode": "kinetic",
+      "lines": [
+        "Before the",
+        "roast..."
+      ],
+      "start": 6.5,
+      "end": 8.0,
+      "size": 180,
+      "x": 64,
+      "y": 392,
+      "color": "var(--ink)",
+      "in": 6
+    },
+    {
+      "mode": "kinetic",
+      "lines": [
+        "...start with",
+        "the oven."
+      ],
+      "start": 8.0,
+      "end": 9.5,
+      "size": 145,
+      "x": 96,
+      "y": 1096,
+      "color": "var(--cream)",
+      "in": 7
+    },
+    {
+      "mode": "kinetic",
+      "lines": [
+        "One less job",
+        "before festive",
+        "cooking."
+      ],
+      "start": 9.5,
+      "end": 11.0,
+      "size": 150,
+      "x": 64,
+      "y": 808,
+      "color": "var(--cream)",
+      "in": 8
+    },
+    {
+      "mode": "static",
+      "lines": [
+        "One less job",
+        "before festive",
+        "cooking."
+      ],
+      "start": 11,
+      "end": 12,
+      "size": 150,
+      "x": 64,
+      "y": 232,
+      "color": "var(--ink)",
+      "in": 9
+    }
+  ],
+  "end": {
+    "start": 12.0,
+    "push": false,
+    "crop": {
+      "photo": "kit-round4/assets/F/F06-worktop-oven-dining-strip.jpg",
+      "sx": 3504,
+      "sy": 0,
+      "z": 1.9,
+      "grade": 1.15,
+      "w": 4320,
+      "h": 1920
+    },
+    "line": "Ask about oven cleaning.",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 64,
+      "y": 236,
+      "w": 800,
+      "align": "left",
+      "size": 110,
+      "logoW": 760,
+      "order": "line-url-logo",
+      "urlSize": 70,
+      "gap": 30
+    }
+  }
+}

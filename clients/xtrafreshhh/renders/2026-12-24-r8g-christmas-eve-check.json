@@ -1,0 +1,102 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 11,
+    "failing": [],
+    "worst": 3.46,
+    "all": [
+      {
+        "t": 3.4,
+        "id": "in-l0",
+        "text": "Guests on",
+        "contrast": 7.19,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.4,
+        "id": "in-l1",
+        "text": "the way?",
+        "contrast": 6.91,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.96,
+        "id": "jt0-l0",
+        "text": "1. Clear the",
+        "contrast": 5.02,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.96,
+        "id": "jt0-l1",
+        "text": "hallway.",
+        "contrast": 5.47,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.53,
+        "id": "jt1-l0",
+        "text": "2. Put out a",
+        "contrast": 7.15,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.53,
+        "id": "jt1-l1",
+        "text": "fresh towel.",
+        "contrast": 7.3,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.09,
+        "id": "jt2-l0",
+        "text": "3. Empty the",
+        "contrast": 5.39,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.09,
+        "id": "jt2-l1",
+        "text": "bins.",
+        "contrast": 3.46,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.79,
+        "id": "yg",
+        "text": "Happy Christmas",
+        "contrast": 6.19,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eh txt",
+        "text": "From the XtraFreshhh team.",
+        "contrast": 5.89,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 5.58,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 11/11 lines pass (worst 3.5:1)",
+  "duration": 15,
+  "minFontPx": 72,
+  "problems": []
+}

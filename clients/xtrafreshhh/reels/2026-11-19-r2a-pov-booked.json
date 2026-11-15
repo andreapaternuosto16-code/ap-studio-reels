@@ -1,0 +1,65 @@
+{
+  "template": "pov-booking",
+  "date": "2026-11-19",
+  "pairsWith": "P1 New website",
+  "bpm": 104,
+  "music": "r2-a-bright-104.m4a",
+  "_wording": "REVIEWED-WORDING.md WR01 (12 Nov), used exactly. Room label 'Bedroom' replaces the review's 'Living room' because the supplied picture A/04 is a bedroom; confirm with the reviewer.",
+  "_check": "Before posting, the production owner checks the live estimate/request flow and email confirmation match this story.",
+  "hook": "POV: the clean is booked.",
+  "exampleLabel": "Example booking",
+  "sender": "XtraFreshhh",
+  "notes": [
+    "Request received.",
+    "We agree the details.",
+    "Booking confirmed by email."
+  ],
+  "roomsLine": "Your agreed rooms, freshly cleaned.",
+  "rooms": [
+    "Kitchen",
+    "Bathroom",
+    "Bedroom",
+    "Hallway"
+  ],
+  "feetLine": "Now the sofa is all yours.",
+  "endCard": {
+    "line": "Get your estimate at",
+    "url": "xtrafreshhh.com"
+  },
+  "screen": {
+    "corners": [
+      [
+        254,
+        469
+      ],
+      [
+        660,
+        454
+      ],
+      [
+        736,
+        1364
+      ],
+      [
+        321,
+        1400
+      ]
+    ],
+    "focus": [
+      495,
+      900
+    ]
+  },
+  "kitD": "kit-round2/assets/D",
+  "assets": {
+    "phone": "kit-round2/assets/A/01-phone.jpg",
+    "strip": "kit-round2/assets/A/07-pan-strip.jpg",
+    "feet": "kit-round2/assets/A/06-feet-up.jpg",
+    "rooms": [
+      "kit-round2/assets/A/02-kitchen.jpg",
+      "kit-round2/assets/A/03-bathroom.jpg",
+      "kit-round2/assets/A/04-bedroom.jpg",
+      "kit-round2/assets/A/05-hallway.jpg"
+    ]
+  }
+}

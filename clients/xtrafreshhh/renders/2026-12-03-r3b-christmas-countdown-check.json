@@ -1,0 +1,118 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 13,
+    "failing": [],
+    "worst": 3.39,
+    "all": [
+      {
+        "t": 3.4,
+        "id": "in-l0",
+        "text": "3 jobs to",
+        "contrast": 5.5,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 3.4,
+        "id": "in-l1",
+        "text": "do now",
+        "contrast": 4.74,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.96,
+        "id": "jt0-l0",
+        "text": "1. Ask about",
+        "contrast": 4.01,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.96,
+        "id": "jt0-l1",
+        "text": "December",
+        "contrast": 4.04,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 4.96,
+        "id": "jt0-l2",
+        "text": "dates early.",
+        "contrast": 4.12,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.53,
+        "id": "jt1-l0",
+        "text": "2. Clear shelves",
+        "contrast": 4.96,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.53,
+        "id": "jt1-l1",
+        "text": "before",
+        "contrast": 5.14,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 6.53,
+        "id": "jt1-l2",
+        "text": "decorating.",
+        "contrast": 5.31,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.09,
+        "id": "jt2-l0",
+        "text": "3. Plan the",
+        "contrast": 4.89,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 8.09,
+        "id": "jt2-l1",
+        "text": "guest room.",
+        "contrast": 4.95,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 11.79,
+        "id": "yg",
+        "text": "You've got this.",
+        "contrast": 4.57,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eh txt",
+        "text": "Ask about December dates at",
+        "contrast": 4.64,
+        "need": 3,
+        "ok": true
+      },
+      {
+        "t": 14.3,
+        "id": "eu txt",
+        "text": "xtrafreshhh.com",
+        "contrast": 3.39,
+        "need": 3,
+        "ok": true
+      }
+    ]
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 72px on 1080 canvas ≈ 26.0px on a 390px phone; duration 15s; legibility 13/13 lines pass (worst 3.4:1)",
+  "duration": 15,
+  "minFontPx": 72,
+  "problems": []
+}

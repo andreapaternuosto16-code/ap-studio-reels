@@ -1,0 +1,246 @@
+{
+  "template": "r4-sequence",
+  "id": "r4-g",
+  "date": "2026-12-24",
+  "pairsWith": "Christmas Eve",
+  "bpm": 92,
+  "music": "r4-g-sleigh-92.m4a",
+  "_wording": "Round-4 brief, used exactly.",
+  "shots": [
+    {
+      "id": "s1",
+      "photo": "kit-round4/assets/G/G01-front-door-snow.jpg",
+      "start": 0,
+      "end": 4,
+      "origin": "540px 960px",
+      "from": {
+        "scale": 1.4,
+        "x": -121,
+        "y": -144
+      },
+      "to": {
+        "scale": 1.45,
+        "x": -121,
+        "y": -144
+      },
+      "ease": "sine.out",
+      "snow": true,
+      "grade": 0.72,
+      "snowCount": [
+        18,
+        11,
+        5
+      ]
+    },
+    {
+      "id": "s1b",
+      "photo": "kit-round4/assets/G/G01-front-door-snow.jpg",
+      "start": 3.4,
+      "end": 4,
+      "origin": "540px 960px",
+      "from": {
+        "scale": 1.45,
+        "x": -121,
+        "y": -144
+      },
+      "to": {
+        "scale": 3.2,
+        "x": -121,
+        "y": -144
+      },
+      "ease": "power2.in",
+      "grade": 0.72
+    },
+    {
+      "id": "s2",
+      "photo": "kit-round4/assets/G/G02-hallway-ready.jpg",
+      "start": 4,
+      "end": 7,
+      "from": {
+        "scale": 1.75,
+        "x": -243,
+        "y": -288
+      },
+      "to": {
+        "scale": 1.45,
+        "x": -243,
+        "y": -288
+      },
+      "ease": "power2.out",
+      "grade": 0.72
+    },
+    {
+      "id": "s3",
+      "photo": "kit-round4/assets/G/G03-fresh-towels.jpg",
+      "start": 7,
+      "end": 10,
+      "from": {
+        "scale": 1.66,
+        "x": 162,
+        "y": -192
+      },
+      "to": {
+        "scale": 1.6,
+        "x": 162,
+        "y": -192
+      },
+      "ease": "sine.out",
+      "grade": 1.1
+    },
+    {
+      "id": "s4",
+      "photo": "kit-round4/assets/G/G04-fresh-bin-liner.jpg",
+      "start": 10,
+      "end": 13,
+      "from": {
+        "scale": 1.6,
+        "x": -324,
+        "y": 576
+      },
+      "to": {
+        "scale": 1.66,
+        "x": -324,
+        "y": 576
+      },
+      "ease": "sine.out",
+      "grade": 0.72
+    },
+    {
+      "id": "s5",
+      "kind": "strip",
+      "photo": "kit-round4/assets/G/G06-entrance-hall-living-strip.jpg",
+      "start": 13,
+      "end": 15.5,
+      "from": {
+        "x": -1000
+      },
+      "to": {
+        "x": -3240
+      },
+      "ease": "power1.inOut"
+    },
+    {
+      "id": "s6",
+      "photo": "kit-round4/assets/G/G05-tree-and-gifts.jpg",
+      "start": 15.5,
+      "end": 19,
+      "from": {
+        "scale": 1.56,
+        "x": 0,
+        "y": 576
+      },
+      "to": {
+        "scale": 1.6,
+        "x": 0,
+        "y": 576
+      },
+      "ease": "sine.out",
+      "grade": 0.72
+    },
+    {
+      "id": "s7",
+      "photo": "kit-round4/assets/G/G02-hallway-ready.jpg",
+      "start": 19,
+      "end": 23,
+      "last": true,
+      "from": {
+        "scale": 1.56,
+        "x": 0,
+        "y": 576
+      },
+      "to": {
+        "scale": 1.6,
+        "x": 0,
+        "y": 576
+      },
+      "ease": "sine.out",
+      "focusPull": 7,
+      "grade": 1.18
+    }
+  ],
+  "texts": [
+    {
+      "id": "hook",
+      "text": "Guests on the way?",
+      "wrap": 10,
+      "start": 0,
+      "end": 3.4,
+      "delay": 0.1,
+      "x": 380,
+      "y": 1030,
+      "w": 640,
+      "size": 130,
+      "color": "var(--cream)"
+    },
+    {
+      "id": "t1",
+      "text": "1. Clear the hallway.",
+      "wrap": 14,
+      "start": 4,
+      "end": 7,
+      "x": 180,
+      "y": 1030,
+      "w": 840,
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "id": "t2",
+      "text": "2. Put out a fresh towel.",
+      "wrap": 14,
+      "start": 7,
+      "end": 10,
+      "x": 100,
+      "y": 1110,
+      "w": 900,
+      "size": 110,
+      "color": "var(--ink)"
+    },
+    {
+      "id": "t3",
+      "text": "3. Empty the bins.",
+      "wrap": 14,
+      "start": 10,
+      "end": 13,
+      "x": 300,
+      "y": 270,
+      "w": 720,
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "id": "greet",
+      "text": [
+        "Happy Christmas",
+        "from the",
+        "XtraFreshhh",
+        "team."
+      ],
+      "wrap": 14,
+      "start": 15.5,
+      "end": 19,
+      "x": 140,
+      "y": 270,
+      "w": 880,
+      "size": 110,
+      "color": "var(--cream)"
+    }
+  ],
+  "end": {
+    "start": 19,
+    "line": "",
+    "url": "xtrafreshhh.com",
+    "block": {
+      "x": 100,
+      "y": 270,
+      "w": 920,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 110,
+      "gap": 40
+    },
+    "urlColor": "var(--ink)"
+  }
+}

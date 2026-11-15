@@ -1,0 +1,20 @@
+{
+  "template": "before-after",
+  "date": "2026-12-03",
+  "pairsWith": "P5 Moving",
+  "music": "calm-keys-01.wav",
+  "_photos": "Replace before/after with Alexandra's real job photos (same room, same angle) and set sample to false. Never AI-made.",
+  "before": "moving-glass-cover.jpg",
+  "after": "moving-glass-cover.jpg",
+  "sample": true,
+  "hook": "Moving out?",
+  "labels": {
+    "before": "Before",
+    "after": "After"
+  },
+  "closing": "One room, freshly cleaned.",
+  "endCard": {
+    "line": "Moving clean? Ask at",
+    "url": "xtrafreshhh.com"
+  }
+}

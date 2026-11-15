@@ -1,0 +1,173 @@
+{
+  "template": "r3-pov-booked",
+  "date": "2026-12-17",
+  "pairsWith": "P6 Oven clean",
+  "bpm": 104,
+  "music": "r2-a-bright-104.m4a",
+  "_template": "Round 8: approved template A (booked POV) recycled for the oven reel: same traced phone (bezel, fit, reflection), solid cards arriving one by one with no overlap, push-through into full-frame line shots, same end card with rack focus.",
+  "phone": {
+    "dir": "kit-round3/prepared/phones/b02",
+    "corners": [
+      [
+        149.2,
+        899.2
+      ],
+      [
+        460.3,
+        812.9
+      ],
+      [
+        795.1,
+        1380.2
+      ],
+      [
+        417.3,
+        1502.5
+      ]
+    ],
+    "glass": 0.1
+  },
+  "_phone": "Round-2 B02 (phone on table) — not used in A or C.",
+  "notesList": {
+    "title": "Christmas dinner",
+    "items": [
+      "Planning Christmas dinner?",
+      "Turkey ✓",
+      "Sprouts ✓",
+      "Gravy ✓",
+      "The oven…?"
+    ],
+    "at": [
+      0,
+      1.5,
+      4.0,
+      6.5,
+      9.0
+    ],
+    "size": 25,
+    "folder": "Notes",
+    "date": "17 December 2026 at 09:41",
+    "titleSize": 32,
+    "row": 46,
+    "firstRow": 176
+  },
+  "cam": {
+    "start": {
+      "scale": 1.85,
+      "x": 185,
+      "y": -333
+    },
+    "screen": {
+      "scale": 1.88,
+      "x": 185,
+      "y": -333
+    }
+  },
+  "scenes": [
+    {
+      "photo": "kit-round4/assets/F/F02-oven-opening.jpg",
+      "at": 11.5,
+      "cam": {
+        "scale": 1.35,
+        "x": -54,
+        "y": 336
+      },
+      "line": "…start with the oven.",
+      "wrap": 13,
+      "pos": {
+        "x": 144,
+        "y": 1016,
+        "w": 870
+      },
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "photo": "kit-round4/assets/F/F03-oven-glass.jpg",
+      "at": 16.5,
+      "cam": {
+        "scale": 1.2,
+        "x": -108,
+        "y": -192
+      },
+      "line": "One less job before festive cooking.",
+      "wrap": 14,
+      "pos": {
+        "x": 64,
+        "y": 808,
+        "w": 950
+      },
+      "size": 110,
+      "color": "var(--cream)"
+    }
+  ],
+  "end": {
+    "photo": "kit-round4/assets/F/F05-christmas-table.jpg",
+    "origin": "540px 960px",
+    "scale": [
+      1.9,
+      1.94
+    ],
+    "x": -243,
+    "y": 864,
+    "grade": 1.3,
+    "focusPull": 7,
+    "line": "Ask about oven cleaning.",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 64,
+      "y": 232,
+      "w": 940,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  },
+  "assets": {
+    "phone": "kit-round2/assets/B/02-phone-table.jpg"
+  },
+  "_round81": "Round 8.1: real iOS Notes screen (status bar, '‹ Notes' header, date, title, ruled Lines paper, toolbar); each tick cuts ~0.9 s to its food close-up with the word in the calm top third; phone holds shortened, closing lines unchanged.",
+  "foodCuts": [
+    {
+      "photo": "kit-round8-1/assets/F/F-food-01.jpg",
+      "at": 2.25,
+      "end": 3.75,
+      "line": "Turkey ✓",
+      "pos": {
+        "x": 96,
+        "y": 240,
+        "w": 900
+      },
+      "size": 130
+    },
+    {
+      "photo": "kit-round8-1/assets/F/F-food-02.jpg",
+      "at": 4.75,
+      "end": 6.25,
+      "line": "Sprouts ✓",
+      "pos": {
+        "x": 96,
+        "y": 240,
+        "w": 900
+      },
+      "size": 130
+    },
+    {
+      "photo": "kit-round8-1/assets/F/F-food-03.jpg",
+      "at": 7.25,
+      "end": 8.75,
+      "line": "Gravy ✓",
+      "pos": {
+        "x": 96,
+        "y": 240,
+        "w": 900
+      },
+      "size": 130,
+      "grade": 1.1
+    }
+  ]
+}

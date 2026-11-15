@@ -1,0 +1,275 @@
+{
+  "template": "r6-reel",
+  "id": "r6-e",
+  "date": "2026-11-26",
+  "pairsWith": "P2 Regular clean",
+  "music": "r5-e-bright-86.m4a",
+  "_motion": "Hook #1 kinetic; habits linked by #3 push; #10 circle on the real detail of each habit. No split screen.",
+  "shots": [
+    {
+      "photo": "kit-round4/assets/E/E02-mirror-clear.jpg",
+      "sx": 168,
+      "sy": 0,
+      "z": 1.45,
+      "start": 0,
+      "end": 1.5,
+      "push": false,
+      "grade": 1.15
+    },
+    {
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 0,
+      "sy": 240,
+      "z": 1.33,
+      "start": 1.5,
+      "end": 3.0,
+      "push": true,
+      "w": 4320,
+      "h": 1920,
+      "grade": 1.15
+    },
+    {
+      "photo": "kit-round4/assets/E/E05-living-room-tidy.jpg",
+      "sx": 251,
+      "sy": 298,
+      "z": 1.45,
+      "start": 3.0,
+      "end": 4.5,
+      "push": true
+    },
+    {
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 3248,
+      "sy": 240,
+      "z": 1.33,
+      "start": 4.5,
+      "end": 6.0,
+      "push": true,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "photo": "kit-round4/assets/E/E03-hob-wipe.jpg",
+      "sx": 0,
+      "sy": 497,
+      "z": 1.45,
+      "start": 6.0,
+      "end": 7.5,
+      "push": true
+    },
+    {
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 892,
+      "sy": 640,
+      "z": 1.5,
+      "start": 7.5,
+      "end": 9.0,
+      "push": true,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "photo": "kit-round4/assets/E/E04-hallway-habits.jpg",
+      "sx": 0,
+      "sy": 0,
+      "z": 1.6,
+      "start": 9.0,
+      "end": 10.5,
+      "push": true,
+      "grade": 1.15
+    },
+    {
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 1624,
+      "sy": 240,
+      "z": 1.33,
+      "start": 10.5,
+      "end": 12.0,
+      "push": true,
+      "w": 4320,
+      "h": 1920
+    }
+  ],
+  "texts": [
+    {
+      "in": 0,
+      "mode": "kinetic",
+      "lines": [
+        "3 easy habits",
+        "between cleans"
+      ],
+      "start": 0,
+      "end": 1.95,
+      "x": 180,
+      "y": 270,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "in": 1,
+      "mode": "static",
+      "lines": [
+        "3 easy habits",
+        "between cleans"
+      ],
+      "start": 1.5,
+      "end": 3.45,
+      "x": 64,
+      "y": 900,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "in": 2,
+      "mode": "mask",
+      "lines": [
+        "1. Ten-minute",
+        "evening reset."
+      ],
+      "start": 3.0,
+      "end": 4.95,
+      "x": 140,
+      "y": 1230,
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "in": 3,
+      "mode": "static",
+      "lines": [
+        "1. Ten-minute",
+        "evening reset."
+      ],
+      "start": 4.5,
+      "end": 6.45,
+      "x": 192,
+      "y": 1140,
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "in": 4,
+      "mode": "mask",
+      "lines": [
+        "2. Wipe the hob",
+        "once cool."
+      ],
+      "start": 6.0,
+      "end": 7.95,
+      "x": 64,
+      "y": 1230,
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "in": 5,
+      "mode": "static",
+      "lines": [
+        "2. Wipe the hob",
+        "once cool."
+      ],
+      "start": 7.5,
+      "end": 9.45,
+      "x": 64,
+      "y": 928,
+      "size": 110,
+      "color": "var(--cream)"
+    },
+    {
+      "in": 6,
+      "mode": "mask",
+      "lines": [
+        "3. Put keys,",
+        "post and shoes",
+        "away."
+      ],
+      "start": 9.0,
+      "end": 10.95,
+      "x": 64,
+      "y": 240,
+      "size": 100,
+      "color": "var(--ink)"
+    },
+    {
+      "in": 7,
+      "mode": "static",
+      "lines": [
+        "3. Put keys,",
+        "post and shoes",
+        "away."
+      ],
+      "start": 10.5,
+      "end": 12.45,
+      "x": 176,
+      "y": 600,
+      "size": 100,
+      "color": "var(--ink)"
+    }
+  ],
+  "circles": [
+    {
+      "in": 2,
+      "start": 3.35,
+      "end": 4.95,
+      "circle": {
+        "cx": 945,
+        "cy": 1400,
+        "rx": 150,
+        "ry": 230,
+        "rot": -6
+      },
+      "color": "cream"
+    },
+    {
+      "in": 4,
+      "start": 6.35,
+      "end": 7.95,
+      "circle": {
+        "cx": 800,
+        "cy": 1040,
+        "rx": 230,
+        "ry": 160,
+        "rot": -8
+      },
+      "color": "cream"
+    },
+    {
+      "in": 6,
+      "start": 9.35,
+      "end": 10.95,
+      "circle": {
+        "cx": 848,
+        "cy": 1168,
+        "rx": 190,
+        "ry": 115,
+        "rot": -5
+      }
+    }
+  ],
+  "end": {
+    "start": 12.0,
+    "push": true,
+    "crop": {
+      "photo": "kit-round4/assets/E/E01-mirror-mid-wipe.jpg",
+      "sx": 304,
+      "sy": 0,
+      "z": 1.6,
+      "grade": 1.15
+    },
+    "line": "A little help?",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 64,
+      "y": 345,
+      "w": 952,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  },
+  "_end": "End card on E01 (unused): the logo sits on the plain fogged mirror, the cloth wiping below."
+}

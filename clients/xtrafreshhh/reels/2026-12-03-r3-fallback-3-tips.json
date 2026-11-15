@@ -1,0 +1,18 @@
+{
+  "template": "three-tips",
+  "date": "2026-12-03",
+  "pairsWith": "P5 Moving (fallback)",
+  "music": "calm-keys-01.wav",
+  "photo": "moving-glass-cover.jpg",
+  "photoPosition": "0% 50%",
+  "headline": "Moving week: 3 tips",
+  "tips": [
+    "1. Empty cupboards before the clean.",
+    "2. Agree keys and access early.",
+    "3. Check the list room by room."
+  ],
+  "endCard": {
+    "line": "Moving clean? Ask at",
+    "url": "xtrafreshhh.com"
+  }
+}

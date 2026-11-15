@@ -1,0 +1,51 @@
+{
+  "template": "price-walkthrough",
+  "date": "2026-11-19",
+  "pairsWith": "P1 New website",
+  "music": "calm-keys-01.wav",
+  "photo": "living-cover.jpg",
+  "photoPosition": "0% 50%",
+  "hook": "Need a cleaning estimate?",
+  "steps": [
+    "Choose your service.",
+    "Add your details.",
+    "See your estimate.",
+    "Send your request."
+  ],
+  "note": "Booking needs email confirmation.",
+  "site": "xtrafreshhh.com",
+  "_mockNote": "Screen contents are a sample mock in the brand look; check service names against the live site before posting.",
+  "services": [
+    "Regular clean",
+    "Deep clean",
+    "Moving clean",
+    "Oven clean"
+  ],
+  "selected": "Regular clean",
+  "details": [
+    {
+      "label": "Bedrooms",
+      "value": "2"
+    },
+    {
+      "label": "Bathrooms",
+      "value": "1"
+    },
+    {
+      "label": "How often",
+      "value": "Weekly"
+    }
+  ],
+  "estimate": {
+    "summary": [
+      "Regular clean",
+      "2 bedrooms · 1 bathroom",
+      "Weekly"
+    ],
+    "placeholder": "Shown here on the site"
+  },
+  "endCard": {
+    "line": "Get your estimate at",
+    "url": "xtrafreshhh.com"
+  }
+}

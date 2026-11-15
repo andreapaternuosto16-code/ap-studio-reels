@@ -1,0 +1,283 @@
+{
+  "template": "r6-reel",
+  "id": "r6-e",
+  "date": "2026-11-26",
+  "pairsWith": "P2 Regular clean",
+  "music": "r6-e-bright-80.m4a",
+  "_motion": "E only: #10 hand-drawn circle + label on each habit's real detail; #2 mask-reveal text; clean hard cuts on the beat (80 bpm, every 2 beats). No push, no kinetic, no parallax, no cube.",
+  "_labels": "Circle labels 'Folded throw', 'Once cool', 'Key bowl' are the details named in the brief; please confirm wording.",
+  "shots": [
+    {
+      "photo": "kit-round4/assets/E/E01-mirror-mid-wipe.jpg",
+      "sx": 168,
+      "sy": 0,
+      "z": 1.45,
+      "grade": 1.2,
+      "start": 0,
+      "end": 1.5,
+      "push": false
+    },
+    {
+      "photo": "kit-round4/assets/E/E02-mirror-clear.jpg",
+      "sx": 168,
+      "sy": 0,
+      "z": 1.45,
+      "grade": 1.2,
+      "start": 1.5,
+      "end": 3.0,
+      "push": false
+    },
+    {
+      "photo": "kit-round4/assets/E/E05-living-room-tidy.jpg",
+      "sx": 251,
+      "sy": 298,
+      "z": 1.45,
+      "grade": 1.0,
+      "start": 3.0,
+      "end": 4.5,
+      "push": false
+    },
+    {
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 1624,
+      "sy": 0,
+      "z": 1.33,
+      "grade": 1.2,
+      "start": 4.5,
+      "end": 6.0,
+      "push": false,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "photo": "kit-round4/assets/E/E03-hob-wipe.jpg",
+      "sx": 0,
+      "sy": 497,
+      "z": 1.45,
+      "grade": 1.0,
+      "start": 6.0,
+      "end": 7.5,
+      "push": false
+    },
+    {
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 0,
+      "sy": 0,
+      "z": 1.33,
+      "grade": 1.2,
+      "start": 7.5,
+      "end": 9.0,
+      "push": false,
+      "w": 4320,
+      "h": 1920
+    },
+    {
+      "photo": "kit-round4/assets/E/E04-hallway-habits.jpg",
+      "sx": 0,
+      "sy": 0,
+      "z": 1.6,
+      "grade": 1.2,
+      "start": 9.0,
+      "end": 10.5,
+      "push": false
+    },
+    {
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 2436,
+      "sy": 0,
+      "z": 1.33,
+      "grade": 1.25,
+      "start": 10.5,
+      "end": 12.0,
+      "push": false,
+      "w": 4320,
+      "h": 1920
+    }
+  ],
+  "texts": [
+    {
+      "mode": "mask",
+      "lines": [
+        "3 easy habits",
+        "between cleans"
+      ],
+      "start": 0,
+      "end": 3.0,
+      "x": 176,
+      "y": 280,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "in": 2,
+      "mode": "mask",
+      "lines": [
+        "1. Ten-minute",
+        "evening reset."
+      ],
+      "start": 3.0,
+      "end": 4.5,
+      "x": 80,
+      "y": 1208,
+      "size": 120,
+      "color": "var(--cream)"
+    },
+    {
+      "in": 3,
+      "mode": "static",
+      "lines": [
+        "1. Ten-minute",
+        "evening reset."
+      ],
+      "start": 4.5,
+      "end": 6.0,
+      "x": 96,
+      "y": 952,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "in": 4,
+      "mode": "mask",
+      "lines": [
+        "2. Wipe the hob",
+        "once cool."
+      ],
+      "start": 6.0,
+      "end": 7.5,
+      "x": 64,
+      "y": 1250,
+      "size": 120,
+      "color": "var(--cream)"
+    },
+    {
+      "in": 5,
+      "mode": "static",
+      "lines": [
+        "2. Wipe the hob",
+        "once cool."
+      ],
+      "start": 7.5,
+      "end": 9.0,
+      "x": 64,
+      "y": 408,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "in": 6,
+      "mode": "mask",
+      "lines": [
+        "3. Put keys,",
+        "post and shoes",
+        "away."
+      ],
+      "start": 9.0,
+      "end": 10.5,
+      "x": 64,
+      "y": 232,
+      "size": 120,
+      "color": "var(--ink)"
+    },
+    {
+      "in": 7,
+      "mode": "static",
+      "lines": [
+        "3. Put keys,",
+        "post and shoes",
+        "away."
+      ],
+      "start": 10.5,
+      "end": 12.0,
+      "x": 64,
+      "y": 472,
+      "size": 120,
+      "color": "var(--ink)"
+    }
+  ],
+  "circles": [
+    {
+      "in": 2,
+      "start": 3.4,
+      "end": 4.5,
+      "circle": {
+        "cx": 945,
+        "cy": 1420,
+        "rx": 140,
+        "ry": 220,
+        "rot": -6
+      },
+      "color": "cream",
+      "label": {
+        "text": "Folded throw",
+        "x": 500,
+        "y": 1070,
+        "size": 80
+      }
+    },
+    {
+      "in": 4,
+      "start": 6.4,
+      "end": 7.5,
+      "circle": {
+        "cx": 800,
+        "cy": 1020,
+        "rx": 220,
+        "ry": 150,
+        "rot": -8
+      },
+      "color": "cream",
+      "label": {
+        "text": "Once cool",
+        "x": 620,
+        "y": 780,
+        "size": 80
+      }
+    },
+    {
+      "in": 6,
+      "start": 9.4,
+      "end": 10.5,
+      "circle": {
+        "cx": 848,
+        "cy": 1168,
+        "rx": 180,
+        "ry": 110,
+        "rot": -5
+      },
+      "label": {
+        "text": "Key bowl",
+        "x": 600,
+        "y": 1310,
+        "size": 80
+      }
+    }
+  ],
+  "end": {
+    "start": 12.0,
+    "push": false,
+    "crop": {
+      "photo": "kit-round4/assets/E/E06-kitchen-living-strip.jpg",
+      "sx": 3640,
+      "sy": 0,
+      "z": 1.9,
+      "grade": 1.15,
+      "w": 4320,
+      "h": 1920
+    },
+    "line": "A little help?",
+    "url": "xtrafreshhh.com",
+    "urlColor": "var(--ink)",
+    "block": {
+      "x": 64,
+      "y": 240,
+      "w": 952,
+      "align": "left",
+      "size": 110,
+      "logoW": 860,
+      "order": "line-url-logo",
+      "urlSize": 72,
+      "gap": 40
+    }
+  }
+}

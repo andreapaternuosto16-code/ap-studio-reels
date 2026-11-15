@@ -1,0 +1,18 @@
+{
+  "template": "review-card",
+  "date": "2026-12-10",
+  "pairsWith": "P3 Guest-ready",
+  "music": "calm-keys-01.wav",
+  "_review": "SAMPLE placeholder. Use only with Alexandra's OK: exact quote (max 15 words), name exactly as on Google, rating as on Google (stars show only for 5).",
+  "sample": true,
+  "photo": "living-cover.jpg",
+  "photoPosition": "0% 50%",
+  "label": "Google review",
+  "rating": 5,
+  "quote": "Placeholder: the customer's exact words go here, fifteen words at most.",
+  "name": "Name as shown on Google",
+  "endCard": {
+    "line": "Thank you for every review.",
+    "url": "xtrafreshhh.com"
+  }
+}

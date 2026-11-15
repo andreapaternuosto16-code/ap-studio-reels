@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "legibility": {
+    "checked": 0,
+    "failing": [],
+    "worst": null,
+    "all": []
+  },
+  "summary": "0 safe-zone/overflow issue(s); smallest caption 130px on 1080 canvas ≈ 46.9px on a 390px phone; duration 43.1s; legibility 0/0 lines pass (worst undefined:1)",
+  "duration": 43.1,
+  "minFontPx": 129.7874078708334,
+  "problems": []
+}

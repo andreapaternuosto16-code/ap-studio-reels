@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<style>
+:root{--ink:#1F4F5B;--teal:#296675;--cream:#FFF7F4;--blush:#FADBD2;
+--head:'Bricolage Grotesque',sans-serif;--text:'Figtree',sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--cream)}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);font-family:var(--text)}
+.photo{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover;transform-origin:0% 30%}
+.abs{position:absolute}
+.label{font-family:var(--text);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:38px}
+.head{font-family:var(--head);font-weight:700;letter-spacing:-.02em;line-height:1.02}
+.logo{display:block;height:auto}
+
+.col{left:96px;width:820px}
+#lab{top:300px;color:var(--ink)}
+#hd{top:360px;font-size:100px;color:var(--ink)}
+.tip{left:96px;width:640px;font-size:48px;font-weight:500;line-height:1.18;color:var(--ink);display:flex;gap:26px}
+.tip b{font-family:var(--head);font-weight:700;color:var(--teal);min-width:44px}
+#e{left:96px;top:300px;width:820px}
+#e .head{font-size:104px}
+#e .logo{width:520px;margin-top:70px}
+#e .url{font-family:var(--head);font-weight:600;font-size:60px;margin-top:22px;color:var(--teal)}
+
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="option-a" data-start="0" data-duration="12" data-width="1080" data-height="1920">
+
+<img class="photo" id="ph" src="photo.jpg" style="object-position:0% 50%" />
+<div class="abs col label" id="lab">Regular clean</div>
+<div class="abs col head" id="hd">3 easy habits between cleans</div>
+<div class="abs tip" id="t1" style="top:610px"><b>1</b><span>Ten-minute reset each evening.</span></div>
+<div class="abs tip" id="t2" style="top:750px"><b>2</b><span>Wipe the hob after cooking.</span></div>
+<div class="abs tip" id="t3" style="top:890px"><b>3</b><span>A home for keys, post and shoes.</span></div>
+<div class="abs" id="e">
+  <div class="head">We'll handle the rest.</div>
+  <img class="logo" src="logo.png" alt="XtraFreshhh" />
+  <div class="url">xtrafreshhh.com</div>
+</div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+
+gsap.set("#e",{opacity:0});
+tl.fromTo("#ph",{scale:1.10,xPercent:0},{scale:1.0,xPercent:-1.5,duration:12,ease:"none"},0);
+tl.fromTo("#lab",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},0.2);tl.fromTo("#hd",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},0.35);
+tl.fromTo("#t1",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},3);tl.fromTo("#t2",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},5);tl.fromTo("#t3",{opacity:0,y:28},{opacity:1,y:0,duration:0.7,ease:"power2.out"},7);
+tl.to("#lab,#hd,#t1,#t2,#t3",{opacity:0,duration:0.35,ease:"power1.in"},9);
+tl.fromTo("#e",{opacity:0,y:24},{opacity:1,y:0,duration:0.8,ease:"power2.out"},9.4);
+tl.to({}, { duration: 12 }, 0); // fill the slot (Herk law 11)
+window.__timelines["option-a"] = tl;
+tl.seek(0);
+</script>
+</body>
+</html>
